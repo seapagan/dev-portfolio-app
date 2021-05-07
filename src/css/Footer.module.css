@@ -6,6 +6,16 @@
   font-size: 0.8rem;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .copyright {
   font-style: italic;
+}
+
+.license {
+  font-size: 0.7rem;
 }

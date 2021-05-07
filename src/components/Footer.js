@@ -5,9 +5,19 @@ import styles from "../css/Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div>
+      <div className={styles.content}>
         <div className={styles.copyright}>
           Created with 'Developer Portfolio', &copy;Seapagan 2021
+        </div>
+        <div className={styles.license}>
+          Released under the{" "}
+          <a
+            href="https://opensource.org/licenses/MIT"
+            rel="noopener noreferrer"
+            target="_blank">
+            MIT
+          </a>{" "}
+          License.
         </div>
       </div>
     </footer>
