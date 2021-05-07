@@ -7,9 +7,11 @@ const Skills = ({ skills }) => {
   return (
     <section id="skills" className={styles.section}>
       <div className="section__title">Skills</div>
-      {skills.map((skill, index) => {
-        return <SkillItem key={index} skill={skill} />;
-      })}
+      <div className={styles.skills}>
+        {skills.map((skill, index) => {
+          return <SkillItem key={index} skill={skill} />;
+        })}
+      </div>
     </section>
   );
 };
