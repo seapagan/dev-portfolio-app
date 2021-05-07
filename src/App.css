@@ -6,3 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--color-main);
 }
+
+section {
+  padding-bottom: 30px;
+}
