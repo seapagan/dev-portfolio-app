@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -11,6 +12,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import OpenSource from "./components/OpenSource";
+import Route404 from "./components/Route404";
 import Skills from "./components/Skills";
 import { settings } from "./configure/settings";
 
@@ -33,17 +35,31 @@ function App() {
         <title>{getTitle()}</title>
       </Helmet>
       <Container>
-        <div className="App">
-          <Header settings={settings} />
-          <MainContent>
-            <About />
-            <Skills />
-            <Experience />
-            <OpenSource />
-            <Contact />
-          </MainContent>
-          <Footer />
-        </div>
+        <Router>
+          <div className="App">
+            <Header settings={settings} />
+            <MainContent>
+              <Switch>
+                <Route path="/" exact>
+                  <About />
+                  <Skills />
+                  <Experience />
+                  <OpenSource />
+                  <Contact />
+                </Route>
+                <Route path="/cv">
+                  <CV />
+                </Route>
+                <Route path="*">
+                  {/* this is a catch-all route for unknown pages, It
+                  should stay as the last route */}
+                  <Route404 />
+                </Route>
+              </Switch>
+            </MainContent>
+            <Footer />
+          </div>
+        </Router>
       </Container>
     </HelmetProvider>
   );

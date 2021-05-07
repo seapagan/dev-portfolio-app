@@ -5,4 +5,7 @@
   --color-badge: hsl(100, 50%, 30%);
   --color-menu-item: hsl(0, 0%, 40%);
   --color-menu-item-hover: hsl(240, 70%, 50%);
+
+  --color-btn-background: hsl(0, 0%, 90%);
+  --color-btn-background-hover: hsl(0, 0%, 80%);
 }

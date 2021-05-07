@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorText {
+  font-size: 2rem;
+}
+
+.errorText code {
+  border: 1px solid black;
+  padding: 0 10px;
+  border-radius: 999999px;
+  background-color: hsl(16, 100%, 80%);
+}
+
+.errorSubtext {
+  font-size: 1.2rem;
+}
+
+.linkBack {
+  padding-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0 10px;
+  border-radius: 9999px;
+  color: var(--color-main);
+  background-color: var(--color-btn-background);
+}
+
+.link:hover {
+  background-color: var(--color-btn-background-hover);
+}
