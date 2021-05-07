@@ -2,7 +2,6 @@
   padding: 10px;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
-  /* margin: 10px 20px 30px 20px; */
   background-color: var(--color-panel-background);
   box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.75);
   transition: transform 250ms ease-in-out;
@@ -10,4 +9,5 @@
 
 .wrapper:hover {
   transform: scale(1.02);
+  background-color: var(--color-panel-background-hover);
 }

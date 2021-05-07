@@ -10,4 +10,5 @@
   --color-btn-background-hover: hsl(0, 0%, 80%);
 
   --color-panel-background: hsl(150, 20%, 95%);
+  --color-panel-background-hover: hsl(150, 65%, 95%);
 }
