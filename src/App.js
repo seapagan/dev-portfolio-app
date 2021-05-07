@@ -40,7 +40,6 @@ function App() {
             <Skills />
             <Experience />
             <OpenSource />
-            <CV />
             <Contact />
           </MainContent>
           <Footer />
