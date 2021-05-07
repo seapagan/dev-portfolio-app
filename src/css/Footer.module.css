@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  font-style: italic;
+}
