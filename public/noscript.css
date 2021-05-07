@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "New Tegomin", serif;
+}
+
+#no-script {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  width: 100%;
+}
+
+#no-script-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0.5em;
+  border: 0.2em double red;
+  border-radius: 0.5em;
+  background-color: salmon;
+}
+
+#no-script-maintext {
+  font-size: 3rem;
+}
+
+#no-script-subtext {
+  font-size: 1.5rem;
+}
