@@ -3,12 +3,11 @@ import { NavLink, Link } from "react-router-dom";
 
 import styles from "../css/Header.module.css";
 
-const Header = ({ settings }) => {
-  console.log(settings);
+const Header = ({ name }) => {
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.namebadge}>
-        &lt; {settings.name} /&gt;
+        &lt; {name} /&gt;
       </Link>
       <nav className={styles.nav}>
         <ul>

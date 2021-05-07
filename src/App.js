@@ -37,7 +37,7 @@ function App() {
       <Container>
         <Router>
           <div className="App">
-            <Header settings={settings} />
+            <Header name={settings.name} />
             <MainContent>
               <Switch>
                 <Route path="/" exact>
