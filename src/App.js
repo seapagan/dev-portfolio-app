@@ -42,7 +42,7 @@ function App() {
               <Switch>
                 <Route path="/" exact>
                   <About />
-                  <Skills />
+                  <Skills skills={settings.skills} />
                   <Experience />
                   <OpenSource />
                   <Contact />
