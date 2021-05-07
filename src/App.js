@@ -43,7 +43,7 @@ function App() {
                 <Route path="/" exact>
                   <About />
                   <Skills skills={settings.skills} />
-                  <Experience />
+                  <Experience experience={settings.experience} />
                   <OpenSource />
                   <Contact />
                 </Route>
