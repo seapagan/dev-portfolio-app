@@ -32,6 +32,12 @@
   text-decoration: none;
 }
 
+.navLink:focus,
+.navLink:hover {
+  color: var(--color-menu-item-hover);
+  border-bottom: 1px solid var(--color-menu-item);
+}
+
 .navLinkActive {
   border-bottom: 1px solid var(--color-menu-item);
 }
