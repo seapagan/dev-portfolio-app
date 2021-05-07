@@ -4,6 +4,7 @@
   height: 50vh;
   justify-content: center;
   align-items: center;
+  line-height: 3;
 }
 
 .errorText {
@@ -12,7 +13,7 @@
 
 .errorText code {
   border: 1px solid black;
-  padding: 0 10px;
+  padding: 5px 20px;
   border-radius: 999999px;
   background-color: hsl(16, 100%, 80%);
 }
@@ -27,14 +28,16 @@
 
 .link {
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   border: 1px solid black;
-  padding: 0 10px;
+  padding: 5px 10px;
   border-radius: 9999px;
   color: var(--color-main);
   background-color: var(--color-btn-background);
+  box-shadow: 1px 1px 5px 0px hsla(0, 0%, 0%, 0.4);
 }
 
 .link:hover {
   background-color: var(--color-btn-background-hover);
+  color: black;
 }
