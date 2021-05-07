@@ -6,16 +6,25 @@ import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
+import { settings } from "./configure/settings";
 
 import "./App.css";
 
 function App() {
   const titlePostfix = "My Portfolio";
 
+  const getTitle = () => {
+    if (settings.name) {
+      return `${settings.name} | ${titlePostfix}`;
+    } else {
+      return `${titlePostfix}`;
+    }
+  };
+
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Grant Ramsay | {titlePostfix}</title>
+        <title>{getTitle()}</title>
       </Helmet>
       <Container>
         <div className="App">
