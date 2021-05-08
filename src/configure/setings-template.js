@@ -3,6 +3,8 @@
 
 export const settings = {
   name: "Master Develpoer", // your name
+  githubUsername: "masterdev",
+  githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
   skills: [
     // list of skills objects
     {
@@ -57,7 +59,7 @@ export const settings = {
       title: "Crap Developer",
       dates: "2010 to 2014",
       company: "A back street Web development company",
-      link: "https://coyboy-web-design.com",
+      link: "https://cowboy-webdesign.com",
       responsibilities: [
         {
           name: "Tea Maker",
