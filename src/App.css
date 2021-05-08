@@ -15,3 +15,9 @@ section .section__title {
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 758px) {
+  .section__title {
+    text-align: center;
+  }
+}
