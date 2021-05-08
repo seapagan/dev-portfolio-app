@@ -6,16 +6,26 @@ import JobResponsibility from "./JobResponsibility";
 
 const JobItem = ({ job }) => {
   return (
-    <CardWrapper>
-      <div>Position: {job.title}</div>
-      <div>Company: {job.company}</div>
-      <div>Dates: {job.dates}</div>
-      <div>Website: {job.link}</div>
-      {job.responsibilities.map((responsibility, index) => {
-        return (
-          <JobResponsibility key={index} responsibility={responsibility} />
-        );
-      })}
+    <CardWrapper className={styles.jobItem}>
+      <div className={styles.company}>{job.company}</div>
+      <div className={styles.position}>{job.title}</div>
+      <div className={styles.dates}>from {job.dates}</div>
+      <div className={styles.responsibilities}>
+        {job.responsibilities.map((responsibility, index) => {
+          return (
+            <JobResponsibility key={index} responsibility={responsibility} />
+          );
+        })}
+      </div>
+      <div className={styles.website}>
+        <a
+          className={styles.link}
+          href={job.link}
+          target="_blank"
+          rel="noopener noreferrer">
+          {job.link}
+        </a>
+      </div>
     </CardWrapper>
   );
 };
