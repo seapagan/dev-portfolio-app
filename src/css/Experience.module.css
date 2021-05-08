@@ -9,5 +9,7 @@
 @media screen and (max-width: 758px) {
   .experience {
     grid-template-columns: 1fr;
+    max-width: 100vw;
+    gap: 15px;
   }
 }

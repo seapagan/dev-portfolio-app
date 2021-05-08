@@ -2,6 +2,7 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
@@ -40,4 +41,10 @@
 
 .navLinkActive {
   border-bottom: 1px solid var(--color-menu-item);
+}
+
+@media screen and (max-width: 758px) {
+  .header {
+    justify-content: center;
+  }
 }
