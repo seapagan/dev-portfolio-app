@@ -4,8 +4,9 @@ import styles from "../css/About.module.css";
 
 const About = () => {
   return (
-    <section id="about" className={styles.section}>
+    <section id="about">
       <div className="section__title">About</div>
+      <div className={styles.about}>About Content</div>
     </section>
   );
 };
