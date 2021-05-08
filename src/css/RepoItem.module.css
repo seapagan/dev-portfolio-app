@@ -1,2 +1,35 @@
 .repoItem {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  grid-gap: 15px;
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.desc {
+  font-size: 0.9em;
+  width: 90%;
+  justify-self: center;
+  align-self: start;
+}
+
+.url {
+  text-decoration: none;
+  justify-self: center;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.8em;
+}
+
+.metricItem {
+  padding-left: 8px;
 }
