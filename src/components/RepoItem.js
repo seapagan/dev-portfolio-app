@@ -5,6 +5,7 @@ import {
   StarIcon,
   GitCommitIcon,
   RepoIcon,
+  DotFillIcon,
 } from "@primer/octicons-react";
 
 import styles from "../css/RepoItem.module.css";
@@ -13,6 +14,15 @@ import CardWrapper from "./CardWrapper";
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;
   const defaultBranch = repo.defaultBranchRef.name;
+  const primaryLanguage = repo.primaryLanguage.name;
+  const primaryLanguageColor = repo.primaryLanguage.color;
+  let licenseType;
+
+  if (repo.licenseInfo) {
+    licenseType = repo.licenseInfo.name;
+  } else {
+    licenseType = "No License Specified";
+  }
 
   return (
     <CardWrapper className={styles.repoItem}>
@@ -23,6 +33,13 @@ const RepoItem = ({ repo }) => {
         {repo.name}
       </div>
       <div className={styles.desc}>{repo.description}</div>
+      <div className={styles.languageLicense}>
+        <div style={{ color: primaryLanguageColor }}>
+          <DotFillIcon />
+          {primaryLanguage}
+        </div>
+        <div>{licenseType}</div>
+      </div>
       <div className={styles.metrics}>
         <div
           className={styles.metricItem}

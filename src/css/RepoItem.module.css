@@ -1,6 +1,6 @@
 .repoItem {
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-rows: auto 1fr auto auto auto;
   grid-gap: 15px;
   position: relative;
 }
@@ -24,6 +24,12 @@
   width: 90%;
   justify-self: center;
   align-self: start;
+}
+
+.languageLicense {
+  display: flex;
+  font-size: 0.85em;
+  justify-content: space-around;
 }
 
 .url {

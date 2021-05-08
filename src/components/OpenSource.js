@@ -23,14 +23,27 @@ const githubApiQuery = gql`
             createdAt
             pushedAt
             updatedAt
+            primaryLanguage {
+              name
+              color
+            }
             defaultBranchRef {
               name
               target {
                 ... on Commit {
-                  id
                   history {
                     totalCount
                   }
+                }
+              }
+            }
+            licenseInfo {
+              name
+            }
+            repositoryTopics(first: 20) {
+              nodes {
+                topic {
+                  name
                 }
               }
             }
