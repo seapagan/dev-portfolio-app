@@ -19,6 +19,20 @@ const githubApiQuery = gql`
             url
             homepageUrl
             forkCount
+            createdAt
+            pushedAt
+            updatedAt
+            defaultBranchRef {
+              name
+              target {
+                ... on Commit {
+                  id
+                  history {
+                    totalCount
+                  }
+                }
+              }
+            }
           }
         }
       }
