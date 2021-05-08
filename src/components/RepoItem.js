@@ -1,6 +1,11 @@
 import React from "react";
 
-import { GitForkIcon, StarIcon, GitCommitIcon } from "@primer/octicons-react";
+import {
+  GitForkIcon,
+  StarIcon,
+  GitCommitIcon,
+  RepoIcon,
+} from "@primer/octicons-react";
 
 import styles from "../css/RepoItem.module.css";
 import CardWrapper from "./CardWrapper";
@@ -11,7 +16,12 @@ const RepoItem = ({ repo }) => {
 
   return (
     <CardWrapper className={styles.repoItem}>
-      <div className={styles.name}>{repo.name}</div>
+      <div className={styles.name}>
+        <span className={styles.repoIcon}>
+          <RepoIcon size="medium" />
+        </span>
+        {repo.name}
+      </div>
       <div className={styles.desc}>{repo.description}</div>
       <div className={styles.metrics}>
         <div

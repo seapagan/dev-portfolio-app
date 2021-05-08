@@ -2,6 +2,14 @@
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   grid-gap: 15px;
+  position: relative;
+}
+
+.repoIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--color-hilight);
 }
 
 .name {
@@ -21,11 +29,11 @@
 .url {
   text-decoration: none;
   justify-self: center;
-  color: var(--color-main);
+  color: var(--color-link-default);
 }
 
 .url:hover {
-  color: var(--color-menu-item-hover);
+  color: var(--color-link-default-hover);
 }
 
 .metrics {

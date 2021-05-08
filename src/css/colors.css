@@ -6,8 +6,13 @@
   --color-menu-item: hsl(0, 0%, 40%);
   --color-menu-item-hover: hsl(240, 70%, 50%);
 
+  --color-hilight: hsl(216, 79%, 46%);
+
   --color-btn-background: hsl(0, 0%, 90%);
   --color-btn-background-hover: hsl(0, 0%, 80%);
+
+  --color-link-default: hsl(0, 0%, 20%);
+  --color-link-default-hover: hsl(234, 67%, 39%);
 
   /* --color-panel-background: hsl(150, 20%, 95%); */
   /* --color-panel-background-hover: hsl(150, 65%, 95%); */
