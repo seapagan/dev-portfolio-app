@@ -10,6 +10,7 @@ import CV from "./components/CV";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import MainContent from "./components/MainContent";
 import OpenSource from "./components/OpenSource";
 import Route404 from "./components/Route404";
@@ -40,6 +41,7 @@ function App({ settings }) {
             <MainContent>
               <Switch>
                 <Route path="/" exact>
+                  <Hero />
                   <About />
                   <Skills skills={settings.skills} />
                   <Experience experience={settings.experience} />
