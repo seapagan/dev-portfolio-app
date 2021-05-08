@@ -4,6 +4,7 @@ import { useQuery, gql } from "@apollo/client";
 
 import styles from "../css/OpenSource.module.css";
 import RepoItem from "./RepoItem";
+import RepoLoading from "./RepoLoading";
 
 const githubApiQuery = gql`
   {
@@ -52,17 +53,21 @@ const OpenSource = () => {
 
   // we will tidy this up later to give a better 'loading' experience for slow
   // connections
-  if (loading) return "Loading...";
+  // if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
 
   return (
     <section id="openSource">
       <div className="section__title">OpenSource Projects</div>
-      <div className={styles.openSource}>
-        {data.user.pinnedItems.nodes.map((repo, index) => {
-          return <RepoItem key={index} repo={repo} />;
-        })}
-      </div>
+      {loading ? (
+        <RepoLoading />
+      ) : (
+        <div className={styles.openSource}>
+          {data.user.pinnedItems.nodes.map((repo, index) => {
+            return <RepoItem key={index} repo={repo} />;
+          })}
+        </div>
+      )}
     </section>
   );
 };
