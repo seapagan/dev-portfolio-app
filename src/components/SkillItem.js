@@ -5,7 +5,7 @@ import CardWrapper from "./CardWrapper";
 
 const SkillItem = ({ skill }) => {
   return (
-    <CardWrapper>
+    <CardWrapper className={styles.skill}>
       <div>Skill: {skill.name}</div>
       <div>Description: {skill.desc}</div>
     </CardWrapper>
