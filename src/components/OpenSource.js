@@ -25,6 +25,10 @@ const githubApiQuery = gql`
       url
       avatarUrl
       createdAt
+      name
+      repositories {
+        totalCount
+      }
     }
   }
 `;
