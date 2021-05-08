@@ -14,11 +14,10 @@ import MainContent from "./components/MainContent";
 import OpenSource from "./components/OpenSource";
 import Route404 from "./components/Route404";
 import Skills from "./components/Skills";
-import { settings } from "./configure/settings";
 
 import "./App.css";
 
-function App() {
+function App({ settings }) {
   const titlePostfix = "My Portfolio";
 
   const getTitle = () => {
