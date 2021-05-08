@@ -36,6 +36,14 @@
   color: var(--color-link-default-hover);
 }
 
+.url:hover::before {
+  content: "[ ";
+}
+
+.url:hover::after {
+  content: " ]";
+}
+
 .metrics {
   display: flex;
   flex-direction: row;

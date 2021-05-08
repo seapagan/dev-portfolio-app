@@ -21,18 +21,23 @@
   justify-self: center;
 }
 
-.responsibilities {
-}
-
 .website {
   justify-self: center;
 }
 
 .link {
   text-decoration: none;
-  color: var(--color-main);
+  color: var(--color-link-default);
 }
 
 .link:hover {
-  color: var(--color-menu-item-hover);
+  color: var(--color-link-default-hover);
+}
+
+.link:hover::before {
+  content: "[ ";
+}
+
+.link:hover::after {
+  content: " ]";
 }
