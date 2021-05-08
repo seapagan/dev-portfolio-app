@@ -20,3 +20,13 @@
 .license {
   font-size: 0.7rem;
 }
+
+.link {
+  text-decoration: none;
+  justify-self: center;
+  color: var(--color-link-footer);
+}
+
+.link:hover {
+  color: var(--color-link-footer-hover);
+}

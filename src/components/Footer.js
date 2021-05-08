@@ -7,11 +7,20 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.copyright}>
-          Created with 'Developer Portfolio', &copy;Seapagan 2021
+          Created with '
+          <a
+            href="https://github.com/seapagan/dev-portfolio-app"
+            className={styles.link}
+            rel="noopener noreferrer"
+            target="_blank">
+            Developer Portfolio
+          </a>
+          ', &copy;Seapagan 2021
         </div>
         <div className={styles.license}>
           Released under the{" "}
           <a
+            className={styles.link}
             href="https://opensource.org/licenses/MIT"
             rel="noopener noreferrer"
             target="_blank">
