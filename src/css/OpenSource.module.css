@@ -1,0 +1,13 @@
+.openSource {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 80vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 758px) {
+  .openSource {
+    grid-template-columns: 1fr;
+  }
+}
