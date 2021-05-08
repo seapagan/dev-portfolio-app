@@ -30,4 +30,9 @@
 
 .link {
   text-decoration: none;
+  color: var(--color-main);
+}
+
+.link:hover {
+  color: var(--color-menu-item-hover);
 }

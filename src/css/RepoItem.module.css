@@ -21,6 +21,11 @@
 .url {
   text-decoration: none;
   justify-self: center;
+  color: var(--color-main);
+}
+
+.url:hover {
+  color: var(--color-menu-item-hover);
 }
 
 .metrics {
@@ -31,5 +36,9 @@
 }
 
 .metricItem {
+  cursor: pointer;
+}
+
+.metricValue {
   padding-left: 8px;
 }

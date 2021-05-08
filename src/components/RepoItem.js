@@ -14,17 +14,19 @@ const RepoItem = ({ repo }) => {
       <div className={styles.name}>{repo.name}</div>
       <div className={styles.desc}>{repo.description}</div>
       <div className={styles.metrics}>
-        <div title={`Number of Commits on the main branch '${defaultBranch}'`}>
+        <div
+          className={styles.metricItem}
+          title={`Number of Commits on the main branch '${defaultBranch}'`}>
           <GitCommitIcon verticalAlign="middle" size="small" />
-          <span className={styles.metricItem}>{totalCommits}</span>
+          <span className={styles.metricValue}>{totalCommits}</span>
         </div>
-        <div title={`Number of Stars`}>
+        <div className={styles.metricItem} title={`Number of Stars`}>
           <StarIcon verticalAlign="middle" size="small" />
-          <span className={styles.metricItem}>{repo.stargazerCount}</span>
+          <span className={styles.metricValue}>{repo.stargazerCount}</span>
         </div>
-        <div title={`Number of Forks`}>
+        <div className={styles.metricItem} title={`Number of Forks`}>
           <GitForkIcon verticalAlign="middle" size="small" />
-          <span className={styles.metricItem}>{repo.forkCount}</span>
+          <span className={styles.metricValue}>{repo.forkCount}</span>
         </div>
       </div>
       <a
