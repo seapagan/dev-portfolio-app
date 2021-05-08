@@ -48,7 +48,6 @@ const OpenSource = () => {
         {data.user.pinnedItems.nodes.map((repo, index) => {
           return <RepoItem key={index} repo={repo} />;
         })}
-        {/* <RepoItem item={data.user.pinnedItems.nodes} /> */}
       </div>
     </section>
   );
