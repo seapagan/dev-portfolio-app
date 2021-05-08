@@ -57,7 +57,7 @@ const OpenSource = () => {
 
   return (
     <section id="openSource">
-      <div className="section__title">OpenSource</div>
+      <div className="section__title">OpenSource Projects</div>
       <div className={styles.openSource}>
         {data.user.pinnedItems.nodes.map((repo, index) => {
           return <RepoItem key={index} repo={repo} />;
