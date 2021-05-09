@@ -2,7 +2,7 @@
 // values to suit your own details
 
 export const settings = {
-  name: "Master Develpoer", // your name
+  name: "Master Developer", // your name
   githubUsername: "masterdev",
   githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
   skills: [
