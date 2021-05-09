@@ -1,2 +1,20 @@
 .skillItem {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 0.9em;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  /* background-color: black; */
+  align-self: start;
 }
