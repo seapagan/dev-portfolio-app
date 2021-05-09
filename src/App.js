@@ -41,8 +41,8 @@ function App({ settings }) {
             <MainContent>
               <Switch>
                 <Route path="/" exact>
-                  <Hero />
-                  <About />
+                  <Hero hero={settings.hero} />
+                  {/* <About /> */}
                   <Skills
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}

@@ -1,2 +1,30 @@
 .hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  max-width: 80vw;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.mainImage {
+  /* padding: 10px; */
+}
+
+.leftPanel {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: start;
+}
+
+.heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-self: center;
+}
+
+.socialMedia {
+  justify-self: center;
+  align-self: center;
 }

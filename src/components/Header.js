@@ -13,14 +13,14 @@ const Header = ({ name }) => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <Link
+            {/* <Link
               className={styles.navLink}
               to="about-section"
               spy={true}
               smooth={true}
               duration={1000}>
               About
-            </Link>
+            </Link> */}
           </li>
           <li>
             <Link
