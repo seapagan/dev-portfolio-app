@@ -10,6 +10,7 @@ Still to do :
  - Social media buttons
  - floating back-to-top button
  - tweaks and user info to the OpenSource section.
+ - make the menu mobile-responsive
  - more!
 
 There is a live working version on my own pages : https://www.gnramsay.com
