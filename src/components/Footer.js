@@ -15,7 +15,7 @@ const Footer = () => {
             target="_blank">
             Developer Portfolio
           </a>
-          ', &copy;Seapagan 2021
+          ', &copy;Grant Ramsay 2021
         </div>
         <div className={styles.license}>
           Released under the{" "}
