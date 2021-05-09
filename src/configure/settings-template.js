@@ -2,15 +2,15 @@
 // values to suit your own details
 
 // comment out these imports if you are not using the particular icon
-import apiLogo from "../assets/api.png";
-import cloudLogo from "../assets/cloud.png";
-import cssLogo from "../assets/css3.png";
-import databaseLogo from "../assets/database.png";
-import esxiLogo from "../assets/esxi.png";
-import htmlLogo from "../assets/html5.png";
-import linuxLogo from "../assets/linux.png";
-import pythonIcon from "../assets/python.png";
-import reactLogo from "../assets/react.png";
+import apiLogo from "../assets/icons//api.png";
+import cloudLogo from "../assets/icons/cloud.png";
+import cssLogo from "../assets/icons/css3.png";
+import databaseLogo from "../assets/icons/database.png";
+import esxiLogo from "../assets/icons/esxi.png";
+import htmlLogo from "../assets/icons/html5.png";
+import linuxLogo from "../assets/icons/linux.png";
+import pythonIcon from "../assets/icons/python.png";
+import reactLogo from "../assets/icons/react.png";
 
 export const settings = {
   name: "Master Developer", // your name
