@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id="contact-section">
       <div className="section__title">Contact</div>
-      <div className={styles.contact}>Contact content</div>
+      <div className={styles.contact}>Coming VERY soon</div>
     </section>
   );
 };
