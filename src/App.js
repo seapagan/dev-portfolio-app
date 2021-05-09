@@ -43,7 +43,10 @@ function App({ settings }) {
                 <Route path="/" exact>
                   <Hero />
                   <About />
-                  <Skills skills={settings.skills} />
+                  <Skills
+                    skills={settings.skills}
+                    additionalSkills={settings.additionalSkills}
+                  />
                   <Experience experience={settings.experience} />
                   <OpenSource />
                   <Contact />

@@ -6,6 +6,26 @@
   margin: auto;
 }
 
+.additionalSkills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.adnSkillTitle {
+  font-weight: bold;
+}
+
+.adnSkillItem {
+  padding-left: 8px;
+}
+
+.adnSkillItem:not(:last-of-type)::after {
+  content: ",";
+}
+
 @media screen and (max-width: 950px) {
   .skills {
     grid-template-columns: 1fr 1fr;
