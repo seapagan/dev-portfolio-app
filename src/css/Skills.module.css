@@ -12,6 +12,8 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 15px;
+  max-width: 80vw;
+  margin: auto;
 }
 
 .adnSkillTitle {
@@ -39,5 +41,10 @@
     grid-template-columns: 1fr;
     max-width: 100vw;
     gap: 15px;
+  }
+
+  .additionalSkills {
+    min-width: 90vw;
+    justify-content: center;
   }
 }
