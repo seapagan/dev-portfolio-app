@@ -8,6 +8,7 @@
       2,
       { "ignoreUrls": true, "ignoreComments": false, "ignoreStrings": false }
     ],
+    "no-multi-str": 0,
     "import/newline-after-import": ["error", { "count": 1 }],
     "import/order": [
       "error",
