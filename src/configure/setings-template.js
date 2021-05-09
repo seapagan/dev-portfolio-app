@@ -31,11 +31,13 @@ export const settings = {
   about: {
     // change to link to your social medial accounts. If blank, they wont
     // be mentioned.
-    socialLinkedin: "",
+    socialBlog: "",
     socialFacebook: "",
-    socialTwitter: "",
-    socialTiktok: "",
+    socialLinkedin: "",
+    socialMedium: "",
     socialSnapchat: "",
+    socialTiktok: "",
+    socialTwitter: "",
     socialYoutube: "",
   },
   experience: [
