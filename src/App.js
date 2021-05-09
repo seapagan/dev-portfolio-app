@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact";
 import Container from "./components/Container";
 import CV from "./components/CV";
