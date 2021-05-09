@@ -1,32 +1,86 @@
 // rename or copy this to 'settings.js' in the same folder, and change the
 // values to suit your own details
 
+// comment out these imports if you are not using the particular icon
+import apiLogo from "../assets/api.png";
+import cloudLogo from "../assets/cloud.png";
+import cssLogo from "../assets/css3.png";
+import databaseLogo from "../assets/database.png";
+import esxiLogo from "../assets/esxi.png";
+import htmlLogo from "../assets/html5.png";
+import linuxLogo from "../assets/linux.png";
+import pythonIcon from "../assets/python.png";
+import reactLogo from "../assets/react.png";
+
 export const settings = {
   name: "Master Developer", // your name
   githubUsername: "masterdev",
   githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
   skills: [
-    // list of skills objects
     {
-      name: "Skill 1",
-      desc: "Blah blah blah about this skill",
+      name: "Python",
+      icon: pythonIcon,
+      desc:
+        "Experienced developer with skills in data manipulation and backend \
+        technologies, including Django.",
     },
     {
-      name: "Skill 2",
-      desc: "Blah blah blah about this skill",
+      name: "React JS",
+      icon: reactLogo,
+      desc:
+        "Frontend Developer with experience in the latest React versions and \
+        methodology, including interfacing with API's and GraphQL.",
     },
     {
-      name: "Skill 3",
-      desc: "Blah blah blah about this skill",
+      name: "API Developer",
+      icon: apiLogo,
+      desc:
+        "Developed API's using Django(Python) and Express.js, interfacing with \
+        multiple Database servers and live devices.",
     },
     {
-      name: "Skill 4",
-      desc: "Blah blah blah about this skill",
+      name: "HTML",
+      icon: htmlLogo,
+      desc: "Fully experienced in all aspects of modern HTML5.",
     },
     {
-      name: "Skill 5",
-      desc: "Blah blah blah about this skill",
+      name: "CSS",
+      icon: cssLogo,
+      desc:
+        "Experienced in modern CSS3 technologies, Including Flexbox and Grid.",
     },
+    {
+      name: "Database Integration",
+      icon: databaseLogo,
+      desc:
+        "Able to integrate the most popular SQL and NoSQL databases with Front \
+        and Backend technologies.",
+    },
+    {
+      name: "Linux",
+      icon: linuxLogo,
+      desc: "Very experienced Linux Sysadmin, installer and troubleshooter.",
+    },
+    {
+      name: "Cloud Hosting",
+      icon: cloudLogo,
+      desc:
+        "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital Ocean \
+        and similar technologies",
+    },
+    {
+      name: "VMWare ESXi",
+      icon: esxiLogo,
+      desc:
+        "Skilled in the installation and administration of VMWare EXSi, \
+        including VCenter.",
+    },
+  ],
+  additionalSkills: [
+    "JavaScript",
+    "Ruby",
+    "Microsoft Office Suite",
+    "Google GSuite",
   ],
   about: {
     // change to link to your social medial accounts. If blank, they wont
