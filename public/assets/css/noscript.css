@@ -1,13 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
-
 * {
   box-sizing: border-box;
+}
+
+/* new-tegomin-regular - latin */
+@font-face {
+  font-family: "New Tegomin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/new-tegomin-v5-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/new-tegomin-v5-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/new-tegomin-v5-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/new-tegomin-v5-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/new-tegomin-v5-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/new-tegomin-v5-latin-regular.svg#NewTegomin") format("svg"); /* Legacy iOS */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "New Tegomin", serif;
+  font-family: "New Tegomin", serif !important;
 }
 
 #no-script {
