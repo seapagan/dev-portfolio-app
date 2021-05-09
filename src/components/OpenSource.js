@@ -64,10 +64,13 @@ const githubApiQuery = gql`
 const OpenSource = () => {
   const { loading, error, data } = useQuery(githubApiQuery);
 
-  // we will tidy this up later to give a better 'loading' experience for slow
-  // connections
-  // if (loading) return "Loading...";
-  if (error) return `Error! ${error.message}`;
+  if (error)
+    return (
+      <section id="openSource">
+        <div className="section__title">OpenSource Projects</div>
+        <div>{`Error! ${error.message}`}</div>
+      </section>
+    );
 
   return (
     <section id="openSource">
