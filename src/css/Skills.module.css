@@ -6,7 +6,15 @@
   margin: auto;
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 950px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+    max-width: 80vw;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .skills {
     grid-template-columns: 1fr;
     max-width: 100vw;

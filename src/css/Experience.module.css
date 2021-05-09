@@ -6,7 +6,14 @@
   margin: auto;
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 850px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .experience {
     grid-template-columns: 1fr;
     max-width: 100vw;
