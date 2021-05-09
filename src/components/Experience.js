@@ -5,7 +5,7 @@ import JobItem from "./JobItem";
 
 const Experience = ({ experience }) => {
   return (
-    <section id="experience">
+    <section id="experience-section">
       <div className="section__title">Experience</div>
       <div className={styles.experience}>
         {experience.map((job, index) => {

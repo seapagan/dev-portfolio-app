@@ -5,7 +5,7 @@ import SkillItem from "./SkillItem";
 
 const Skills = ({ skills, additionalSkills }) => {
   return (
-    <section id="skills">
+    <section id="skills-section">
       <div className="section__title">Skills</div>
       <div className={styles.skills}>
         {skills.map((skill, index) => {

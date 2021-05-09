@@ -73,7 +73,7 @@ const OpenSource = () => {
     );
 
   return (
-    <section id="openSource">
+    <section id="openSource-section">
       <div className="section__title">OpenSource Projects</div>
       {loading ? (
         <RepoLoading />
