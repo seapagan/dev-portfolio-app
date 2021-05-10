@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "../css/Hero.module.css";
+import Social from "./Social";
 
 const Hero = ({ hero }) => {
   return (
@@ -8,7 +9,9 @@ const Hero = ({ hero }) => {
       <div className={styles.leftPanel}>
         <div className={styles.heading}>{hero.heading}</div>
         <div className={styles.message}>{hero.message}</div>
-        <div className={styles.socialMedia}>social media buttons</div>
+        <div className={styles.socialMedia}>
+          <Social />
+        </div>
         <div></div>
       </div>
       <div>
