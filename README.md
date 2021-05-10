@@ -8,11 +8,12 @@ used by anyone.
 
 Still to do :
 
-- <del>Contact section<del>
-- <del>Social media buttons<del>
-- floating back-to-top button
+- <del>Contact section.<del>
+- <del>Social media buttons.<del>
+- <del>floating back-to-top button.<del>
 - tweaks and user info to the OpenSource section.
-- make the menu mobile-responsive [WIP]
+- <del>make the menu mobile-responsive.<del>
+- Full instructions in this README.
 - more!
 
 There is a live working version on my own pages : https://www.gnramsay.com
