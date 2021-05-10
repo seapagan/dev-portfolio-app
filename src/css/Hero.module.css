@@ -13,16 +13,17 @@
 
 .leftPanel {
   display: grid;
-  /* grid-template-rows: 1fr 2fr 1fr 1fr; */
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: 1fr;
   justify-content: start;
+  row-gap: 10px;
 }
 
 .heading {
   font-size: 1.5em;
   font-weight: bold;
   justify-self: center;
+  align-self: center;
 }
 
 .socialMedia {
