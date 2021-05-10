@@ -1,0 +1,11 @@
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon {
+  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+}

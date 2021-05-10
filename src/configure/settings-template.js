@@ -11,11 +11,50 @@ import htmlLogo from "../assets/icons/html5.png";
 import linuxLogo from "../assets/icons/linux.png";
 import pythonIcon from "../assets/icons/python.png";
 import reactLogo from "../assets/icons/react.png";
+import socialBlog from "../assets/social/blog.png";
+import socialEmail from "../assets/social/email.png";
+import socialFacebook from "../assets/social/facebook.png";
+import socialLinkedIn from "../assets/social/linkedin.png";
+import socialMedium from "../assets/social/medium.png";
+import socialSnapchat from "../assets/social/snapchat.png";
+import socialTikTok from "../assets/social/tiktok.png";
+import socialTwitter from "../assets/social/twitter.png";
+import socialYouTube from "../assets/social/youtube.png";
+import heroLogo from "../assets/svg/undraw_Code_thinking.svg";
 
 export const settings = {
   name: "Master Developer", // your name
   githubUsername: "masterdev",
   githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
+  hero: {
+    image: heroLogo,
+    heading: "A Passion to Excel",
+    message:
+      "Results-oriented professional with a diverse experience and a proven \
+      knowledge of Application Development, IT Skills, End-User support, and \
+      Innovation.",
+  },
+  social: [
+    // change to link to your social medial accounts. If link is blank, they
+    // wont be mentioned.
+    { name: "Email", link: "mailto:me@hello.com", icon: socialEmail },
+    { name: "Blog", link: "", icon: socialBlog },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/my-name/",
+      icon: socialLinkedIn,
+    },
+    {
+      name: "Medium",
+      link: "https://you.medium.com/",
+      icon: socialMedium,
+    },
+    { name: "YouTube", link: "youtube", icon: socialYouTube },
+    { name: "FaceBook", link: "facebook", icon: socialFacebook },
+    { name: "SnapChat", link: "snapchat", icon: socialSnapchat },
+    { name: "TikTok", link: "tiktok", icon: socialTikTok },
+    { name: "Twitter", link: "twitter", icon: socialTwitter },
+  ],
   skills: [
     {
       name: "Python",
@@ -82,18 +121,7 @@ export const settings = {
     "Microsoft Office Suite",
     "Google GSuite",
   ],
-  about: {
-    // change to link to your social medial accounts. If blank, they wont
-    // be mentioned.
-    socialBlog: "",
-    socialFacebook: "",
-    socialLinkedin: "",
-    socialMedium: "",
-    socialSnapchat: "",
-    socialTiktok: "",
-    socialTwitter: "",
-    socialYoutube: "",
-  },
+
   experience: [
     {
       title: "Top Notch Developer",
