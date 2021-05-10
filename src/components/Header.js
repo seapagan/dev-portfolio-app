@@ -7,20 +7,21 @@ import styles from "../css/Header.module.css";
 const Header = ({ name }) => {
   return (
     <header className={styles.header}>
+      {/* <input type="checkbox" className="mobileMenuButton"></input> */}
       <Link to="/" className={styles.namebadge}>
         &lt; {name} /&gt;
       </Link>
       <nav className={styles.nav}>
         <ul>
           <li>
-            {/* <Link
+            <Link
               className={styles.navLink}
               to="about-section"
               spy={true}
               smooth={true}
               duration={1000}>
               About
-            </Link> */}
+            </Link>
           </li>
           <li>
             <Link
@@ -53,13 +54,13 @@ const Header = ({ name }) => {
             </Link>
           </li>
           {/* <li>
-            <NavLink
-              activeClassName={styles.navLinkActive}
-              className={styles.navLink}
-              to="/cv">
-              CV
-            </NavLink>
-          </li> */}
+              <NavLink
+                activeClassName={styles.navLinkActive}
+                className={styles.navLink}
+                to="/cv">
+                CV
+              </NavLink>
+            </li> */}
           <li>
             <Link
               className={styles.navLink}

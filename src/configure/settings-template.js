@@ -35,6 +35,17 @@ export const settings = {
       knowledge of Application Development, IT Skills, End-User support, and \
       Innovation.",
   },
+  about: [
+    "A Python and Backend developer with Frontend leanings, living in the \
+    beautiful (and wet) Scottish Borders with a Border Terrier, Border Collie \
+    (both mental), A Horse, and some lodger sheep.",
+    "Based on an old Farm, I am surrounded by beautiful scenery and working \
+    fields. Tractors and Harversters before dawn yeah!",
+    "I am fully setup for Remote work with a dedicated office space and \
+    superfast Wireless Broadband, 20 minutes drive from Berwick-Upon-Tweed \
+    and Rail links to the rest of the UK, 90 minutes from either Edinburgh or \
+    Newcastle airports.",
+  ],
   social: [
     // change to link to your social medial accounts. If link is blank, they
     // wont be mentioned.

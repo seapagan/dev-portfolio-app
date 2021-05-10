@@ -1,2 +1,7 @@
 .about {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 80vw;
+  margin: auto;
+  row-gap: 20px;
 }
