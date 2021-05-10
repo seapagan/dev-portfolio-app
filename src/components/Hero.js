@@ -12,7 +12,7 @@ const Hero = ({ hero, social }) => {
         <div className={styles.socialMedia}>
           <Social social={social} />
         </div>
-        <div></div>
+        {/* <div></div> */}
       </div>
       <div>
         <img className={styles.mainImage} src={hero.image} alt="" />
