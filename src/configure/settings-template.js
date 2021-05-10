@@ -14,6 +14,7 @@ import reactLogo from "../assets/icons/react.png";
 import socialBlog from "../assets/social/blog.png";
 import socialEmail from "../assets/social/email.png";
 import socialFacebook from "../assets/social/facebook.png";
+import socialGitHub from "../assets/social/github.png";
 import socialLinkedIn from "../assets/social/linkedin.png";
 import socialMedium from "../assets/social/medium.png";
 import socialSnapchat from "../assets/social/snapchat.png";
@@ -49,6 +50,7 @@ export const settings = {
       link: "https://you.medium.com/",
       icon: socialMedium,
     },
+    { name: "GitHub", link: "github", icon: socialGitHub },
     { name: "YouTube", link: "youtube", icon: socialYouTube },
     { name: "FaceBook", link: "facebook", icon: socialFacebook },
     { name: "SnapChat", link: "snapchat", icon: socialSnapchat },
