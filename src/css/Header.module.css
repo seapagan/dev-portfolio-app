@@ -2,35 +2,65 @@
 
 .header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 20px;
 }
 
 .namebadge {
+  grid-column: 2 / span 1;
   font-family: "Caveat", cursive;
   font-size: 2em;
   color: var(--color-badge);
   text-decoration: none;
 }
 
-.nav ul {
-  /* display: inline; */
+.navToggle {
+  display: none;
+}
 
-  list-style: none;
+.navToggle:checked ~ nav {
+  display: block;
+}
+
+.navToggleLabel {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin-left: 1em;
+  height: 48px;
+  align-items: center;
+  display: none;
+}
+
+.navToggleLabel span,
+.navToggleLabel span::before,
+.navToggleLabel span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.navToggleLabel span::before,
+.navToggleLabel span::after {
+  content: "";
+  position: absolute;
+}
+
+.navToggleLabel span::before {
+  bottom: 7px;
+}
+
+.navToggleLabel span::after {
+  top: 7px;
 }
 
 .nav li {
   display: inline-block;
   padding: 0 10px;
-}
-
-.navLink {
-  display: inline-block;
-  /* padding: 0 10px; */
-  color: var(--color-menu-item);
-  text-decoration: none;
 }
 
 .navLink:focus,
@@ -43,8 +73,37 @@
   border-bottom: 1px solid var(--color-menu-item);
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
   .header {
     justify-content: center;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  /* we will switch to mobile menu at this point */
+  .header {
+    flex-direction: column;
+  }
+
+  .navToggleLabel {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    /* transform: scale(1, 0); */
+    transform-origin: top;
+    /* transition: transform 400ms ease-in-out; */
+  }
+
+  /* .nav.ul {
+    display: inline;
+  } */
+
+  .nav li {
+    line-height: 2.5em;
+    width: 100vw;
+    margin-left: 1em;
+    padding: 0;
   }
 }
