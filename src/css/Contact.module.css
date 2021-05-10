@@ -1,0 +1,14 @@
+.contact {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr;
+  max-width: 80vw;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.socialButtons {
+  max-width: 70%;
+  margin: auto;
+  vertical-align: center;
+}

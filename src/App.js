@@ -49,7 +49,7 @@ function App({ settings }) {
                   />
                   <Experience experience={settings.experience} />
                   <OpenSource />
-                  <Contact />
+                  <Contact social={settings.social} />
                 </Route>
                 <Route path="/cv">
                   <CV />
