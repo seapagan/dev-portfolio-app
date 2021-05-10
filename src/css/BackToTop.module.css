@@ -6,6 +6,7 @@
   right: 20px;
   z-index: 2;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .backToTop:hover {
