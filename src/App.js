@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import About from "./components/About";
+import BackToTop from "./components/BackToTop";
 import Contact from "./components/Contact";
 import Container from "./components/Container";
 import CV from "./components/CV";
@@ -38,6 +39,7 @@ function App({ settings }) {
         <Router>
           <div className="App">
             <Header name={settings.name} />
+            <BackToTop />
             <MainContent>
               <Switch>
                 <Route path="/" exact>
