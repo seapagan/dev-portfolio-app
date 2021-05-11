@@ -5,12 +5,14 @@ import { Link } from "react-scroll";
 import styles from "../css/Header.module.css";
 
 const Header = ({ name }) => {
+  // set a Ref on the checkbox used to open/close the CSS menu. This will be
+  // used to ensure we can close it when clicked.
   const toggleRef = useRef();
 
   const closeMenu = () => {
-    if (toggleRef.current.checked) {
-      toggleRef.current.checked = false;
-    }
+    // close the responsive menu on click. Detect if it is open by querying the
+    // 'current.checked' property from the Ref.
+    toggleRef.current.checked && (toggleRef.current.checked = false);
   };
 
   return (
