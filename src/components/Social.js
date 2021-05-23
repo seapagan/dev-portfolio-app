@@ -13,8 +13,8 @@ const Social = ({ social }) => {
                 href={socialItem.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                alt={`Open ${socialItem.name}`}
-                title={`Open ${socialItem.name}`}>
+                alt={`visit${socialItem.name}`}
+                title={`${socialItem.name}`}>
                 <img className={styles.icon} src={socialItem.icon} alt="" />
               </a>
             </div>
