@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.19",
-    "@primer/octicons-react": "^13.0.0",
+    "@primer/octicons-react": "^14.2.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^13.1.8",
