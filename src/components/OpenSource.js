@@ -91,7 +91,7 @@ const githubApiQuery = gql`
 `;
 
 const OpenSource = () => {
-  const [showPublicRepos, setShowPublicRepos] = useState(true);
+  const [showPublicRepos, setShowPublicRepos] = useState(false);
   const { loading, error, data } = useQuery(githubApiQuery);
 
   const pinnedRepos = [];
