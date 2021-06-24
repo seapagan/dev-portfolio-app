@@ -9,10 +9,24 @@ body {
 }
 
 section .section__title {
+  position: relative;
   font-weight: bold;
   font-size: 2.5rem;
   padding: 40px 0;
   text-align: center;
+}
+
+section .section__title:before {
+  content: "";
+  width: 80%;
+  height: 3px;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  /* position: absolute; */
+  background: var(--color-separator);
+  margin-bottom: 10px;
+  /* top: 20px; */
 }
 
 @media screen and (max-width: 800px) {
@@ -20,5 +34,9 @@ section .section__title {
     text-align: center;
     font-size: 2rem;
     padding: 20px 0;
+  }
+
+  section .section__title:before {
+    width: 90%;
   }
 }
