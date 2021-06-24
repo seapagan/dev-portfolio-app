@@ -14,9 +14,18 @@ import CardWrapper from "./CardWrapper";
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;
   const defaultBranch = repo.defaultBranchRef.name;
-  const primaryLanguage = repo.primaryLanguage.name;
-  const primaryLanguageColor = repo.primaryLanguage.color;
+
+  let primaryLanguage;
+  let primaryLanguageColor;
   let licenseType;
+
+  if (repo.primaryLanguage) {
+    primaryLanguage = repo.primaryLanguage.name;
+    primaryLanguageColor = repo.primaryLanguage.color;
+  } else {
+    primaryLanguage = "";
+    primaryLanguageColor = "";
+  }
 
   if (repo.licenseInfo) {
     licenseType = repo.licenseInfo.name;
@@ -34,10 +43,12 @@ const RepoItem = ({ repo }) => {
       </div>
       <div className={styles.desc}>{repo.description}</div>
       <div className={styles.languageLicense}>
-        <div style={{ color: primaryLanguageColor }}>
-          <DotFillIcon />
-          {primaryLanguage}
-        </div>
+        {primaryLanguage !== "" && (
+          <div style={{ color: primaryLanguageColor }}>
+            <DotFillIcon />
+            {primaryLanguage}
+          </div>
+        )}
         <div>{licenseType}</div>
       </div>
       <div className={styles.metrics}>
