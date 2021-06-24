@@ -78,11 +78,27 @@ const OpenSource = () => {
       {loading ? (
         <RepoLoading />
       ) : (
-        <div className={styles.openSource}>
-          {data.user.pinnedItems.nodes.map((repo, index) => {
-            return <RepoItem key={index} repo={repo} />;
-          })}
-        </div>
+        <>
+          <div className={styles.openSource}>
+            <div className={styles.header}>
+              <div className={styles.urlTitle}>
+                <b>
+                  <a
+                    className={styles.url}
+                    href={data.user.url}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Visit Github Account
+                  </a>
+                </b>
+              </div>
+              <div className={styles.pinnedTitle}>Pinned Repositories.</div>
+            </div>
+            {data.user.pinnedItems.nodes.map((repo, index) => {
+              return <RepoItem key={index} repo={repo} />;
+            })}
+          </div>
+        </>
       )}
     </section>
   );
