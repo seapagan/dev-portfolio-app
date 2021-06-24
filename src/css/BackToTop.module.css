@@ -18,7 +18,7 @@
 @media screen and (max-width: 650px) {
   .backToTop {
     /* bottom: 100px; */
-    bottom: 20px;
+    top: 50%;
     width: 30px;
     height: 30px;
     right: 5px;
