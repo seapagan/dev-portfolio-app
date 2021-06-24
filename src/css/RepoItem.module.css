@@ -58,7 +58,8 @@
 }
 
 .metricItem {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: default;
 }
 
 .metricValue {
