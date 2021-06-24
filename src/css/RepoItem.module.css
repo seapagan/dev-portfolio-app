@@ -72,7 +72,7 @@
   font-weight: bold;
   top: 0px;
   right: -5px;
-  transform: rotate(35deg) scaleY(0.6);
+  transform: rotate(35deg) scaleY(0.5);
   color: red;
   text-align: center;
 }
