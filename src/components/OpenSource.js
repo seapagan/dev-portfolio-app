@@ -79,6 +79,9 @@ const githubApiQuery = gql`
               }
             }
           }
+          licenseInfo {
+            name
+          }
         }
       }
     }
