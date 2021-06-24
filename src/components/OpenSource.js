@@ -54,8 +54,32 @@ const githubApiQuery = gql`
       avatarUrl
       createdAt
       name
-      repositories {
+      repositories(privacy: PUBLIC, first: 100) {
         totalCount
+        nodes {
+          url
+          description
+          name
+          stargazerCount
+          forkCount
+          createdAt
+          pushedAt
+          updatedAt
+          primaryLanguage {
+            name
+            color
+          }
+          defaultBranchRef {
+            name
+            target {
+              ... on Commit {
+                history {
+                  totalCount
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -71,6 +95,8 @@ const OpenSource = () => {
         <div>{`Error! ${error.message}`}</div>
       </section>
     );
+
+  console.log(data);
 
   return (
     <section id="openSource-section">
