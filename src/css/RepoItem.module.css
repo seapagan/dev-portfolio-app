@@ -65,3 +65,31 @@
 .metricValue {
   padding-left: 8px;
 }
+
+.fork {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  top: 0px;
+  right: -5px;
+  transform: rotate(35deg) scaleY(0.6);
+  color: red;
+  text-align: center;
+}
+
+.fork:before {
+  content: "";
+  width: 100%;
+  margin: auto;
+  height: 2px;
+  display: block;
+  background: red;
+}
+
+.fork:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: red;
+}

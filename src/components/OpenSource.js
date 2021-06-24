@@ -47,6 +47,7 @@ const githubApiQuery = gql`
                 }
               }
             }
+            isFork
           }
         }
       }
@@ -82,6 +83,7 @@ const githubApiQuery = gql`
           licenseInfo {
             name
           }
+          isFork
         }
       }
     }
@@ -89,7 +91,7 @@ const githubApiQuery = gql`
 `;
 
 const OpenSource = () => {
-  const [showPublicRepos, setShowPublicRepos] = useState(false);
+  const [showPublicRepos, setShowPublicRepos] = useState(true);
   const { loading, error, data } = useQuery(githubApiQuery);
 
   const pinnedRepos = [];
