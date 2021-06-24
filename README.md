@@ -8,15 +8,15 @@ used by anyone.
 
 Still to do :
 
-- <del>Contact section.<del>
-- <del>Social media buttons.<del>
-- <del>floating back-to-top button.<del>
-- tweaks and user info to the OpenSource section.
-- <del>make the menu mobile-responsive.<del>
+- ~~Contact section.~~
+- ~~Social media buttons.~~
+- ~~floating back-to-top button.~~
+- ~~tweaks and user info to the OpenSource section.~~
+- ~~make the menu mobile-responsive.~~
 - Full instructions in this README.
 - more!
 
-There is a live working version on my own pages : https://www.gnramsay.com
+There is a live working version on my own pages : [https://www.gnramsay.com](https://www.gnramsay.com)
 
 Licensed under MIT, do with it as you will but please leave my copyright on it.
 Pull requests are welcome.
