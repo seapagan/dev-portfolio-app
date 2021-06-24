@@ -23,10 +23,8 @@ section .section__title:before {
   border-radius: 8px;
   display: block;
   margin: auto;
-  /* position: absolute; */
   background: var(--color-separator);
   margin-bottom: 10px;
-  /* top: 20px; */
 }
 
 @media screen and (max-width: 800px) {
