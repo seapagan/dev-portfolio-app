@@ -20,6 +20,10 @@
 .pinnedTitle {
   font-size: 1.5em;
 }
+.publicTitle {
+  font-size: 1.1em;
+  cursor: pointer;
+}
 
 .url {
   text-decoration: none;

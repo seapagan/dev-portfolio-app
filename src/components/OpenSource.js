@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useQuery, gql } from "@apollo/client";
 
@@ -89,7 +89,10 @@ const githubApiQuery = gql`
 `;
 
 const OpenSource = () => {
+  const [showPublicRepos, setShowPublicRepos] = useState(false);
   const { loading, error, data } = useQuery(githubApiQuery);
+
+  const pinnedRepos = [];
 
   if (error)
     return (
@@ -99,7 +102,10 @@ const OpenSource = () => {
       </section>
     );
 
-  console.log(data);
+  const togglePublicRepos = () => {
+    // this will toggle to display the public repos
+    setShowPublicRepos(!showPublicRepos);
+  };
 
   return (
     <section id="openSource-section">
@@ -124,8 +130,24 @@ const OpenSource = () => {
               <div className={styles.pinnedTitle}>Pinned Repositories.</div>
             </div>
             {data.user.pinnedItems.nodes.map((repo, index) => {
+              pinnedRepos.push(repo.name);
               return <RepoItem key={index} repo={repo} />;
             })}
+
+            <div className={styles.header}>
+              <div onClick={togglePublicRepos} className={styles.publicTitle}>
+                {showPublicRepos ? "Hide" : "Show"}
+                &nbsp;Public Repositories.
+              </div>
+            </div>
+            {showPublicRepos
+              ? data.user.repositories.nodes.map((repo, index) => {
+                  if (!pinnedRepos.includes(repo.name)) {
+                    return <RepoItem key={index} repo={repo} />;
+                  }
+                  return "";
+                })
+              : ""}
           </div>
         </>
       )}
