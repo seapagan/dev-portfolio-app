@@ -19,6 +19,7 @@
 
 .pinnedTitle {
   font-size: 1.5em;
+  justify-self: center;
 }
 .publicTitle {
   font-size: 1.1em;
