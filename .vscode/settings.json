@@ -1,5 +1,4 @@
 {
-  "cornflakes.linter.run": "onType",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -34,13 +33,6 @@
   "prettier.jsxBracketSameLine": true,
   "prettier.packageManager": "yarn",
   "prettier.tabWidth": 2,
-  "python.formatting.blackArgs": ["--line-length=79"],
-  "python.formatting.provider": "black",
-  "python.linting.flake8Args": ["--max-line-length=79"],
-  "python.linting.flake8Enabled": true,
-  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
-  "python.linting.pylintEnabled": true,
-  "python.pythonPath": "/home/seapagan/.pyenv/versions/uprn/bin/python",
   "css.customData": ["./.vscode/custom.css-data.json"],
   "explorer.compactFolders": false,
   "git.enableCommitSigning": true
