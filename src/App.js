@@ -50,7 +50,7 @@ function App({ settings }) {
                     additionalSkills={settings.additionalSkills}
                   />
                   <Experience experience={settings.experience} />
-                  <OpenSource />
+                  <OpenSource username={settings.githubUsername} />
                   <Contact social={settings.social} />
                 </Route>
                 <Route path="/cv">

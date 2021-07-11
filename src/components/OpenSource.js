@@ -6,19 +6,63 @@ import styles from "../css/OpenSource.module.css";
 import RepoItem from "./RepoItem";
 import RepoLoading from "./RepoLoading";
 
-const githubApiQuery = gql`
-  {
-    user(login: "seapagan") {
-      anyPinnableItems(type: REPOSITORY)
-      pinnedItems(first: 10) {
-        totalCount
-        nodes {
-          ... on Repository {
-            name
-            description
-            stargazerCount
+const OpenSource = ({ username }) => {
+  const githubApiQuery = gql`
+    {
+      user(login: "${username}") {
+        anyPinnableItems(type: REPOSITORY)
+        pinnedItems(first: 10) {
+          totalCount
+          nodes {
+            ... on Repository {
+              name
+              description
+              stargazerCount
+              url
+              homepageUrl
+              forkCount
+              createdAt
+              pushedAt
+              updatedAt
+              primaryLanguage {
+                name
+                color
+              }
+              defaultBranchRef {
+                name
+                target {
+                  ... on Commit {
+                    history {
+                      totalCount
+                    }
+                  }
+                }
+              }
+              licenseInfo {
+                name
+              }
+              repositoryTopics(first: 20) {
+                nodes {
+                  topic {
+                    name
+                  }
+                }
+              }
+              isFork
+            }
+          }
+        }
+        url
+        avatarUrl
+        createdAt
+        name
+        repositories(privacy: PUBLIC, first: 100) {
+          totalCount
+          nodes {
             url
-            homepageUrl
+            description
+            name
+            stargazerCount
             forkCount
             createdAt
             pushedAt
@@ -40,57 +84,13 @@ const githubApiQuery = gql`
             licenseInfo {
               name
             }
-            repositoryTopics(first: 20) {
-              nodes {
-                topic {
-                  name
-                }
-              }
-            }
             isFork
           }
         }
       }
-      url
-      avatarUrl
-      createdAt
-      name
-      repositories(privacy: PUBLIC, first: 100) {
-        totalCount
-        nodes {
-          url
-          description
-          name
-          stargazerCount
-          forkCount
-          createdAt
-          pushedAt
-          updatedAt
-          primaryLanguage {
-            name
-            color
-          }
-          defaultBranchRef {
-            name
-            target {
-              ... on Commit {
-                history {
-                  totalCount
-                }
-              }
-            }
-          }
-          licenseInfo {
-            name
-          }
-          isFork
-        }
-      }
     }
-  }
-`;
+  `;
 
-const OpenSource = () => {
   const [showPublicRepos, setShowPublicRepos] = useState(false);
   const { loading, error, data } = useQuery(githubApiQuery);
 
