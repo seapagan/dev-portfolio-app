@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import { useQuery, gql } from "@apollo/client";
 
-import styles from "../css/OpenSource.module.css";
-import CardWrapper from "./CardWrapper";
+import styles from "../css/OpenSourceUser.module.css";
 import RepoItem from "./RepoItem";
 import RepoLoading from "./RepoLoading";
 
@@ -110,7 +109,7 @@ const OpenSourceUser = ({ username }) => {
   };
 
   return (
-    <CardWrapper id="openSourceUser">
+    <>
       {loading ? (
         <RepoLoading />
       ) : (
@@ -152,7 +151,7 @@ const OpenSourceUser = ({ username }) => {
           </div>
         </>
       )}
-    </CardWrapper>
+    </>
   );
 };
 
