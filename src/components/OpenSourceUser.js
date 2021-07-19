@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
 import { useQuery, gql } from "@apollo/client";
-import { ChevronRightIcon, ChevronDownIcon } from "@primer/octicons-react";
+import {
+  ChevronRightIcon,
+  ChevronDownIcon,
+  MarkGithubIcon,
+} from "@primer/octicons-react";
 
 import styles from "../css/OpenSourceUser.module.css";
 import RepoItem from "./RepoItem";
@@ -156,11 +160,12 @@ const OpenSourceUser = ({ username }) => {
             {showUser && (
               <>
                 <div className={styles.url}>
+                  <MarkGithubIcon />
                   <a
                     href={data.user.url}
                     target="_blank"
                     rel="noopener noreferrer">
-                    visit on github
+                    view repositories on github
                   </a>
                 </div>
                 <div className={styles.openSourceGrid}>

@@ -31,24 +31,21 @@
 }
 
 .url {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .url a {
   text-decoration: none;
   color: var(--color-link-default);
+  padding-left: 5px;
 }
 
+.url:hover,
 .url a:hover {
   color: var(--color-link-default-hover);
-}
-
-.url a:hover::before {
-  content: "[ ";
-}
-
-.url a:hover::after {
-  content: " ]";
 }
 
 .foldIcon {
