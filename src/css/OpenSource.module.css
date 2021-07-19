@@ -1,72 +1,20 @@
-.openSource {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+.wrapper {
   max-width: 80vw;
   margin: auto;
+  background-color: inherit;
 }
 
-.header {
-  display: grid;
-  grid-column: 1 / 4;
-  justify-content: center;
+/* Needx to remove this for the last one */
+.wrapper {
+  margin-bottom: 15px;
 }
 
-.urlTitle {
-  padding-bottom: 10px;
-  justify-self: center;
-}
-
-.pinnedTitle {
-  font-size: 1.5em;
-}
-.publicTitle {
-  font-size: 1.1em;
-  cursor: pointer;
-}
-
-.url {
-  text-decoration: none;
-  padding-left: 5px;
-  color: var(--color-link-default);
-}
-
-.url:hover {
-  color: var(--color-link-default-hover);
-}
-
-.url:hover::before {
-  content: "[ ";
-}
-
-.url:hover::after {
-  content: " ]";
-}
-
-@media screen and (max-width: 950px) {
-  .openSource {
-    grid-template-columns: 1fr 1fr;
-    max-width: 80vw;
-    gap: 15px;
-  }
-
-  .header {
-    grid-column: 1 / 3;
-  }
+.wrapper:hover {
+  background-color: inherit;
 }
 
 @media screen and (max-width: 650px) {
-  .openSource {
-    grid-template-columns: 1fr;
+  .wrapper {
     max-width: 100vw;
-    gap: 15px;
   }
-
-  .header {
-    grid-column: 1;
-  }
-
-  /* .urlTitle {
-    display: none;
-  } */
 }

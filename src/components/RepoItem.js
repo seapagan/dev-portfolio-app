@@ -35,7 +35,7 @@ const RepoItem = ({ repo }) => {
 
   return (
     <CardWrapper className={styles.repoItem}>
-      {repo.isFork && <span className={styles.fork}>Fork</span>}
+      {repo.isFork && <span className={styles.fork}>Forked</span>}
       <div className={styles.name}>
         <span className={styles.repoIcon}>
           <RepoIcon size="medium" />
