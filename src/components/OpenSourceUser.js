@@ -115,6 +115,15 @@ const OpenSourceUser = ({ username }) => {
     setShowUser(!showUser);
   };
 
+  const returnPinned = () => {
+    if (showUser) {
+      return data.user.pinnedItems.nodes.map((repo, index) => {
+        pinnedRepos.push(repo.name);
+        return <RepoItem key={index} repo={repo} />;
+      });
+    }
+  };
+
   return (
     <>
       {loading ? (
@@ -141,20 +150,26 @@ const OpenSourceUser = ({ username }) => {
                   </a>
                 </b>
               </div>
-              <div className={styles.pinnedTitle}>Pinned Repositories.</div>
+              {showUser ? (
+                <div className={styles.pinnedTitle}>Pinned Repositories.</div>
+              ) : (
+                ""
+              )}
             </div>
-            {data.user.pinnedItems.nodes.map((repo, index) => {
-              pinnedRepos.push(repo.name);
-              return <RepoItem key={index} repo={repo} />;
-            })}
+            {returnPinned()}
 
-            <div className={styles.header}>
-              <div onClick={togglePublicRepos} className={styles.publicTitle}>
-                {showPublicRepos ? "Hide" : "Show"}
-                &nbsp;Public Repositories.
+            {showUser ? (
+              <div className={styles.header}>
+                <div onClick={togglePublicRepos} className={styles.publicTitle}>
+                  {showPublicRepos ? "Hide" : "Show"}
+                  &nbsp;Public Repositories.
+                </div>
               </div>
-            </div>
-            {showPublicRepos
+            ) : (
+              ""
+            )}
+
+            {showUser && showPublicRepos
               ? data.user.repositories.nodes.map((repo, index) => {
                   if (!pinnedRepos.includes(repo.name)) {
                     return <RepoItem key={index} repo={repo} />;
