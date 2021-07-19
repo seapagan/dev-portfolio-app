@@ -44,6 +44,13 @@
   content: " ]";
 }
 
+.foldIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--color-hilight);
+}
+
 @media screen and (max-width: 950px) {
   .openSource {
     grid-template-columns: 1fr 1fr;

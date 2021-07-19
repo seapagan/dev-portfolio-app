@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { useQuery, gql } from "@apollo/client";
+import { ChevronRightIcon, ChevronDownIcon } from "@primer/octicons-react";
 
 import styles from "../css/OpenSourceUser.module.css";
 import RepoItem from "./RepoItem";
@@ -91,6 +92,7 @@ const OpenSourceUser = ({ username }) => {
     }
   `;
 
+  const [showUser, setShowUser] = useState(true);
   const [showPublicRepos, setShowPublicRepos] = useState(false);
   const { loading, error, data } = useQuery(githubApiQuery);
 
@@ -108,6 +110,11 @@ const OpenSourceUser = ({ username }) => {
     setShowPublicRepos(!showPublicRepos);
   };
 
+  const toggleUser = () => {
+    // this will toggle to display the public repos
+    setShowUser(!showUser);
+  };
+
   return (
     <>
       {loading ? (
@@ -118,6 +125,13 @@ const OpenSourceUser = ({ username }) => {
             <div className={styles.header}>
               <div className={styles.urlTitle}>
                 <b>
+                  <span onClick={toggleUser} className={styles.foldIcon}>
+                    {showUser ? (
+                      <ChevronDownIcon size="medium" />
+                    ) : (
+                      <ChevronRightIcon size="medium" />
+                    )}
+                  </span>
                   <a
                     className={styles.url}
                     href={data.user.url}
