@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.3.19",
+    "@apollo/client": "^3.3.21",
     "@primer/octicons-react": "^13.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.7",
@@ -16,8 +16,7 @@
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.2",
-    "web-vitals": "^1.0.1"
+    "react-scroll": "^1.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
