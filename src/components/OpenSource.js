@@ -111,7 +111,7 @@ const OpenSource = ({ username }) => {
 
   return (
     <section id="openSource-section">
-      <div className="section__title">OpenSource Projects</div>
+      <h2 className="section__title">OpenSource Projects</h2>
       {loading ? (
         <RepoLoading />
       ) : (

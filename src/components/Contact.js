@@ -6,7 +6,7 @@ import Social from "./Social";
 const Contact = ({ social }) => {
   return (
     <section id="contact-section">
-      <div className="section__title">Contact Me</div>
+      <h2 className="section__title">Contact Me</h2>
       <div className={styles.contact}>
         <div>
           If you have managed to read down this far, you may like what you see
