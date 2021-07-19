@@ -143,9 +143,9 @@ const OpenSourceUser = ({ username }) => {
         <>
           <div className={styles.openSource}>
             <div className={styles.header}>
-              <div className={styles.urlTitle}>
+              <div onClick={toggleUser} className={styles.userTitle}>
                 <b>
-                  <span onClick={toggleUser} className={styles.foldIcon}>
+                  <span className={styles.foldIcon}>
                     {showUser ? (
                       <ChevronDownIcon size="medium" />
                     ) : (
