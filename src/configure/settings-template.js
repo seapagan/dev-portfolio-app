@@ -37,7 +37,7 @@ export const settings = {
     image: heroLogo,
     heading: "A Passion to Excel",
     message:
-      "Results-oriented professional with a diverse experience and a proven \
+      "A Results-oriented professional with a diverse experience and a proven \
       knowledge of Application Development, IT Skills, End-User support, and \
       Innovation.",
   },
