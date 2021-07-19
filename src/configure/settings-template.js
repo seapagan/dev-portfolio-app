@@ -24,6 +24,12 @@ import socialYouTube from "../assets/social/youtube.png";
 import heroLogo from "../assets/svg/undraw_Code_thinking.svg";
 
 export const settings = {
+  meta: {
+    description:
+      "A Passionate and driven Python, Django, React developer, API Writer; " +
+      "Frontend and Backend geek; Lover of Pizza and unrepentant Trekkie",
+    link: "https://www.gnramsay.com",
+  },
   name: "Master Developer", // your name
   githubUsername: "masterdev",
   githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
@@ -72,23 +78,20 @@ export const settings = {
     {
       name: "Python",
       icon: pythonIcon,
-      desc:
-        "Experienced developer with skills in data manipulation and backend \
-        technologies, including Django.",
+      desc: "Experienced developer with skills in data manipulation and \
+      backend technologies, including Django.",
     },
     {
       name: "React JS",
       icon: reactLogo,
-      desc:
-        "Frontend Developer with experience in the latest React versions and \
-        methodology, including interfacing with API's and GraphQL.",
+      desc: "Frontend Developer with experience in the latest React versions \
+      and methodology, including interfacing with API's and GraphQL.",
     },
     {
       name: "API Developer",
       icon: apiLogo,
-      desc:
-        "Developed API's using Django(Python) and Express.js, interfacing with \
-        multiple Database servers and live devices.",
+      desc: "Developed API's using Django(Python) and Express.js, interfacing \
+      with multiple Database servers and live devices.",
     },
     {
       name: "HTML",
@@ -98,15 +101,14 @@ export const settings = {
     {
       name: "CSS",
       icon: cssLogo,
-      desc:
-        "Experienced in modern CSS3 technologies, Including Flexbox and Grid.",
+      desc: "Experienced in modern CSS3 technologies, Including Flexbox and \
+      Grid.",
     },
     {
       name: "Database Integration",
       icon: databaseLogo,
-      desc:
-        "Able to integrate the most popular SQL and NoSQL databases with Front \
-        and Backend technologies.",
+      desc: "Able to integrate the most popular SQL and NoSQL databases with \
+      Front and Backend technologies.",
     },
     {
       name: "Linux",
@@ -116,15 +118,13 @@ export const settings = {
     {
       name: "Cloud Hosting",
       icon: cloudLogo,
-      desc:
-        "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital Ocean \
-        and similar technologies",
+      desc: "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital \
+      Ocean and similar technologies",
     },
     {
       name: "VMWare ESXi",
       icon: esxiLogo,
-      desc:
-        "Skilled in the installation and administration of VMWare EXSi, \
+      desc: "Skilled in the installation and administration of VMWare EXSi, \
         including VCenter.",
     },
   ],
