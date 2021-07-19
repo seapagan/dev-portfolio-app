@@ -8,7 +8,7 @@ const Hero = ({ hero, social }) => {
     <section id="hero" className={styles.hero}>
       <div className={styles.leftPanel}>
         <h1 className={styles.heading}>{hero.heading}</h1>
-        <div className={styles.message}>{hero.message}</div>
+        <blockquote className={styles.message}>{hero.message}</blockquote>
         <div className={styles.socialMedia}>
           <Social social={social} />
         </div>
