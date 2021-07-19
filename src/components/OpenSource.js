@@ -8,7 +8,7 @@ const OpenSource = ({ usernames }) => {
   return (
     <section id="openSource-section">
       <div className="section__title">OpenSource Projects</div>
-      {usernames.map((username, index) => {
+      {[].concat(usernames).map((username, index) => {
         return (
           <Wrapper key={index} className={styles.wrapper}>
             <OpenSourceUser username={username} />
