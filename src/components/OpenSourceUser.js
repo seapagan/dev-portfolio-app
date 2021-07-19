@@ -148,34 +148,35 @@ const OpenSourceUser = ({ username }) => {
                       <ChevronRightIcon size="medium" />
                     )}
                   </span>
-                  <a
-                    className={styles.url}
-                    href={data.user.url}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Github Account {username}
-                  </a>
+                  Github Account “{username}”
                 </b>
               </div>
-              {showUser ? (
-                <div className={styles.pinnedTitle}>Pinned Repositories.</div>
-              ) : (
-                ""
-              )}
             </div>
 
             {showUser && (
               <>
-                {returnPinned()}
-                <div className={styles.header}>
-                  <div
-                    onClick={togglePublicRepos}
-                    className={styles.publicTitle}>
-                    {showPublicRepos ? "Hide" : "Show"}
-                    &nbsp;Public Repositories.
-                  </div>
+                <div className={styles.url}>
+                  <a
+                    href={data.user.url}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    visit on github
+                  </a>
                 </div>
-                {showPublicRepos ? returnPublic() : ""}
+                <div className={styles.openSourceGrid}>
+                  <>
+                    {returnPinned()}
+                    <div className={styles.publicHeader}>
+                      <div
+                        onClick={togglePublicRepos}
+                        className={styles.publicTitle}>
+                        {showPublicRepos ? "Hide" : "Show"}
+                        &nbsp;Public Repositories.
+                      </div>
+                    </div>
+                    {showPublicRepos ? returnPublic() : ""}
+                  </>
+                </div>
               </>
             )}
           </div>
