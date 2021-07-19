@@ -78,8 +78,11 @@
 }
 
 .fork:before {
+  position: relative;
   content: "";
-  width: 100%;
+  left: -3px;
+  top: 5px;
+  width: 110%;
   margin: auto;
   height: 2px;
   display: block;
@@ -87,8 +90,11 @@
 }
 
 .fork:after {
+  position: relative;
   content: "";
-  width: 100%;
+  left: -3px;
+  bottom: 5px;
+  width: 110%;
   height: 2px;
   display: block;
   background: red;
