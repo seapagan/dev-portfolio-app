@@ -34,6 +34,8 @@ function App({ settings }) {
     <HelmetProvider>
       <Helmet>
         <title>{getTitle()}</title>
+        <meta name="description" content={settings.meta.description} />
+        <link rel="canonical" href={settings.meta.link} />
       </Helmet>
       <Container>
         <Router>
