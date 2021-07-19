@@ -68,11 +68,11 @@
 
 .fork {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
-  top: 0px;
+  top: 10px;
   right: -5px;
-  transform: rotate(35deg) scaleY(0.5);
+  transform: rotate(35deg);
   color: red;
   text-align: center;
 }
