@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import { createBrowserHistory } from "history";
+import ReactGA from "react-ga";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import About from "./components/About";
@@ -16,9 +18,19 @@ import MainContent from "./components/MainContent";
 import OpenSource from "./components/OpenSource";
 import Route404 from "./components/Route404";
 import Skills from "./components/Skills";
-
 import "./App.css";
+import { settings } from "./configure/settings";
 
+const history = createBrowserHistory();
+
+ReactGA.initialize(settings.ga_id);
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
+console.log(settings.ga_id);
 function App({ settings }) {
   const titlePostfix = "My Portfolio";
 
@@ -38,7 +50,7 @@ function App({ settings }) {
         <link rel="canonical" href={settings.meta.link} />
       </Helmet>
       <Container>
-        <Router>
+        <Router history={history}>
           <div className="App">
             <Header name={settings.name} />
             <BackToTop />

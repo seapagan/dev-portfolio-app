@@ -33,6 +33,7 @@ export const settings = {
   name: "Master Developer", // your name
   githubUsername: "masterdev",
   githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
+  ga_id: "UA-123456789-1", // Google Analytics ID
   hero: {
     image: heroLogo,
     heading: "A Passion to Excel",
