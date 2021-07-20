@@ -1,13 +1,18 @@
 # Developers Portfolio Website
 
-![](docs/images/webpage_image.png)
+![Website Preview](docs/images/webpage_image.png)
 
 A totally stand-alone React based developers portfolio website, taking all data
-from a local JSON file.
+from a local JSON file. The Application is **Fully Responsive**, reads your
+GitHub **repository data in real-time**, has **Social Media buttons**, and can
+be configured using one simple file - **No Coding needed**.
 
 This is still work in progress but fully able to be used live. I try to avoid
 any breaking changes in the configuration file, this will be noted in the
 changelog if required.
+
+There is a live working version on my own pages :
+[https://www.gnramsay.com](https://www.gnramsay.com)
 
 ## Sections
 
@@ -16,8 +21,8 @@ changelog if required.
 - About Me
   - A brief couple of paragraphs to describe/sell yourself.
 - My Skills
-  - Displays brief info about the main relevant Skills you have, and a list of
-    other perhaps lesser but still relevant skills.
+  - Displays brief info about the main Skills you have, and a list of other
+    perhaps lesser but still relevant skills.
 - My Experience
   - List your Job/Project experience with dates, notable responsibilities etc.
 - OpenSource Projects.
@@ -34,15 +39,65 @@ All of the information contained in the above are fully customisable using the
 `settings.js` file, no actual programming or modification to the React code is
 needed.
 
-## How to Use
+## Required setup
 
-## Still to do
+This is a [`React`][react] application, therefore it depends on having
+[`Node.JS`][nodejs] installed locally on your development and possibly
+production systems.
+
+You will need some form of web hosting. React build folders are basically just
+static HTML, CSS and JavaScript files so pretty much any provider will be able
+to host them. the CRA website has some useful information [here][deploy]
+
+You can use either [`yarn`][yarn] or `npm` to install the required dependencies
+as below, personally I prefer `yarn` as it seems faster and more robust. Either
+works. `Npm` comes installed with Node.js and can be used straight out of the
+box, however you will need to install `yarn` yourself if you choose to go that
+way :
+
+```bash
+npm install -g yarn
+```
+
+## How to use
+
+### Clone this Git repository
+
+Either clone it somewhere locally from where you then upload the build directory
+to your web hosting provider, or clone it directly onto your hosting server.
+Note that the only files which need to be available to your web hosting server
+are the contents of the `./build` directory.
+
+### Install the dependencies
+
+  From the root project directory, either run ```npm
+   install``` or ```yarn``` depending on your own personal preference.
+
+### Edit the configuration
+
+Rename the
+[./src/configure/settings-template.js](./src/configure/settings-template.js)
+file to `./src/configure/settings.js` Modify the settings, text, icons, hero
+image, GitHub key etc to your own requirements as described above. **This file
+is the ONLY file you should be editing! Nothing else needs changing**.
+
+### Build the application
+
+From the web application root folder, either run ```npm run build``` or ```yarn
+build```. This will create a production-ready website in the
+[`./build`](./build) folder. This `/.build` folder is the one you need to upload
+to your hosting provider, with the **contents of this folder** being the root to
+serve. Again, the [React Deployment pages][deploy] have good information if you
+are new at this.
+
+## TODO
 
 - ~~Contact section.~~
 - ~~Social media buttons.~~
 - ~~floating back-to-top button.~~
 - ~~tweaks and user info to the OpenSource section.~~
 - ~~make the menu mobile-responsive.~~
+- Add a contact form in the Contact section to facilitate easier contacts.
 - Add GitLab and Bitbucket integration.
 - Add a carousel to showcase notable projects.
 - Optional [`AddThis`][addthis] or [`ShareThis`][sharethis] integration.
@@ -50,11 +105,13 @@ needed.
 - Full instructions in this README.
 - more!
 
-There is a live working version on my own pages : [https://www.gnramsay.com](https://www.gnramsay.com)
-
 Licensed under MIT, do with it as you will but please leave my copyright on it.
 Pull requests are welcome.
 
 [addthis]: https://www.addthis.com/
 [sharethis]: https://sharethis.com/
 [googanal]: https://analytics.google.com
+[nodejs]: https://nodejs.org/en/
+[react]: https://reactjs.org/
+[yarn]: https://yarnpkg.com/
+[deploy]: https://create-react-app.dev/docs/deployment/
