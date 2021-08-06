@@ -176,7 +176,7 @@ const OpenSourceUser = ({ username }) => {
                         onClick={togglePublicRepos}
                         className={styles.publicTitle}>
                         {showPublicRepos ? "Hide" : "Show"}
-                        &nbsp;Public Repositories.
+                        &nbsp; all Public Repositories.
                       </div>
                     </div>
                     {showPublicRepos ? returnPublic() : ""}
