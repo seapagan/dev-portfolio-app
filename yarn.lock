@@ -2,7 +2,6 @@
 # yarn lockfile v1
 
 
-
 "@apollo/client@^3.3.21":
   version "3.3.21"
   resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.3.21.tgz#2862baa4e1ced8c5e89ebe6fc52877fc64a726aa"
@@ -1466,10 +1465,10 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@primer/octicons-react@^13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-13.0.0.tgz#a7f2288fd9cf9cabc1e75553a0dd9f00d74b68c1"
-  integrity sha512-j5XppNRCvgaMZLPsVvvmp6GSh7P5pq6PUbsfLNBWi2Kz3KYDeoGDWbPr5MjoxFOGUn6Hjnt6qjHPRxahd11vLQ==
+"@primer/octicons-react@^15.2.0":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-15.2.0.tgz#d8a334d6961daf6cc8ca84614effa88e90df3a9d"
+  integrity sha512-3tPUVWq7FWmAWWAHXpd4nEeMxbX7nEq3Fi1jXFeAcruOXOFcREddW2r46Zjv2sfXLoklilZ8nRa1OdrkxRxM8A==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
