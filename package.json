@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.3.21",
+    "@apollo/client": "^3.4.16",
     "@primer/octicons-react": "^13.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^12.0.0",
@@ -12,7 +12,7 @@
     "modern-css-reset": "^1.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet-async": "^1.0.9",
+    "react-helmet-async": "^1.1.2",
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
