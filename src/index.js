@@ -12,8 +12,8 @@ import {
 // import the css reset rules
 import "modern-css-reset";
 
-import App from "./App";
 import { settings } from "./configure/settings";
+import App from "./App";
 
 const httpLink = createHttpLink({
   uri: "https://api.github.com/graphql",

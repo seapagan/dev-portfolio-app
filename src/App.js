@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import About from "./components/About";
 import BackToTop from "./components/BackToTop";
