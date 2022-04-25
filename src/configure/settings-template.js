@@ -37,20 +37,20 @@ export const settings = {
     image: heroLogo,
     heading: "A Passion to Excel",
     message:
-      "A Results-oriented professional with a diverse experience and a proven \
-      knowledge of Application Development, IT Skills, End-User support, and \
-      Innovation.",
+      "A Results-oriented professional with a diverse experience and a " +
+      "proven knowledge of Application Development, IT Skills, End-User " +
+      "support, and Innovation. Driven to continuously learn and improve.",
   },
   about: [
-    "A Python and Backend developer with Frontend leanings, living in the \
-    beautiful (and wet) Scottish Borders with a Border Terrier, Border Collie \
-    (both mental), A Horse, and some lodger sheep.",
-    "Based on an old Farm, I am surrounded by beautiful scenery and working \
-    fields. Tractors and Harversters before dawn yeah!",
-    "I am fully setup for Remote work with a dedicated office space and \
-    superfast Wireless Broadband, 20 minutes drive from Berwick-Upon-Tweed \
-    and Rail links to the rest of the UK, 90 minutes from either Edinburgh or \
-    Newcastle airports.",
+    "A Python and Backend developer with Frontend leanings, living in the " +
+      "beautiful (and wet) Scottish Borders with a Border Terrier, Border " +
+      "Collie (both mental), a Horse, and some lodger sheep.",
+    "Based on an old Farm, I am surrounded by beautiful scenery and working " +
+      "fields. Tractors and Harversters before dawn yeah!",
+    "I am fully setup for Remote work with a dedicated office space and " +
+      "superfast Wireless Broadband, 20 minutes drive from Berwick-Upon-" +
+      "Tweed and Rail links to the rest of the UK, 90 minutes drive from " +
+      "either Edinburgh or Newcastle airports.",
   ],
   social: [
     // change to link to your social medial accounts. If link is blank, they
@@ -78,20 +78,23 @@ export const settings = {
     {
       name: "Python",
       icon: pythonIcon,
-      desc: "Experienced developer with skills in data manipulation and \
-      backend technologies, including Django.",
+      desc:
+        "Experienced developer with skills in data manipulation and " +
+        "backend technologies, including Django.",
     },
     {
       name: "React JS",
       icon: reactLogo,
-      desc: "Frontend Developer with experience in the latest React versions \
-      and methodology, including interfacing with API's and GraphQL.",
+      desc:
+        "Frontend Developer with experience in the latest React versions " +
+        "and methodology, including interfacing with API's and GraphQL.",
     },
     {
       name: "API Developer",
       icon: apiLogo,
-      desc: "Developed API's using Django(Python) and Express.js, interfacing \
-      with multiple Database servers and live devices.",
+      desc:
+        "Developed API's using Django(Python) and Express.js, interfacing " +
+        "with multiple Database servers and live devices.",
     },
     {
       name: "HTML",
@@ -101,14 +104,16 @@ export const settings = {
     {
       name: "CSS",
       icon: cssLogo,
-      desc: "Experienced in modern CSS3 technologies, Including Flexbox and \
-      Grid.",
+      desc:
+        "Experienced in modern CSS3 technologies, Including Flexbox and " +
+        "Grid.",
     },
     {
       name: "Database Integration",
       icon: databaseLogo,
-      desc: "Able to integrate the most popular SQL and NoSQL databases with \
-      Front and Backend technologies.",
+      desc:
+        "Able to integrate the most popular SQL and NoSQL databases with " +
+        "Front and Backend technologies.",
     },
     {
       name: "Linux",
@@ -116,16 +121,18 @@ export const settings = {
       desc: "Very experienced Linux Sysadmin, installer and troubleshooter.",
     },
     {
-      name: "Cloud Hosting",
+      name: "Cloud Services",
       icon: cloudLogo,
-      desc: "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital \
-      Ocean and similar technologies",
+      desc:
+        "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital " +
+        "Ocean and similar technologies",
     },
     {
       name: "VMWare ESXi",
       icon: esxiLogo,
-      desc: "Skilled in the installation and administration of VMWare EXSi, \
-        including VCenter.",
+      desc:
+        "Skilled in the installation and administration of VMWare EXSi, " +
+        "including VCenter.",
     },
   ],
   additionalSkills: [

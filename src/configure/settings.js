@@ -35,20 +35,20 @@ export const settings = {
     image: heroLogo,
     heading: "A Passion for Excellence",
     message:
-      "A Results-oriented professional with a diverse experience and a proven \
-      knowledge of Application Development, IT Skills, End-User support, and \
-      Innovation. Driven to continuously learn and improve.",
+      "A Results-oriented professional with a diverse experience and a " +
+      "proven knowledge of Application Development, IT Skills, End-User " +
+      "support, and Innovation. Driven to continuously learn and improve.",
   },
   about: [
-    "A Python and Backend developer with Frontend leanings, living in the \
-    beautiful (and wet) Scottish Borders with a Border Terrier, Border Collie \
-    (both mental), a Horse, and some lodger sheep.",
-    "Based on an old Farm, I am surrounded by beautiful scenery and working \
-    fields. Tractors and Harversters before dawn yeah!",
-    "I am fully setup for Remote work with a dedicated office space and \
-    superfast Wireless Broadband, 20 minutes drive from Berwick-Upon-Tweed \
-    and Rail links to the rest of the UK, 90 minutes drive from either \
-    Edinburgh or Newcastle airports.",
+    "A Python and Backend developer with Frontend leanings, living in the " +
+      "beautiful (and wet) Scottish Borders with a Border Terrier, Border " +
+      "Collie (both mental), a Horse, and some lodger sheep.",
+    "Based on an old Farm, I am surrounded by beautiful scenery and working " +
+      "fields. Tractors and Harversters before dawn yeah!",
+    "I am fully setup for Remote work with a dedicated office space and " +
+      "superfast Wireless Broadband, 20 minutes drive from Berwick-Upon-" +
+      "Tweed and Rail links to the rest of the UK, 90 minutes drive from " +
+      "either Edinburgh or Newcastle airports.",
   ],
   social: [
     // change to link to your social medial accounts. If link is blank, they
@@ -76,20 +76,23 @@ export const settings = {
     {
       name: "Python",
       icon: pythonIcon,
-      desc: "Experienced developer with skills in data manipulation and \
-      backend technologies, including Django.",
+      desc:
+        "Experienced developer with skills in data manipulation and " +
+        "backend technologies, including Django.",
     },
     {
       name: "React JS",
       icon: reactLogo,
-      desc: "Frontend Developer with experience in the latest React versions \
-      and methodology, including interfacing with API's and GraphQL.",
+      desc:
+        "Frontend Developer with experience in the latest React versions " +
+        "and methodology, including interfacing with API's and GraphQL.",
     },
     {
       name: "API Developer",
       icon: apiLogo,
-      desc: "Developed API's using Django(Python) and Express.js, interfacing \
-      with multiple Database servers and live devices.",
+      desc:
+        "Developed API's using Django(Python) and Express.js, interfacing " +
+        "with multiple Database servers and live devices.",
     },
     {
       name: "HTML",
@@ -99,14 +102,16 @@ export const settings = {
     {
       name: "CSS",
       icon: cssLogo,
-      desc: "Experienced in modern CSS3 technologies, Including Flexbox and \
-      Grid.",
+      desc:
+        "Experienced in modern CSS3 technologies, Including Flexbox and " +
+        "Grid.",
     },
     {
       name: "Database Integration",
       icon: databaseLogo,
-      desc: "Able to integrate the most popular SQL and NoSQL databases with \
-      Front and Backend technologies.",
+      desc:
+        "Able to integrate the most popular SQL and NoSQL databases with " +
+        "Front and Backend technologies.",
     },
     {
       name: "Linux",
@@ -116,14 +121,16 @@ export const settings = {
     {
       name: "Cloud Services",
       icon: cloudLogo,
-      desc: "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital \
-      Ocean and similar technologies",
+      desc:
+        "Familiar with Google Cloud (and Firebase), Amazon AWS, Digital " +
+        "Ocean and similar technologies",
     },
     {
       name: "VMWare ESXi",
       icon: esxiLogo,
-      desc: "Skilled in the installation and administration of VMWare EXSi, \
-        including VCenter.",
+      desc:
+        "Skilled in the installation and administration of VMWare EXSi, " +
+        "including VCenter.",
     },
   ],
   additionalSkills: [
@@ -147,16 +154,18 @@ export const settings = {
         },
         {
           name: "Remote IT troubleshooting and administration",
-          desc: "Remote and on-site support for Linux servers. Upgrades, \
-            Troubleshooting, installing LAMP and LEMP systems.",
+          desc:
+            "Remote and on-site support for Linux servers. Upgrades, " +
+            "Troubleshooting, installing LAMP and LEMP systems.",
         },
         {
           name: "Learn and improve",
-          desc: "During this time I have not stopped learning new technologies \
-          and improving my skills in those I already use. I have a passion for \
-          learning and researching new methods and technologies, so currently \
-          improving my knowledge of Numpy and Pandas while learning Machine \
-          Learning and Data Science topics.",
+          desc:
+            "During this time I have not stopped learning new " +
+            "technologies and improving my skills in those I already use. I " +
+            "have a passion for learning and researching new methods and " +
+            "technologies, so currently improving my knowledge of Numpy and " +
+            "Pandas while learning Machine Learning and Data Science topics.",
         },
       ],
     },
@@ -168,9 +177,10 @@ export const settings = {
       responsibilities: [
         {
           name: "Co-Founder and first Installation Engineer of this Startup",
-          desc: "Responsible for installing equipment on customer premises, \
-            working at height, creating and maintaining a network of Wireless \
-            Base Stations across the Scottish Borders.",
+          desc:
+            "Responsible for installing equipment on customer premises, " +
+            "working at height, creating and maintaining a network of " +
+            "Wireless Base Stations across the Scottish Borders.",
         },
         {
           name: "Led the Company's real-time support",
@@ -182,14 +192,16 @@ export const settings = {
         },
         {
           name: "Server Install and administration",
-          desc: "Setting up and maintaining back-end servers running VMWare \
-          ESXi, with assorted Operating systems and applications.",
+          desc:
+            "Setting up and maintaining back-end servers running VMWare " +
+            "ESXi, with assorted Operating systems and applications.",
         },
         {
           name: "Develop in-house applications and scripts as needed",
-          desc: "Wrote a Python (Django) system to query all the Antenna & \
-          Router hardware in the network and display it in a helpful web \
-          front-end. I also designed an API for JSON access to same.",
+          desc:
+            "Wrote a Python (Django) system to query all the Antenna & " +
+            "Router hardware in the network and display it in a helpful web " +
+            "front-end. I also designed an API for JSON access to same.",
         },
       ],
     },
@@ -200,35 +212,42 @@ export const settings = {
       link: "https://www.cgg.com",
       responsibilities: [
         {
-          name: "Manage a high-capacity 3D multi-streamer Seismic research \
-          vessel",
-          desc: "Working in challenging environments and with demanding \
-          clients, with a varied team to ensure that production targets are \
-          met or exceeded",
+          name:
+            "Manage a high-capacity 3D multi-streamer Seismic research " +
+            "vessel",
+          desc:
+            "Working in challenging environments and with demanding " +
+            "clients, with a varied team to ensure that production targets " +
+            "are met or exceeded",
         },
         {
           name: "Take ownership of the vessel QHSE process",
-          desc: "Overall responsibility for the on-board QHSE system, trained \
-          in incident investigation and reporting. Plan and chair the monthly \
-            safety meetings then follow up and close any outstanding action \
-            points. Ensure that all crew meet their required targets for HSE \
-            training and reporting and that all hazards or unsafe acts are \
-            immediately logged then followed up and closed.",
+          desc:
+            "Overall responsibility for the on-board QHSE system, " +
+            "trained in incident investigation and reporting. Plan and " +
+            "chair the monthly safety meetings then follow up and close any " +
+            "outstanding action points. Ensure that all crew meet their " +
+            "required targets for HSE training and reporting and that all " +
+            "hazards or unsafe acts are immediately logged then followed up " +
+            "and closed.",
         },
         {
-          name: "Perform well under extreme levels of stress and time \
-          constraints",
-          desc: "making correct and timely decisions to ensure that the \
-          operation continues smoothly without impact on surrounding marine \
-          traffic or wildlife. First line of contact between the Company and \
-          Client (usually a major oil company) for all quality, operational \
-          and contractual issues. ",
+          name:
+            "Perform well under extreme levels of stress and time " +
+            "constraints",
+          desc:
+            "making correct and timely decisions to ensure that the " +
+            "operation continues smoothly without impact on surrounding " +
+            "marine traffic or wildlife. First line of contact between the " +
+            "Company and Client (usually a major oil company) for all " +
+            "quality, operational and contractual issues. ",
         },
         {
           name: "On site coordinator for mutli-vessel derig in Dunkirk",
-          desc: "Coordinate the derig and cold-stacking of 6 state-of-the-art \
-            vessels, leaving them in a state so that they could be \
-            re-commisioned when needed.",
+          desc:
+            "Coordinate the derig and cold-stacking of 6 state-of-the-" +
+            "art vessels, leaving them in a state so that they could be re-" +
+            "commisioned when needed.",
         },
       ],
     },
@@ -243,16 +262,19 @@ export const settings = {
           desc: "Working safely and reaching production targets.",
         },
         {
-          name: "Line Crew Chief on land, shallow water, and deep-water \
-          Seismic surveys",
-          desc: "Responsible for the kilometers of Seismic cables – deploying, \
-            recovering, and repairing. I also maintained all the electronic \
-            equipment or oversaw those who did.",
+          name:
+            "Line Crew Chief on land, shallow water, and deep-water " +
+            "Seismic surveys",
+          desc:
+            "Responsible for the kilometers of Seismic cables – " +
+            "deploying, recovering, and repairing. I also maintained all the " +
+            "electronic equipment or oversaw those who did.",
         },
         {
           name: "Programming as needed",
-          desc: "Writing programs, scripts and interfaces as needed to improve \
-          the workflow and efficiency of the crews.",
+          desc:
+            "Writing programs, scripts and interfaces as needed to " +
+            "improve the workflow and efficiency of the crews.",
         },
       ],
     },
