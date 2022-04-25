@@ -66,6 +66,16 @@ const Header = ({ name }) => {
               </Link>
             </li>
             <li>
+              <a
+                onClick={closeMenu}
+                className={styles.navLink}
+                href="http://www.grantramsay.dev"
+                target="_blank"
+                rel="noopener noreferrer">
+                Projects
+              </a>
+            </li>
+            <li>
               <Link
                 onClick={closeMenu}
                 className={styles.navLink}
@@ -76,14 +86,6 @@ const Header = ({ name }) => {
                 Open-Source
               </Link>
             </li>
-            {/* <li>
-                <NavLink
-                  activeClassName={styles.navLinkActive}
-                  className={styles.navLink}
-                  to="/cv">
-                  CV
-                </NavLink>
-              </li> */}
             <li>
               <Link
                 onClick={closeMenu}
