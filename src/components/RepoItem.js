@@ -1,15 +1,16 @@
 import React from "react";
 
 import {
-  GitForkIcon,
-  StarIcon,
-  GitCommitIcon,
-  RepoIcon,
   DotFillIcon,
+  GitCommitIcon,
+  GitForkIcon,
+  RepoIcon,
+  StarIcon,
 } from "@primer/octicons-react";
 
-import styles from "../css/RepoItem.module.css";
 import CardWrapper from "./CardWrapper";
+
+import styles from "../css/RepoItem.module.css";
 
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;
@@ -59,11 +60,11 @@ const RepoItem = ({ repo }) => {
           <GitCommitIcon verticalAlign="middle" size="small" />
           <span className={styles.metricValue}>{totalCommits}</span>
         </div>
-        <div className={styles.metricItem} title={`Number of Stars`}>
+        <div className={styles.metricItem} title={"Number of Stars"}>
           <StarIcon verticalAlign="middle" size="small" />
           <span className={styles.metricValue}>{repo.stargazerCount}</span>
         </div>
-        <div className={styles.metricItem} title={`Number of Forks`}>
+        <div className={styles.metricItem} title={"Number of Forks"}>
           <GitForkIcon verticalAlign="middle" size="small" />
           <span className={styles.metricValue}>{repo.forkCount}</span>
         </div>

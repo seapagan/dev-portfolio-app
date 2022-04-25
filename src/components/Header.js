@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-
 import { Link } from "react-scroll";
 
 import styles from "../css/Header.module.css";

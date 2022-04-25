@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
-import { useQuery, gql } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 import {
-  ChevronRightIcon,
   ChevronDownIcon,
+  ChevronRightIcon,
   MarkGithubIcon,
 } from "@primer/octicons-react";
 
-import styles from "../css/OpenSourceUser.module.css";
 import RepoItem from "./RepoItem";
 import RepoLoading from "./RepoLoading";
+
+import styles from "../css/OpenSourceUser.module.css";
 
 const OpenSourceUser = ({ username }) => {
   const githubApiQuery = gql`

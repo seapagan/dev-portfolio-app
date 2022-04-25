@@ -1,5 +1,4 @@
 import React from "react";
-
 import Loader from "react-loader-spinner";
 
 import styles from "../css/RepoLoading.module.css";
