@@ -70,16 +70,24 @@ are the contents of the `./build` directory.
 
 ### Install the dependencies
 
-  From the root project directory, either run ```npm
-   install``` or ```yarn``` depending on your own personal preference.
+From the root project directory, either run `npm install` or `yarn` depending on
+your own personal preference. I use Yarn personally, so there is a `yarn.lock`
+file in the repo.
 
 ### Edit the configuration
 
 Rename the
 [./src/configure/settings-template.js](./src/configure/settings-template.js)
 file to `./src/configure/settings.js` Modify the settings, text, icons, hero
-image, GitHub key etc to your own requirements as described above. **This file
-is the ONLY file you should be editing! Nothing else needs changing**.
+image etc to your own requirements as described above.
+
+add your **GitHib Personal Access Token** to the `REACT_APP_GH_TOKEN` key in the
+`.env` file. This will allow the 'Open Source' section to query GitHub. Without
+this, that section will not work. Define your PAT on GitHub (it is account wide,
+not per-repository) [here][token] under `Personal access tokens`
+
+**These files are the ONLY files you should be editing! Nothing else needs
+changing**.
 
 ### Build the application
 
@@ -89,6 +97,20 @@ build```. This will create a production-ready website in the
 to your hosting provider, with the **contents of this folder** being the root to
 serve. Again, the [React Deployment pages][deploy] have good information if you
 are new at this.
+
+#### Deploy to Github Pages
+
+I have added scripts to automatically push the generated website to GitHub
+Pages, independent of pushing to the main repo. Simply run `yarn deploy` (or
+`npm run deploy` if you prefer npm). This will create the gh-pages branch if not
+already there, and deploy the production build. It will create a new fresh build
+at this time too. Then all you will need to do is go to the `Pages` settings for
+that repo and set up any domain alias if needed.
+
+There is also a (disabled) GitHub Action which will do this automatically for
+every Pull Request or Push to main if this is preferred. You will need to set a
+Action `secret` variable called `REACT_APP_GITHUB_TOKEN` containing the token in
+that case.
 
 ## TODO
 
@@ -115,3 +137,4 @@ Pull requests are welcome.
 [react]: https://reactjs.org/
 [yarn]: https://yarnpkg.com/
 [deploy]: https://create-react-app.dev/docs/deployment/
+[token]: https://github.com/settings/tokens
