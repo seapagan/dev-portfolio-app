@@ -32,7 +32,7 @@ export const settings = {
   },
   name: "Master Developer", // your name
   githubUsername: "masterdev",
-  githubToken: "z0w45tkwiecskfglksoaietricw4act0aw4t0",
+  githubToken: process.env.REACT_APP_GH_TOKEN,
   hero: {
     image: heroLogo,
     heading: "A Passion to Excel",
