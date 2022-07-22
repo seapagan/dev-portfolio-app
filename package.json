@@ -9,14 +9,14 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.1.8",
-    "graphql": "^15.5.0",
+    "graphql": "^16.5.0",
     "modern-css-reset": "^1.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet-async": "^1.0.9",
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.2"
   },
   "scripts": {
@@ -50,7 +50,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^4.0.0",
     "sass": "^1.50.1"
   }
 }
