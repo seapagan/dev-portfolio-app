@@ -3,7 +3,7 @@ import React from "react";
 import {
   DotFillIcon,
   GitCommitIcon,
-  GitForkIcon,
+  RepoForkedIcon,
   RepoIcon,
   StarIcon,
 } from "@primer/octicons-react";
@@ -65,7 +65,7 @@ const RepoItem = ({ repo }) => {
           <span className={styles.metricValue}>{repo.stargazerCount}</span>
         </div>
         <div className={styles.metricItem} title={"Number of Forks"}>
-          <GitForkIcon verticalAlign="middle" size="small" />
+          <RepoForkedIcon verticalAlign="middle" size="small" />
           <span className={styles.metricValue}>{repo.forkCount}</span>
         </div>
       </div>
