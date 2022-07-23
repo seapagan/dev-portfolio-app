@@ -9,6 +9,7 @@ import Container from "./components/Container";
 import CV from "./components/CV";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import FrontendMentor from "./components/FrontendMentor";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MainContent from "./components/MainContent";
@@ -32,9 +33,9 @@ function App({ settings }) {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{getTitle()}</title>
         <meta name="description" content={settings.meta.description} />
         <link rel="canonical" href={settings.meta.link} />
+        <title>{getTitle()}</title>
       </Helmet>
       <Container>
         <Router>
@@ -51,7 +52,8 @@ function App({ settings }) {
                     additionalSkills={settings.additionalSkills}
                   />
                   <Experience experience={settings.experience} />
-                  <OpenSource usernames={settings.githubUsername} />
+                  <FrontendMentor username={settings.fem_username} />
+                  {/* <OpenSource usernames={settings.githubUsername} /> */}
                   <Contact social={settings.social} />
                 </Route>
                 <Route path="/cv">

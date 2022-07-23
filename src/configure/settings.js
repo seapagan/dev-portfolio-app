@@ -30,6 +30,7 @@ export const settings = {
   githubUsername: ["seapagan", "gnramsay"],
   githubToken: process.env.REACT_APP_GH_TOKEN,
   ga_id: "UA-202732836-1",
+  fem_username: "seapagan",
   hero: {
     enabled: true,
     image: heroLogo,

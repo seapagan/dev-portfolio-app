@@ -1,0 +1,6 @@
+.wrapper {
+  width: 95%;
+  border-radius: 1em;
+  background-color: var(--color-panel-background);
+  margin: 0 auto;
+}
