@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import styles from "../css/Route404.module.css";
+import styles from "./Route404.module.css";
 
 const Route404 = props => {
   const location = useLocation();

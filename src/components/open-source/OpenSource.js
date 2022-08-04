@@ -1,9 +1,9 @@
 import React from "react";
 
-import Wrapper from "./CardWrapper";
-import OpenSourceUser from "./OpenSourceUser";
+import Wrapper from "components/card-wrapper/CardWrapper";
+import OpenSourceUser from "components/open-source/open-source-user/OpenSourceUser";
 
-import styles from "../css/OpenSource.module.css";
+import styles from "./OpenSource.module.css";
 
 const OpenSource = ({ usernames }) => {
   return (

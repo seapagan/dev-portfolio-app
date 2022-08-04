@@ -1,8 +1,8 @@
 import React from "react";
 
-import Social from "./Social";
+import Social from "components/social/Social";
 
-import styles from "../css/Contact.module.css";
+import styles from "./Contact.module.css";
 
 const Contact = ({ social }) => {
   return (

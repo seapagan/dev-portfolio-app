@@ -1,8 +1,8 @@
 import React from "react";
 
-import Carousel from "./carousel/Carousel";
+import Carousel from "components/carousel/Carousel";
 
-import styles from "../css/FrontendMentor.module.css";
+import styles from "./FrontendMentor.module.css";
 
 const FrontendMentor = ({ username }) => {
   return (

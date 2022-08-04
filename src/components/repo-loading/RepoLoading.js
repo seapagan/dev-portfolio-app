@@ -1,7 +1,7 @@
 import React from "react";
 import { TailSpin } from "react-loader-spinner";
 
-import styles from "../css/RepoLoading.module.css";
+import styles from "./RepoLoading.module.css";
 
 const Loading = () => {
   return (

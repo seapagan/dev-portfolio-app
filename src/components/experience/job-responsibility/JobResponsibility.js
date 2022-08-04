@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../css/JobResponsibility.module.css";
+import styles from "./JobResponsibility.module.css";
 
 const JobResponsibility = ({ responsibility }) => {
   return (

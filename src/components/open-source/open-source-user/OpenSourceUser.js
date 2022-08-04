@@ -7,10 +7,10 @@ import {
   MarkGithubIcon,
 } from "@primer/octicons-react";
 
-import RepoItem from "./RepoItem";
-import RepoLoading from "./RepoLoading";
+import RepoItem from "components/repo-item/RepoItem";
+import RepoLoading from "components/repo-loading/RepoLoading";
 
-import styles from "../css/OpenSourceUser.module.css";
+import styles from "./OpenSourceUser.module.css";
 
 const OpenSourceUser = ({ username }) => {
   const githubApiQuery = gql`
@@ -123,6 +123,7 @@ const OpenSourceUser = ({ username }) => {
   const returnPinned = () => {
     return data.user.pinnedItems.nodes.map((repo, index) => {
       pinnedRepos.push(repo.name);
+
       return <RepoItem key={index} repo={repo} />;
     });
   };
@@ -132,6 +133,7 @@ const OpenSourceUser = ({ username }) => {
       if (!pinnedRepos.includes(repo.name)) {
         return <RepoItem key={index} repo={repo} />;
       }
+
       return "";
     });
   };

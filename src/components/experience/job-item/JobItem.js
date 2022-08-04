@@ -1,9 +1,9 @@
 import React from "react";
 
-import CardWrapper from "./CardWrapper";
-import JobResponsibility from "./JobResponsibility";
+import CardWrapper from "components/card-wrapper/CardWrapper";
+import JobResponsibility from "components/experience/job-responsibility/JobResponsibility";
 
-import styles from "../css/JobItem.module.css";
+import styles from "./JobItem.module.css";
 
 const JobItem = ({ job }) => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Social from "./Social";
+import Social from "components/social/Social";
 
-import styles from "../css/Hero.module.css";
+import styles from "./Hero.module.css";
 
 const Hero = ({ hero, social }) => {
   return (

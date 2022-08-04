@@ -8,9 +8,9 @@ import {
   StarIcon,
 } from "@primer/octicons-react";
 
-import CardWrapper from "./CardWrapper";
+import CardWrapper from "components/card-wrapper/CardWrapper";
 
-import styles from "../css/RepoItem.module.css";
+import styles from "./RepoItem.module.css";
 
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;
