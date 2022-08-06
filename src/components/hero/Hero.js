@@ -8,12 +8,11 @@ const Hero = ({ hero, social }) => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.leftPanel}>
-        <h1 className={styles.heading}>{hero.heading}</h1>
+        <h2 className={styles.heading}>{hero.heading}</h2>
         <blockquote className={styles.message}>{hero.message}</blockquote>
         <div className={styles.socialMedia}>
           <Social social={social} />
         </div>
-        {/* <div></div> */}
       </div>
       <div>
         <img className={styles.mainImage} src={hero.image} alt="" />

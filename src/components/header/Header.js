@@ -18,9 +18,7 @@ const Header = ({ name }) => {
   return (
     <>
       <header className={styles.header}>
-        <Link to="/" className={styles.namebadge}>
-          &lt; {name} /&gt;
-        </Link>
+        <h1 className={styles.namebadge}>&lt; {name} /&gt;</h1>
         <input
           ref={toggleRef}
           type="checkbox"
