@@ -1,21 +1,22 @@
 import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import About from "./components/About";
-import BackToTop from "./components/BackToTop";
-import Contact from "./components/Contact";
-import Container from "./components/Container";
-import CV from "./components/CV";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import FrontendMentor from "./components/FrontendMentor";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import MainContent from "./components/MainContent";
-import OpenSource from "./components/OpenSource";
-import Route404 from "./components/Route404";
-import Skills from "./components/Skills";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import About from "./components/about/About";
+import BackToTop from "./components/back-to-top/BackToTop";
+import Contact from "./components/contact/Contact";
+import Container from "./components/container/Container";
+import Experience from "./components/experience/Experience";
+import Footer from "./components/footer/Footer";
+import FrontendMentor from "./components/frontend-mentor/FrontendMentor";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import MainContent from "./components/main-content/MainContent";
+import OpenSource from "./components/open-source/OpenSource";
+import Route404 from "./components/route-404/Route404";
+import Skills from "./components/skills/Skills";
 
 import "./App.css";
 
@@ -51,13 +52,10 @@ function App({ settings }) {
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}
                   />
+                  {/* <FrontendMentor username={settings.fem_username} /> */}
                   <Experience experience={settings.experience} />
-                  <FrontendMentor username={settings.fem_username} />
-                  {/* <OpenSource usernames={settings.githubUsername} /> */}
+                  <OpenSource usernames={settings.githubUsername} />
                   <Contact social={settings.social} />
-                </Route>
-                <Route path="/cv">
-                  <CV />
                 </Route>
                 <Route path="*">
                   {/* this is a catch-all route for unknown pages, It

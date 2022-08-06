@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
+
 import { Link } from "react-scroll";
 
-import styles from "../css/Header.module.css";
+import styles from "./Header.module.css";
 
 const Header = ({ name }) => {
   // set a Ref on the checkbox used to open/close the CSS menu. This will be
@@ -17,9 +18,7 @@ const Header = ({ name }) => {
   return (
     <>
       <header className={styles.header}>
-        <Link to="/" className={styles.namebadge}>
-          &lt; {name} /&gt;
-        </Link>
+        <h1 className={styles.namebadge}>&lt; {name} /&gt;</h1>
         <input
           ref={toggleRef}
           type="checkbox"

@@ -1,9 +1,9 @@
 import React from "react";
 
-import Wrapper from "./CardWrapper";
-import OpenSourceUser from "./OpenSourceUser";
+import Wrapper from "components/card-wrapper/CardWrapper";
+import GithubUser from "components/open-source/github-user/GithubUser";
 
-import styles from "../css/OpenSource.module.css";
+import styles from "./OpenSource.module.css";
 
 const OpenSource = ({ usernames }) => {
   return (
@@ -12,7 +12,7 @@ const OpenSource = ({ usernames }) => {
       {[].concat(usernames).map((username, index) => {
         return (
           <Wrapper key={index} className={styles.wrapper}>
-            <OpenSourceUser username={username} />
+            <GithubUser username={username} />
           </Wrapper>
         );
       })}

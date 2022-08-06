@@ -1,8 +1,8 @@
 import React from "react";
 
-import JobItem from "./JobItem";
+import JobItem from "components/experience/job/Job";
 
-import styles from "../css/Experience.module.css";
+import styles from "./Experience.module.css";
 
 const Experience = ({ experience }) => {
   return (
