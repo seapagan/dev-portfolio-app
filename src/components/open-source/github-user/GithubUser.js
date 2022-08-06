@@ -10,9 +10,9 @@ import {
 import RepoItem from "components/repo-item/RepoItem";
 import RepoLoading from "components/repo-loading/RepoLoading";
 
-import styles from "./OpenSourceUser.module.css";
+import styles from "./GithubUser.module.css";
 
-const OpenSourceUser = ({ username }) => {
+const GithubUser = ({ username }) => {
   const githubApiQuery = gql`
     {
       user(login: "${username}") {
@@ -194,4 +194,4 @@ const OpenSourceUser = ({ username }) => {
   );
 };
 
-export default OpenSourceUser;
+export default GithubUser;

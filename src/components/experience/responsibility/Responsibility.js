@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./JobResponsibility.module.css";
+import styles from "./Responsibility.module.css";
 
-const JobResponsibility = ({ responsibility }) => {
+const Responsibility = ({ responsibility }) => {
   return (
     <dl className={styles.wrapper}>
       <dt>{responsibility.name}</dt>
@@ -11,4 +11,4 @@ const JobResponsibility = ({ responsibility }) => {
   );
 };
 
-export default JobResponsibility;
+export default Responsibility;

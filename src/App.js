@@ -52,8 +52,8 @@ function App({ settings }) {
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}
                   />
+                  {/* <FrontendMentor username={settings.fem_username} /> */}
                   <Experience experience={settings.experience} />
-                  <FrontendMentor username={settings.fem_username} />
                   <OpenSource usernames={settings.githubUsername} />
                   <Contact social={settings.social} />
                 </Route>
