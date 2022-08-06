@@ -1,6 +1,6 @@
 import React from "react";
 
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import {
   ApolloClient,
@@ -40,11 +40,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <App settings={settings} />
     </ApolloProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
