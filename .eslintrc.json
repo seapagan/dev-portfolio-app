@@ -65,11 +65,12 @@
           ["react-app-polyfill"],
           ["^react$", "^next"],
           ["^react-dom", "^react-router-dom"],
-          ["^[a-z]"],
           // Packages starting with `@`
           ["^@"],
           // Packages starting with `~`
           ["^~"],
+          // packages starting with alpha chars
+          ["^[a-z]"],
           // Side effect imports
           ["^\\u0000"],
           // internal Components
