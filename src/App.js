@@ -18,7 +18,7 @@ import OpenSource from "./components/open-source/OpenSource";
 import Route404 from "./components/route-404/Route404";
 import Skills from "./components/skills/Skills";
 
-import "./App.css";
+import "./App.scss";
 
 function App({ settings }) {
   const titlePostfix = "My Portfolio";
