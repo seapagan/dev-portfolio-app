@@ -2,7 +2,7 @@ import React from "react";
 
 import CardWrapper from "../../card-wrapper/CardWrapper";
 
-import styles from "./SkillItem.module.css";
+import styles from "./SkillItem.module.scss";
 
 const SkillItem = ({ skill }) => {
   return (

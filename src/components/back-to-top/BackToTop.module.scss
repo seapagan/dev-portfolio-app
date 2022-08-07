@@ -7,17 +7,15 @@
   z-index: 2;
   border-radius: 50%;
   cursor: pointer;
-}
 
-.backToTop:hover {
-  box-shadow: 2px 2px 5px hsla(40, 10%, 30%, 0.6),
-    -2px -2px 5px hsla(40, 10%, 30%, 0.6);
-  /* background-color: hsla(0, 100%, 50%, 0.1); */
+  &:hover {
+    box-shadow: 2px 2px 5px hsla(40, 10%, 30%, 0.6),
+      -2px -2px 5px hsla(40, 10%, 30%, 0.6);
+  }
 }
 
 @media screen and (max-width: 650px) {
   .backToTop {
-    /* bottom: 100px; */
     top: 50%;
     width: 30px;
     height: 30px;

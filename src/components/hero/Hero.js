@@ -2,7 +2,7 @@ import React from "react";
 
 import Social from "components/social/Social";
 
-import styles from "./Hero.module.css";
+import styles from "./Hero.module.scss";
 
 const Hero = ({ hero, social }) => {
   return (

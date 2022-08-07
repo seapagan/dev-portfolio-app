@@ -31,27 +31,27 @@
   position: relative;
   margin: 0.5em;
   padding: 0.5em 2em 0.5em 3em;
-}
 
-.message:before {
-  font-family: Georgia, serif;
-  position: absolute;
-  line-height: 1;
-  top: 0;
-  left: 0;
-  content: "\201C";
-  font-size: 6em;
-}
+  &::before {
+    font-family: Georgia, serif;
+    position: absolute;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+    font-size: 6em;
+  }
 
-.message:after {
-  font-family: Georgia, serif;
-  position: absolute;
-  float: right;
-  font-size: 6em;
-  line-height: 1;
-  right: 0;
-  bottom: -0.5em;
-  content: "\201D";
+  &::after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float: right;
+    font-size: 6em;
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: "\201D";
+  }
 }
 
 .socialMedia {

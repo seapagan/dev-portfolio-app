@@ -10,7 +10,7 @@ import {
 import RepoItem from "components/repo-item/RepoItem";
 import RepoLoading from "components/repo-loading/RepoLoading";
 
-import styles from "./GithubUser.module.css";
+import styles from "./GithubUser.module.scss";
 
 const GithubUser = ({ username }) => {
   const githubApiQuery = gql`

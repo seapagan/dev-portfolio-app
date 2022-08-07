@@ -31,31 +31,31 @@
   height: 48px;
   align-items: center;
   display: none;
-}
 
-.navToggleLabel span,
-.navToggleLabel span::before,
-.navToggleLabel span::after {
-  display: block;
-  background: black;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
+  span,
+  span::before,
+  span::after {
+    display: block;
+    background: black;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
 
-.navToggleLabel span::before,
-.navToggleLabel span::after {
-  content: "";
-  position: absolute;
-}
+  span::before,
+  span::after {
+    content: "";
+    position: absolute;
+  }
 
-.navToggleLabel span::before {
-  bottom: 7px;
-}
+  span::before {
+    bottom: 7px;
+  }
 
-.navToggleLabel span::after {
-  top: 7px;
+  span:after {
+    top: 7px;
+  }
 }
 
 .nav li {
@@ -66,23 +66,17 @@
 .navLink {
   text-decoration: none;
   color: var(--color-link-default);
-}
 
-.navLink:focus,
-.navLink:hover {
-  color: var(--color-menu-item-hover);
-  cursor: pointer;
+  &:focus,
+  &:hover {
+    color: var(--color-menu-item-hover);
+    cursor: pointer;
+  }
 }
 
 .navLinkActive {
   border-bottom: 1px solid var(--color-menu-item);
 }
-
-/* @media screen and (max-width: 950px) {
-  .header {
-    justify-content: center;
-  }
-} */
 
 @media screen and (max-width: 800px) {
   /* we will switch to mobile menu at this point */
@@ -96,19 +90,13 @@
 
   .nav {
     display: none;
-    /* transform: scale(1, 0); */
     transform-origin: top;
-    /* transition: transform 400ms ease-in-out; */
-  }
 
-  /* .nav.ul {
-    display: inline;
-  } */
-
-  .nav li {
-    line-height: 2.5em;
-    width: 100vw;
-    margin-left: 1em;
-    padding: 0;
+    li {
+      line-height: 2.5em;
+      width: 100vw;
+      margin-left: 1em;
+      padding: 0;
+    }
   }
 }

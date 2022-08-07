@@ -2,7 +2,7 @@ import React from "react";
 
 import SkillItem from "./skill-item/SkillItem";
 
-import styles from "./Skills.module.css";
+import styles from "./Skills.module.scss";
 
 const Skills = ({ skills, additionalSkills }) => {
   return (

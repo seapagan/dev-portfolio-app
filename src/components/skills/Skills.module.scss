@@ -22,10 +22,10 @@
 
 .adnSkillItem {
   padding-left: 8px;
-}
 
-.adnSkillItem:not(:last-of-type)::after {
-  content: ",";
+  &:not(:last-of-type)::after {
+    content: ",";
+  }
 }
 
 @media screen and (max-width: 950px) {
