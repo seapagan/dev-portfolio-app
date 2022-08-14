@@ -3,7 +3,7 @@
   padding: 10px;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 1px 0px var(--color-wrapper-box-shadow);
   background-color: var(--color-panel-background);
 
   &::after {
@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px 0px var(--color-wrapper-box-shadow);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
   }

@@ -6,7 +6,9 @@
   --color-menu-item: hsl(0, 0%, 40%);
   --color-menu-item-hover: hsl(240, 70%, 50%);
 
-  --color-separator: rgb(185, 176, 176);
+  --color-wrapper-box-shadow: hsla(0, 0%, 0%, 0.25);
+
+  --color-separator: hsl(0, 6%, 71%);
 
   --color-hilight: hsl(216, 79%, 46%);
 
@@ -19,9 +21,11 @@
   --color-link-footer: hsl(1, 67%, 40%);
   --color-link-footer-hover: hsl(1, 67%, 60%);
 
-  /* --color-panel-background: hsl(150, 20%, 95%); */
-  /* --color-panel-background-hover: hsl(150, 65%, 95%); */
-
   --color-panel-background: hsl(0, 0%, 98%);
   --color-panel-background-hover: hsl(140, 20%, 97%);
+
+  --color-back-to-top-shadow: hsla(40, 10%, 30%, 0.6);
+
+  --color-fork: red;
+  --social-button-shadow: hsl(115, 51%, 58%);
 }
