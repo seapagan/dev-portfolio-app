@@ -8,7 +8,11 @@ const SkillItem = ({ skill }) => {
   return (
     <CardWrapper className={styles.skillItem}>
       <div className={styles.icon}>
-        <img src={skill.icon} alt="" />
+        {typeof skill.icon === "string" ? (
+          <img src={skill.icon} alt="" />
+        ) : (
+          <skill.icon />
+        )}
       </div>
       <div>
         <div className={styles.name}>{skill.name}</div>
