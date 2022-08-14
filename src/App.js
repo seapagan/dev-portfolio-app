@@ -38,7 +38,7 @@ function App({ settings }) {
         <link rel="canonical" href={settings.meta.link} />
         <title>{getTitle()}</title>
       </Helmet>
-      <Container>
+      <Container className="mainContainer">
         <Router>
           <div className="App">
             <Header name={settings.name} />

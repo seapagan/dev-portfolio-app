@@ -3,9 +3,10 @@
 
 @import "css/colors.css";
 
-body {
+.mainContainer {
   font-family: "Montserrat", sans-serif;
   color: var(--color-main);
+  background-color: var(--color-main-bg);
 }
 
 section {
