@@ -2,7 +2,6 @@
 
 BUGS and Anoyances should go in the BUGS.md
 
-- Add Light / Dark mode
 - Add ability to disable each section in the settings.js
 - OpenSource - if no username or key, don't display it regardless if requested
 - OpenSource - if no pinned repos, say this and dont try to loop. Give
