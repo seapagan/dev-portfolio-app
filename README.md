@@ -37,7 +37,7 @@ There is a live working version on my own pages :
 - Light / Dark mode
   - Toggle to choose own preference
   - Defaults to using the Operating System preference, if Supported. So far
-    tested to work on Windows, Linux and iOS.
+    tested to work on Windows, Linux, OSX and iOS.
 
 All of the information contained in the above are fully customisable using the
 `settings.js` file, no actual programming or modification to the React code is
