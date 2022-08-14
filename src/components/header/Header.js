@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { Link } from "react-scroll";
 
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = ({ name }) => {
   // set a Ref on the checkbox used to open/close the CSS menu. This will be

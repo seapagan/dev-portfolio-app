@@ -25,8 +25,8 @@
   text-decoration: none;
   justify-self: center;
   color: var(--color-link-footer);
-}
 
-.link:hover {
-  color: var(--color-link-footer-hover);
+  &:hover {
+    color: var(--color-link-footer-hover);
+  }
 }

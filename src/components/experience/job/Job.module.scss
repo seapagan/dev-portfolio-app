@@ -1,0 +1,43 @@
+.jobItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto) 1fr auto;
+
+  .company {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    justify-self: center;
+  }
+
+  .position {
+    font-style: italic;
+    justify-self: center;
+  }
+
+  .dates {
+    font-size: 0.9em;
+    justify-self: center;
+  }
+
+  .website {
+    justify-self: center;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--color-link-default);
+
+    &:hover {
+      color: var(--color-link-default-hover);
+
+      &::before {
+        content: "[ ";
+      }
+
+      &::after {
+        content: " ]";
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ import {
 
 import CardWrapper from "components/card-wrapper/CardWrapper";
 
-import styles from "./RepoItem.module.css";
+import styles from "./RepoItem.module.scss";
 
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;

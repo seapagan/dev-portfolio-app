@@ -3,7 +3,7 @@ import React from "react";
 import CardWrapper from "components/card-wrapper/CardWrapper";
 import Responsibility from "components/experience/responsibility/Responsibility";
 
-import styles from "./Job.module.css";
+import styles from "./Job.module.scss";
 
 const JobItem = ({ job }) => {
   return (

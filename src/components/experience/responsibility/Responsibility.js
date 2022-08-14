@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Responsibility.module.css";
+import styles from "./Responsibility.module.scss";
 
 const Responsibility = ({ responsibility }) => {
   return (

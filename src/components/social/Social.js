@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Social.module.css";
+import styles from "./Social.module.scss";
 
 const Social = ({ social }) => {
   return (

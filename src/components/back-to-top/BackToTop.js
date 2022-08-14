@@ -3,7 +3,7 @@ import React from "react";
 import backToTopIcon from "assets/icons/back-to-top.png";
 import { animateScroll as scroll } from "react-scroll";
 
-import styles from "./BackToTop.module.css";
+import styles from "./BackToTop.module.scss";
 
 const scrollToTop = () => {
   scroll.scrollToTop();

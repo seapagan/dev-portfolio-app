@@ -2,15 +2,14 @@
   max-width: 80vw;
   margin: auto;
   background-color: inherit;
-}
 
-/* Needx to remove this for the last one */
-.wrapper {
-  margin-bottom: 15px;
-}
+  &:hover {
+    background-color: inherit;
+  }
 
-.wrapper:hover {
-  background-color: inherit;
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 650px) {

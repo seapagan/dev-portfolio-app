@@ -2,7 +2,7 @@ import React from "react";
 
 import Social from "components/social/Social";
 
-import styles from "./Contact.module.css";
+import styles from "./Contact.module.scss";
 
 const Contact = ({ social }) => {
   return (

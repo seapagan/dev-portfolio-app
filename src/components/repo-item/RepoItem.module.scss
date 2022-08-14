@@ -36,18 +36,18 @@
   text-decoration: none;
   justify-self: center;
   color: var(--color-link-default);
-}
 
-.url:hover {
-  color: var(--color-link-default-hover);
-}
+  &:hover {
+    color: var(--color-link-default-hover);
 
-.url:hover::before {
-  content: "[ ";
-}
+    &::before {
+      content: "[ ";
+    }
 
-.url:hover::after {
-  content: " ]";
+    &:after {
+      content: " ]";
+    }
+  }
 }
 
 .metrics {
@@ -58,7 +58,6 @@
 }
 
 .metricItem {
-  /* cursor: pointer; */
   cursor: default;
 }
 
@@ -75,27 +74,27 @@
   transform: rotate(35deg);
   color: red;
   text-align: center;
-}
 
-.fork:before {
-  position: relative;
-  content: "";
-  left: -3px;
-  top: 5px;
-  width: 110%;
-  margin: auto;
-  height: 2px;
-  display: block;
-  background: red;
-}
+  &::before {
+    position: relative;
+    content: "";
+    left: -3px;
+    top: 5px;
+    width: 110%;
+    margin: auto;
+    height: 2px;
+    display: block;
+    background: red;
+  }
 
-.fork:after {
-  position: relative;
-  content: "";
-  left: -3px;
-  bottom: 5px;
-  width: 110%;
-  height: 2px;
-  display: block;
-  background: red;
+  &::after {
+    position: relative;
+    content: "";
+    left: -3px;
+    bottom: 5px;
+    width: 110%;
+    height: 2px;
+    display: block;
+    background: red;
+  }
 }
