@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 import Container from "./components/container/Container";
 import Experience from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
-import FrontendMentor from "./components/frontend-mentor/FrontendMentor";
+// import FrontendMentor from "./components/frontend-mentor/FrontendMentor";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import MainContent from "./components/main-content/MainContent";

@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./Responsibility.module.scss";
+import styles from "./Task.module.scss";
 
-const Responsibility = ({ responsibility }) => {
+const Task = ({ responsibility }) => {
   return (
     <dl className={styles.wrapper}>
       <dt>{responsibility.name}</dt>
@@ -11,4 +11,4 @@ const Responsibility = ({ responsibility }) => {
   );
 };
 
-export default Responsibility;
+export default Task;

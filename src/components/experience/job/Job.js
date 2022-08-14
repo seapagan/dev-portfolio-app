@@ -1,7 +1,7 @@
 import React from "react";
 
 import CardWrapper from "components/card-wrapper/CardWrapper";
-import Responsibility from "components/experience/responsibility/Responsibility";
+import Task from "components/experience/tasks/Task";
 
 import styles from "./Job.module.scss";
 
@@ -13,7 +13,7 @@ const JobItem = ({ job }) => {
       <div className={styles.dates}>from {job.dates}</div>
       <div className={styles.responsibilities}>
         {job.responsibilities.map((responsibility, index) => {
-          return <Responsibility key={index} responsibility={responsibility} />;
+          return <Task key={index} responsibility={responsibility} />;
         })}
       </div>
       <div className={styles.website}>
