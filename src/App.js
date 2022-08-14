@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -25,6 +25,15 @@ function App({ settings }) {
   const [theme, setTheme] = useState("light");
   const titlePostfix = "My Portfolio";
 
+  useEffect(() => {
+    const matcher = window.matchMedia("(prefers-color-scheme: dark)");
+    setTheme(matcher.matches ? "dark" : "light");
+
+    matcher.onchange = () => {
+      setTheme(matcher.matches ? "dark" : "light");
+    };
+  }, []);
+
   const getTitle = () => {
     if (settings.name) {
       return `${settings.name} | ${titlePostfix}`;
@@ -45,7 +54,7 @@ function App({ settings }) {
         <title>{getTitle()}</title>
       </Helmet>
       <Container className={`mainContainer theme-${theme}`}>
-        <ToggleTheme toggleTheme={toggleTheme} />
+        <ToggleTheme mode={theme} toggleTheme={toggleTheme} />
         <Router>
           <div className="App">
             <Header name={settings.name} />
