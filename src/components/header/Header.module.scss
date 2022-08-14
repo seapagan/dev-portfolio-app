@@ -5,6 +5,7 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 20px;
+  transition: all var(--transition-time) ease-in-out;
 }
 
 .namebadge {
@@ -13,6 +14,7 @@
   font-size: 2em;
   color: var(--color-badge);
   text-decoration: none;
+  transition: all var(--transition-time) ease-in-out;
 }
 
 .navToggle {
@@ -66,6 +68,7 @@
 .navLink {
   text-decoration: none;
   color: var(--color-link-default);
+  transition: all var(--transition-time) ease-in-out;
 
   &:focus,
   &:hover {

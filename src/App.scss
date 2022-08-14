@@ -3,6 +3,10 @@
 
 @import "css/colors.css";
 
+:root {
+  --transition-time: 0.3s;
+}
+
 .mainContainer {
   font-family: "Montserrat", sans-serif;
   color: var(--color-main);
