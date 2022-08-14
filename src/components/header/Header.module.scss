@@ -38,7 +38,7 @@
   span::before,
   span::after {
     display: block;
-    background: black;
+    background: var(--color-main);
     height: 2px;
     width: 2em;
     border-radius: 2px;

@@ -32,9 +32,9 @@
   --color-fork: red;
   --social-button-shadow: hsl(115, 51%, 58%);
 
-  --color-toggle: black;
+  --color-toggle: var(--color-main);
   --color-toggle-bg: rgb(235, 235, 235);
-  --color-toggle-border: gray;
+  --color-toggle-border: rgb(217, 217, 217);
 }
 
 .theme-dark {
@@ -70,7 +70,7 @@
   --color-fork: hsl(0, 100%, 65%);
   --social-button-shadow: hsl(115, 51%, 58%);
 
-  --color-toggle: white;
-  --color-toggle-bg: rgb(63, 63, 63);
-  --color-toggle-border: lightgray;
+  --color-toggle: var(--color-main);
+  --color-toggle-bg: hsl(0, 0%, 25%);
+  --color-toggle-border: hsl(0, 1%, 36%);
 }
