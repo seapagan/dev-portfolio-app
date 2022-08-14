@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # specific to this app
-.env.personal
+settings.js
