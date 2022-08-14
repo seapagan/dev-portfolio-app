@@ -4,7 +4,7 @@ import styles from "./ToggleTheme.module.scss";
 
 const ToggleTheme = ({ toggleTheme }) => {
   return (
-    <div>
+    <div className={styles.toggleWrapper}>
       <input
         className={styles.toggle}
         type="checkbox"
