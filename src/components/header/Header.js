@@ -95,6 +95,7 @@ const Header = ({ name }) => {
                 Contact
               </Link>
             </li>
+            <li></li>
           </ul>
         </nav>
       </header>

@@ -1,6 +1,6 @@
 /* css color variables */
 
-:root {
+.theme-light {
   --color-main: hsl(0, 0%, 40%);
   --color-main-bg: hsl(0, 0%, 100%);
   --color-badge: hsl(100, 50%, 30%);
@@ -24,6 +24,38 @@
 
   --color-panel-background: hsl(0, 0%, 98%);
   --color-panel-background-hover: hsl(140, 20%, 97%);
+
+  --color-back-to-top-shadow: hsla(40, 10%, 30%, 0.6);
+
+  --color-fork: red;
+  --social-button-shadow: hsl(115, 51%, 58%);
+}
+
+.theme-dark {
+  --color-main: hsl(0, 0%, 90%);
+  --color-main-bg: hsl(0, 0%, 10%);
+  --color-badge: hsl(100, 62%, 39%);
+  /* --color-menu-item: hsl(0, 0%, 40%); */
+  --color-menu-item: red;
+  --color-menu-item-hover: var(--color-badge);
+
+  /* --color-wrapper-box-shadow: hsl(0, 0%, 47%); */
+
+  --color-separator: hsl(0, 6%, 71%);
+
+  --color-hilight: hsl(216, 58%, 58%);
+
+  --color-btn-background: hsl(0, 0%, 60%);
+  --color-btn-background-hover: hsl(0, 2%, 50%);
+
+  --color-link-default: var(--color-main);
+  --color-link-default-hover: hsl(186, 66%, 58%);
+
+  --color-link-footer: hsl(1, 67%, 60%);
+  --color-link-footer-hover: hsl(1, 67%, 70%);
+
+  --color-panel-background: hsl(0, 0%, 26%);
+  --color-panel-background-hover: hsl(0, 0%, 30%);
 
   --color-back-to-top-shadow: hsla(40, 10%, 30%, 0.6);
 
