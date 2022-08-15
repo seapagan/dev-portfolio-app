@@ -25,12 +25,23 @@ function App({ settings }) {
   const [theme, setTheme] = useState("light");
   const titlePostfix = "My Portfolio";
 
+  const getUserThemeChoice = () => localStorage.getItem("dev-portfolio-theme");
+
   useEffect(() => {
+    let userThemeChoice = getUserThemeChoice();
     const matcher = window.matchMedia("(prefers-color-scheme: dark)");
-    setTheme(matcher.matches ? "dark" : "light");
+
+    if (userThemeChoice) {
+      setTheme(userThemeChoice);
+    } else {
+      setTheme(matcher.matches ? "dark" : "light");
+    }
 
     matcher.onchange = () => {
-      setTheme(matcher.matches ? "dark" : "light");
+      userThemeChoice = getUserThemeChoice();
+      if (!userThemeChoice) {
+        setTheme(matcher.matches ? "dark" : "light");
+      }
     };
   }, []);
 
@@ -43,7 +54,9 @@ function App({ settings }) {
   };
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("dev-portfolio-theme", newTheme);
   };
 
   return (
