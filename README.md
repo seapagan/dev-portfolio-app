@@ -111,6 +111,10 @@ this and cancel it, hence the OpenSource section will fail. Look at
 [Netlify][netlify] or [Vercel][vercel] instead. Obviously, if you have your own
 hosting you can upload the production build and serve that as any other site.
 
+## Attributions
+
+- Day/Night toggle icons are from [IconScout](https://iconscout.com)
+
 ## TODO
 
 - ~~Contact section.~~
@@ -139,3 +143,5 @@ Pull requests are welcome.
 [token]: https://github.com/settings/tokens
 [netlify]: https://www.netlify.com/
 [vercel]: https://vercel.com
+
+Day/Night icons are from [IconScout](https://iconscout.com)
