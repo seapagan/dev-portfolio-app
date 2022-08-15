@@ -1,27 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import About from "./components/about/About";
-import BackToTop from "./components/back-to-top/BackToTop";
-import Contact from "./components/contact/Contact";
-import Container from "./components/container/Container";
-import Experience from "./components/experience/Experience";
-import Footer from "./components/footer/Footer";
-// import FrontendMentor from "./components/frontend-mentor/FrontendMentor";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import MainContent from "./components/main-content/MainContent";
-import OpenSource from "./components/open-source/OpenSource";
-import Route404 from "./components/route-404/Route404";
-import Skills from "./components/skills/Skills";
+import About from "components/about/About";
+import BackToTop from "components/back-to-top/BackToTop";
+import Contact from "components/contact/Contact";
+import Container from "components/container/Container";
+import Experience from "components/experience/Experience";
+import Footer from "components/footer/Footer";
+// import FrontendMentor from "components/frontend-mentor/FrontendMentor";
+import Header from "components/header/Header";
+import Hero from "components/hero/Hero";
+import MainContent from "components/main-content/MainContent";
+import OpenSource from "components/open-source/OpenSource";
+import Route404 from "components/route-404/Route404";
+import Skills from "components/skills/Skills";
+import ToggleTheme from "components/toggle-theme/ToggleTheme";
 
 import "./App.scss";
 
 function App({ settings }) {
+  const [theme, setTheme] = useState("light");
   const titlePostfix = "My Portfolio";
+
+  const getUserThemeChoice = () => localStorage.getItem("dev-portfolio-theme");
+
+  useEffect(() => {
+    let userThemeChoice = getUserThemeChoice();
+    const matcher = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (userThemeChoice) {
+      setTheme(userThemeChoice);
+    } else {
+      setTheme(matcher.matches ? "dark" : "light");
+    }
+
+    matcher.onchange = () => {
+      userThemeChoice = getUserThemeChoice();
+      if (!userThemeChoice) {
+        setTheme(matcher.matches ? "dark" : "light");
+      }
+    };
+  }, []);
 
   const getTitle = () => {
     if (settings.name) {
@@ -31,6 +53,12 @@ function App({ settings }) {
     }
   };
 
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("dev-portfolio-theme", newTheme);
+  };
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -38,7 +66,8 @@ function App({ settings }) {
         <link rel="canonical" href={settings.meta.link} />
         <title>{getTitle()}</title>
       </Helmet>
-      <Container>
+      <Container className={`mainContainer theme-${theme}`}>
+        <ToggleTheme mode={theme} toggleTheme={toggleTheme} />
         <Router>
           <div className="App">
             <Header name={settings.name} />

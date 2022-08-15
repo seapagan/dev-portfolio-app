@@ -1,7 +1,5 @@
 # Unsorted list of bugs or anoyances to fix
 
-## Visual
+## Dark Mode
 
-- ~~OpenSource - The section title vanishes when loading. Rewrite to set a state
-   based on the loading status, and always print the outer components, put a
-   spinner where the repos should be.~~
+The user choice is not saved, so on reload it will take the OS choice again.

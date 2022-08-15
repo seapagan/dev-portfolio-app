@@ -1,12 +1,17 @@
 /* css color variables */
 
-:root {
+.theme-light {
   --color-main: hsl(0, 0%, 40%);
+  --color-main-bg: hsl(0, 0%, 100%);
   --color-badge: hsl(100, 50%, 30%);
   --color-menu-item: hsl(0, 0%, 40%);
   --color-menu-item-hover: hsl(240, 70%, 50%);
 
-  --color-separator: rgb(185, 176, 176);
+  --color-section-header: var(--color-main);
+
+  --color-wrapper-box-shadow: hsla(0, 0%, 0%, 0.25);
+
+  --color-separator: hsl(0, 6%, 71%);
 
   --color-hilight: hsl(216, 79%, 46%);
 
@@ -19,9 +24,53 @@
   --color-link-footer: hsl(1, 67%, 40%);
   --color-link-footer-hover: hsl(1, 67%, 60%);
 
-  /* --color-panel-background: hsl(150, 20%, 95%); */
-  /* --color-panel-background-hover: hsl(150, 65%, 95%); */
-
   --color-panel-background: hsl(0, 0%, 98%);
   --color-panel-background-hover: hsl(140, 20%, 97%);
+
+  --color-back-to-top-shadow: hsla(40, 10%, 30%, 0.6);
+
+  --color-fork: red;
+  --social-button-shadow: hsl(115, 51%, 58%);
+
+  --color-toggle: var(--color-main);
+  --color-toggle-bg: rgb(235, 235, 235);
+  --color-toggle-border: rgb(217, 217, 217);
+}
+
+.theme-dark {
+  --color-main: hsl(0, 0%, 90%);
+  --color-main-bg: hsl(0, 0%, 10%);
+  --color-badge: hsl(100, 62%, 39%);
+  /* --color-menu-item: hsl(0, 0%, 40%); */
+  --color-menu-item: red;
+  --color-menu-item-hover: var(--color-badge);
+
+  --color-section-header: var(--color-badge);
+
+  /* --color-wrapper-box-shadow: hsl(0, 0%, 47%); */
+
+  --color-separator: hsl(0, 6%, 71%);
+
+  --color-hilight: hsl(216, 58%, 58%);
+
+  --color-btn-background: hsl(0, 0%, 60%);
+  --color-btn-background-hover: hsl(0, 2%, 50%);
+
+  --color-link-default: var(--color-main);
+  --color-link-default-hover: hsl(186, 66%, 58%);
+
+  --color-link-footer: hsl(1, 67%, 60%);
+  --color-link-footer-hover: hsl(1, 67%, 70%);
+
+  --color-panel-background: hsl(0, 0%, 26%);
+  --color-panel-background-hover: hsl(0, 0%, 30%);
+
+  --color-back-to-top-shadow: hsla(40, 10%, 30%, 0.6);
+
+  --color-fork: hsl(0, 100%, 65%);
+  --social-button-shadow: hsl(115, 51%, 58%);
+
+  --color-toggle: var(--color-main);
+  --color-toggle-bg: hsl(0, 0%, 25%);
+  --color-toggle-border: hsl(0, 1%, 36%);
 }

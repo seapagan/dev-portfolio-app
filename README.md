@@ -34,6 +34,10 @@ There is a live working version on my own pages :
   - The final statements and contact information
 - Social Media buttons
   - Customisable buttons to link to your Social Media presence.
+- Light / Dark mode
+  - Toggle to choose own preference
+  - Defaults to using the Operating System preference, if Supported. So far
+    tested to work on Windows, Linux, OSX and iOS.
 
 All of the information contained in the above are fully customisable using the
 `settings.js` file, no actual programming or modification to the React code is
@@ -47,7 +51,8 @@ production systems.
 
 You will need some form of web hosting. React build folders are basically just
 static HTML, CSS and JavaScript files so pretty much any provider will be able
-to host them. the CRA website has some useful information [here][deploy]
+to host them. the CRA website has some useful information [here][deploy].
+[Netlify][netlify] and [Vercel][vercel] are good choices.
 
 You can use either [`yarn`][yarn] or `npm` to install the required dependencies
 as below, personally I prefer `yarn` as it seems faster and more robust. Either
@@ -98,19 +103,17 @@ to your hosting provider, with the **contents of this folder** being the root to
 serve. Again, the [React Deployment pages][deploy] have good information if you
 are new at this.
 
-#### Deploy to Github Pages
+### Deploy the application
 
-I have added scripts to automatically push the generated website to GitHub
-Pages, independent of pushing to the main repo. Simply run `yarn deploy` (or
-`npm run deploy` if you prefer npm). This will create the gh-pages branch if not
-already there, and deploy the production build. It will create a new fresh build
-at this time too. Then all you will need to do is go to the `Pages` settings for
-that repo and set up any domain alias if needed.
+I no longer recommend deploying to GitHub pages - since your GitHub Personal
+Access Token is stored in the final production build, GitHub will then detect
+this and cancel it, hence the OpenSource section will fail. Look at
+[Netlify][netlify] or [Vercel][vercel] instead. Obviously, if you have your own
+hosting you can upload the production build and serve that as any other site.
 
-There is also a (disabled) GitHub Action which will do this automatically for
-every Pull Request or Push to main if this is preferred. You will need to set a
-Action `secret` variable called `REACT_APP_GITHUB_TOKEN` containing the token in
-that case.
+## Attributions
+
+- Day/Night toggle icons are from [IconScout](https://iconscout.com)
 
 ## TODO
 
@@ -138,3 +141,7 @@ Pull requests are welcome.
 [yarn]: https://yarnpkg.com/
 [deploy]: https://create-react-app.dev/docs/deployment/
 [token]: https://github.com/settings/tokens
+[netlify]: https://www.netlify.com/
+[vercel]: https://vercel.com
+
+Day/Night icons are from [IconScout](https://iconscout.com)

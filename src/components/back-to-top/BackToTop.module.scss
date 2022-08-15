@@ -7,10 +7,11 @@
   z-index: 2;
   border-radius: 50%;
   cursor: pointer;
+  color: var(--color-main);
 
   &:hover {
-    box-shadow: 2px 2px 5px hsla(40, 10%, 30%, 0.6),
-      -2px -2px 5px hsla(40, 10%, 30%, 0.6);
+    box-shadow: 2px 2px 5px var(--color-back-to-top-shadow),
+      -2px -2px 5px var(--color-back-to-top-shadow);
   }
 }
 

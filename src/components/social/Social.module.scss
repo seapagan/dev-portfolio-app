@@ -14,7 +14,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 2px 2px 10px rgb(101, 202, 92), -2px -2px 10px rgb(101, 202, 92);
+    box-shadow: 2px 2px 10px var(--social-button-shadow),
+      -2px -2px 10px var(--social-button-shadow);
   }
 }
 

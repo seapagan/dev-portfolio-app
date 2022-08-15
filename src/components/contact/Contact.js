@@ -22,10 +22,11 @@ const Contact = ({ social }) => {
           <Social social={social} />
         </div>
         <div>
-          This portfolio webpage was designed from scratch over a weeked and is
-          availiable for anyone to use under the MIT licence. No coding needed
-          to customise, all the details are stored in one configuration file.
-          See the link in the footer for the GitHub repository.
+          This portfolio webpage was originally designed from scratch over a
+          weekend and is availiable for anyone to use under the MIT licence. No
+          coding needed to customise, all the details are stored in one
+          configuration file. See the link in the footer for the GitHub
+          repository.
         </div>
       </div>
     </section>

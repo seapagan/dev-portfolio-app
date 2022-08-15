@@ -3,9 +3,14 @@
 
 @import "css/colors.css";
 
-body {
+:root {
+  --transition-time: 0.3s;
+}
+
+.mainContainer {
   font-family: "Montserrat", sans-serif;
   color: var(--color-main);
+  background-color: var(--color-main-bg);
 }
 
 section {
@@ -15,6 +20,7 @@ section {
     font-size: 2.5rem;
     padding: 40px 0;
     text-align: center;
+    color: var(--color-section-header);
 
     &::before {
       content: "";
