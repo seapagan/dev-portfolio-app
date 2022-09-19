@@ -55,6 +55,7 @@ const GithubUser = ({ username }) => {
                 }
               }
               isFork
+              isArchived
             }
           }
         }
@@ -91,6 +92,7 @@ const GithubUser = ({ username }) => {
               name
             }
             isFork
+            isArchived
           }
         }
       }
@@ -129,12 +131,15 @@ const GithubUser = ({ username }) => {
   };
 
   const returnPublic = () => {
-    return data.user.repositories.nodes.map((repo, index) => {
-      if (!pinnedRepos.includes(repo.name)) {
-        return <RepoItem key={index} repo={repo} />;
-      }
+    const data_copy = data.user.repositories.nodes.slice();
+    const sorted = data_copy
+      .filter(repo => !pinnedRepos.includes(repo.name) && !repo.isArchived)
+      .sort((a, b) => {
+        return Date.parse(b.pushedAt) - Date.parse(a.pushedAt);
+      });
 
-      return "";
+    return sorted.map((repo, index) => {
+      return <RepoItem key={index} repo={repo} />;
     });
   };
 
