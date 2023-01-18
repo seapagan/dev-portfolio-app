@@ -14,7 +14,7 @@ const Footer = () => {
             target="_blank">
             Developer Portfolio App
           </a>
-          , &copy;Grant Ramsay 2021
+          , &copy;Grant Ramsay 2023
         </div>
         <div className={styles.license}>
           Released under the{" "}
