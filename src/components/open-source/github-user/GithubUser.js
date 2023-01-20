@@ -56,6 +56,7 @@ const GithubUser = ({ username }) => {
               }
               isFork
               isArchived
+              nameWithOwner
             }
           }
         }
@@ -93,6 +94,7 @@ const GithubUser = ({ username }) => {
             }
             isFork
             isArchived
+            nameWithOwner
           }
         }
       }
