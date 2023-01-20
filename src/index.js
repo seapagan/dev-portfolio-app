@@ -11,10 +11,11 @@ import {
 } from "@apollo/client";
 
 // import the css reset rules
-import "modern-css-reset";
-
+// import "modern-css-reset";
 import { settings } from "./configure/settings";
 import App from "./App";
+
+import "index.css";
 
 const httpLink = createHttpLink({
   uri: "https://api.github.com/graphql",
