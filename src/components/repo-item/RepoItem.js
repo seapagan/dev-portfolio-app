@@ -8,6 +8,8 @@ import {
   StarIcon,
 } from "@primer/octicons-react";
 
+import { GitHubReadmeButton } from "react-github-readme-button";
+
 import CardWrapper from "components/card-wrapper/CardWrapper";
 
 import styles from "./RepoItem.module.scss";
@@ -69,12 +71,17 @@ const RepoItem = ({ repo }) => {
           <span className={styles.metricValue}>{repo.forkCount}</span>
         </div>
       </div>
+      <GitHubReadmeButton
+        branch={defaultBranch}
+        repo={repo.nameWithOwner}
+        // className={styles.url}
+      />
       <a
         className={styles.url}
         href={repo.url}
         target="_blank"
         rel="noopener noreferrer">
-        Visit on GitHub
+        View on GitHub
       </a>
     </CardWrapper>
   );

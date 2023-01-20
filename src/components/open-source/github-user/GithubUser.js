@@ -56,6 +56,7 @@ const GithubUser = ({ username }) => {
               }
               isFork
               isArchived
+              nameWithOwner
             }
           }
         }
@@ -93,6 +94,7 @@ const GithubUser = ({ username }) => {
             }
             isFork
             isArchived
+            nameWithOwner
           }
         }
       }
@@ -173,7 +175,7 @@ const GithubUser = ({ username }) => {
                     href={data.user.url}
                     target="_blank"
                     rel="noopener noreferrer">
-                    view repositories on github
+                    view repositories on GitHub
                   </a>
                 </div>
                 <div className={styles.openSourceGrid}>
@@ -183,7 +185,7 @@ const GithubUser = ({ username }) => {
                       <div
                         onClick={togglePublicRepos}
                         className={styles.publicTitle}>
-                        {showPublicRepos ? "Hide" : "Show"}
+                        {showPublicRepos ? "Hide" : "Show more"}
                         &nbsp;Public Repositories.
                       </div>
                     </div>
