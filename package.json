@@ -52,6 +52,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^5.0.0",
-    "sass": "^1.58.1"
+    "sass": "^1.58.2"
   }
 }
