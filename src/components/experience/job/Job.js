@@ -8,7 +8,7 @@ import styles from "./Job.module.scss";
 const JobItem = ({ job }) => {
   return (
     <CardWrapper className={styles.jobItem}>
-      <div className={styles.company}>{job.company}</div>
+      <h3 className={styles.company}>{job.company}</h3>
       <div className={styles.position}>{job.title}</div>
       <div className={styles.dates}>from {job.dates}</div>
       <div className={styles.responsibilities}>

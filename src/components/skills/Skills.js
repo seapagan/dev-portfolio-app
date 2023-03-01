@@ -14,12 +14,12 @@ const Skills = ({ skills, additionalSkills }) => {
         })}
       </div>
       <div className={styles.additionalSkills}>
-        <div className={styles.adnSkillTitle}>Additional Skills include : </div>
+        <h3 className={styles.adnSkillTitle}>Additional Skills include : </h3>
         {additionalSkills.map((skill, index) => {
           return (
-            <div className={styles.adnSkillItem} key={index}>
+            <span className={styles.adnSkillItem} key={index}>
               {skill}
-            </div>
+            </span>
           );
         })}
       </div>

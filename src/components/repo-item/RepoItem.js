@@ -39,13 +39,13 @@ const RepoItem = ({ repo }) => {
   return (
     <CardWrapper className={styles.repoItem}>
       {repo.isFork && <span className={styles.fork}>Forked</span>}
-      <div className={styles.name}>
+      <h4 className={styles.name}>
         <span className={styles.repoIcon}>
           <RepoIcon size="medium" />
         </span>
         {repo.name}
-      </div>
-      <div className={styles.desc}>{repo.description}</div>
+      </h4>
+      <p className={styles.desc}>{repo.description}</p>
       <div className={styles.languageLicense}>
         {primaryLanguage !== "" && (
           <div style={{ color: primaryLanguageColor }}>
@@ -71,11 +71,7 @@ const RepoItem = ({ repo }) => {
           <span className={styles.metricValue}>{repo.forkCount}</span>
         </div>
       </div>
-      <GitHubReadmeButton
-        branch={defaultBranch}
-        repo={repo.nameWithOwner}
-        // className={styles.url}
-      />
+      <GitHubReadmeButton branch={defaultBranch} repo={repo.nameWithOwner} />
       <a
         className={styles.url}
         href={repo.url}

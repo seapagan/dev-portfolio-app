@@ -115,20 +115,20 @@ const GithubUser = ({ username }) => {
     );
 
   const togglePublicRepos = () => {
-    // this will toggle to display the public repos
-    setShowPublicRepos(!showPublicRepos);
+    // this will toggle displaying the public repos for this User.
+    setShowPublicRepos(current => !current);
   };
 
   const toggleUser = () => {
-    // this will toggle to display the public repos
-    setShowUser(!showUser);
+    // this will toggle displaying all repos for this User.
+    setShowUser(current => !current);
   };
 
   const returnPinned = () => {
-    return data.user.pinnedItems.nodes.map((repo, index) => {
+    return data.user.pinnedItems.nodes.map(repo => {
       pinnedRepos.push(repo.name);
 
-      return <RepoItem key={index} repo={repo} />;
+      return <RepoItem key={repo.name} repo={repo} />;
     });
   };
 
@@ -140,8 +140,8 @@ const GithubUser = ({ username }) => {
         return Date.parse(b.pushedAt) - Date.parse(a.pushedAt);
       });
 
-    return sorted.map((repo, index) => {
-      return <RepoItem key={index} repo={repo} />;
+    return sorted.map(repo => {
+      return <RepoItem key={repo.name} repo={repo} />;
     });
   };
 
@@ -152,20 +152,18 @@ const GithubUser = ({ username }) => {
       ) : (
         <>
           <div className={styles.openSource}>
-            <div className={styles.header}>
-              <div onClick={toggleUser} className={styles.userTitle}>
-                <b>
-                  <span className={styles.foldIcon}>
-                    {showUser ? (
-                      <ChevronDownIcon size="medium" />
-                    ) : (
-                      <ChevronRightIcon size="medium" />
-                    )}
-                  </span>
-                  Github Account “{username}”
-                </b>
-              </div>
-            </div>
+            {/* <div className={styles.header}> */}
+            <h3 onClick={toggleUser} className={styles.userTitle}>
+              <span className={styles.foldIcon}>
+                {showUser ? (
+                  <ChevronDownIcon size="medium" />
+                ) : (
+                  <ChevronRightIcon size="medium" />
+                )}
+              </span>
+              Github Account “{username}”
+            </h3>
+            {/* </div> */}
 
             {showUser && (
               <>

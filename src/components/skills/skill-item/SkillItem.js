@@ -15,8 +15,8 @@ const SkillItem = ({ skill }) => {
         )}
       </div>
       <div>
-        <div className={styles.name}>{skill.name}</div>
-        <div className={styles.desc}>{skill.desc}</div>
+        <h3 className={styles.name}>{skill.name}</h3>
+        <p className={styles.desc}>{skill.desc}</p>
       </div>
     </CardWrapper>
   );

@@ -9,9 +9,9 @@ const OpenSource = ({ usernames }) => {
   return (
     <section id="openSource-section">
       <h2 className="section__title">OpenSource Projects</h2>
-      {[].concat(usernames).map((username, index) => {
+      {[].concat(usernames).map(username => {
         return (
-          <Wrapper key={index} className={styles.wrapper}>
+          <Wrapper key={username} className={styles.wrapper}>
             <GithubUser username={username} />
           </Wrapper>
         );

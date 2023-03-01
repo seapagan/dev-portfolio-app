@@ -8,7 +8,7 @@ const About = ({ about }) => {
       <h2 className="section__title">About Me</h2>
       <div className={styles.about}>
         {about.map((line, index) => {
-          return <div key={index}>{line}</div>;
+          return <p key={index}>{line}</p>;
         })}
       </div>
     </section>
