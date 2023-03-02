@@ -24,3 +24,4 @@ yarn-error.log*
 
 # specific to this app
 settings.js
+dist
