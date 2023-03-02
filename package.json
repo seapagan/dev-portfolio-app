@@ -17,16 +17,11 @@
     "react-helmet-async": "^1.0.9",
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9"
   },
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "start": "vite",
+    "build": "vite build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,11 +42,14 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.35.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^5.0.0",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "vite": "^4.1.4",
+    "vite-plugin-svgr": "^2.4.0"
   }
 }

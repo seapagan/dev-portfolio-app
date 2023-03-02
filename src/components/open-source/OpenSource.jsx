@@ -1,7 +1,7 @@
 import React from "react";
 
-import Wrapper from "components/card-wrapper/CardWrapper";
-import GithubUser from "components/open-source/github-user/GithubUser";
+import Wrapper from "/src/components/card-wrapper/CardWrapper";
+import GithubUser from "/src/components/open-source/github-user/GithubUser";
 
 import styles from "./OpenSource.module.scss";
 
