@@ -2,26 +2,26 @@
 // values to suit your own details
 
 // comment out these imports if you are not using the particular icon
-import apiLogo from "../assets/icons//api.png";
-import cloudLogo from "../assets/icons/cloud.png";
-import cssLogo from "../assets/icons/css3.png";
-import databaseLogo from "../assets/icons/database.png";
-import esxiLogo from "../assets/icons/esxi.png";
-import htmlLogo from "../assets/icons/html5.png";
-import linuxLogo from "../assets/icons/linux.png";
-import pythonIcon from "../assets/icons/python.png";
-import reactLogo from "../assets/icons/react.png";
-import socialBlog from "../assets/social/blog.png";
-import socialEmail from "../assets/social/email.png";
-import socialFacebook from "../assets/social/facebook.png";
-import socialGitHub from "../assets/social/github.png";
-import socialLinkedIn from "../assets/social/linkedin.png";
-import socialMedium from "../assets/social/medium.png";
-import socialSnapchat from "../assets/social/snapchat.png";
-import socialTikTok from "../assets/social/tiktok.png";
-import socialTwitter from "../assets/social/twitter.png";
-import socialYouTube from "../assets/social/youtube.png";
-import heroLogo from "../assets/svg/undraw_Code_thinking.svg";
+import { ReactComponent as apiLogo } from "/src/assets/icons/api.svg";
+import cloudLogo from "/src/assets/icons/cloud.png";
+import cssLogo from "/src/assets/icons/css3.png";
+import databaseLogo from "/src/assets/icons/database.png";
+import esxiLogo from "/src/assets/icons/esxi.png";
+import htmlLogo from "/src/assets/icons/html5.png";
+import linuxLogo from "/src/assets/icons/linux.png";
+import pythonIcon from "/src/assets/icons/python.png";
+import reactLogo from "/src/assets/icons/react.png";
+import socialBlog from "/src/assets/social/blog.png";
+import socialEmail from "/src/assets/social/email.png";
+import socialFacebook from "/src/assets/social/facebook.png";
+import socialGitHub from "/src/assets/social/github.png";
+import socialLinkedIn from "/src/assets/social/linkedin.png";
+import socialMedium from "/src/assets/social/medium.png";
+import socialSnapchat from "/src/assets/social/snapchat.png";
+import socialTikTok from "/src/assets/social/tiktok.png";
+import socialTwitter from "/src/assets/social/twitter.png";
+import socialYouTube from "/src/assets/social/youtube.png";
+import heroLogo from "/src/assets/svg/undraw_Code_thinking.svg";
 
 export const settings = {
   meta: {
@@ -32,7 +32,7 @@ export const settings = {
   },
   name: "Master Developer", // your name
   githubUsername: "masterdev",
-  githubToken: process.env.REACT_APP_GH_TOKEN,
+  githubToken: import.meta.env.VITE_GH_TOKEN,
   hero: {
     image: heroLogo,
     heading: "A Passion to Excel",

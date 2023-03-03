@@ -10,7 +10,7 @@ import {
 
 import { GitHubReadmeButton } from "react-github-readme-button";
 
-import CardWrapper from "components/card-wrapper/CardWrapper";
+import CardWrapper from "/src/components/card-wrapper/CardWrapper";
 
 import styles from "./RepoItem.module.scss";
 

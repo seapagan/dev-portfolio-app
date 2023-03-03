@@ -1,7 +1,7 @@
 import React from "react";
 
-import CardWrapper from "components/card-wrapper/CardWrapper";
-import Task from "components/experience/tasks/Task";
+import CardWrapper from "/src/components/card-wrapper/CardWrapper";
+import Task from "/src/components/experience/tasks/Task";
 
 import styles from "./Job.module.scss";
 

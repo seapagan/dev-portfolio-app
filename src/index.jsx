@@ -15,7 +15,7 @@ import {
 import { settings } from "./configure/settings";
 import App from "./App";
 
-import "index.css";
+import "./index.css";
 
 const httpLink = createHttpLink({
   uri: "https://api.github.com/graphql",

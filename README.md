@@ -11,6 +11,11 @@ This is still work in progress but fully able to be used live. I try to avoid
 any breaking changes in the configuration file, this will be noted in the
 changelog if required.
 
+> **Important : I have now converted this application to use**
+> **[Vite](https://vitejs.dev) instead of `Create React App`. If you have an**
+> **existing installation, please delete your existing `node_modules` folder and**
+> **re-install the dependencies using `npm` or `yarn`**
+
 There is a live working version on my own pages :
 [https://www.gnramsay.com](https://www.gnramsay.com)
 
@@ -86,7 +91,7 @@ Rename the
 file to `./src/configure/settings.js` Modify the settings, text, icons, hero
 image etc to your own requirements as described above.
 
-add your **GitHib Personal Access Token** to the `REACT_APP_GH_TOKEN` key in the
+add your **GitHib Personal Access Token** to the `VITE_GH_TOKEN` key in the
 `.env` file. This will allow the 'Open Source' section to query GitHub. Without
 this, that section will not work. Define your PAT on GitHub (it is account wide,
 not per-repository) [here][token] under `Personal access tokens`
