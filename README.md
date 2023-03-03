@@ -73,10 +73,10 @@ npm install -g yarn
 
 ### Clone this Git repository
 
-Either clone it somewhere locally from where you then upload the build directory
+Either clone it somewhere locally from where you then upload the dist directory
 to your web hosting provider, or clone it directly onto your hosting server.
 Note that the only files which need to be available to your web hosting server
-are the contents of the `./build` directory.
+are the contents of the `./dist` directory.
 
 ### Install the dependencies
 
@@ -103,7 +103,7 @@ changing**.
 
 From the web application root folder, either run ```npm run build``` or ```yarn
 build```. This will create a production-ready website in the
-[`./build`](./build) folder. This `/.build` folder is the one you need to upload
+[`./dist`](./dist) folder. This `/.dist` folder is the one you need to upload
 to your hosting provider, with the **contents of this folder** being the root to
 serve. Again, the [React Deployment pages][deploy] have good information if you
 are new at this.
