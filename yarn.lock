@@ -1227,10 +1227,10 @@ domhandler@5.0.3, domhandler@^5.0.1, domhandler@^5.0.2:
   dependencies:
     domelementtype "^2.3.0"
 
-dompurify@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.3.tgz#f4133af0e6a50297fc8874e2eaedc13a3c308c03"
-  integrity sha512-q6QaLcakcRjebxjg8/+NP+h0rPfatOgOzc46Fst9VAA3jF2ApfKBNKMzdP4DYTqtUMXSCd5pRS/8Po/OmoCHZQ==
+dompurify@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.0.1.tgz#a0933f38931b3238934dd632043b727e53004289"
+  integrity sha512-60tsgvPKwItxZZdfLmamp0MTcecCta3avOhsLgPZ0qcWt96OasFfhkeIRbJ6br5i0fQawT1/RBGB5L58/Jpwuw==
 
 domutils@^3.0.1:
   version "3.0.1"
@@ -1749,10 +1749,10 @@ gh-pages@^5.0.0:
     fs-extra "^8.1.0"
     globby "^6.1.0"
 
-github-markdown-css@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-5.1.0.tgz#a96281cd90a8969e3c13b9d3ca6a733a523a00a6"
-  integrity sha512-QLtORwHHtUHhPMHu7i4GKfP6Vx5CWZn+NKQXe+cBhslY1HEt0CTEkP4d/vSROKV0iIJSpl4UtlQ16AD8C6lMug==
+github-markdown-css@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-5.2.0.tgz#9f9e30f16cbc1d3b76110667b7c36ca3d96c9cdc"
+  integrity sha512-hq5RaCInSUZ48bImOZpkppW2/MT44StRgsbsZ8YA4vJFwLKB/Vo3k7R2t+pUGqO+ThG0QDMi96TewV/B3vyItg==
 
 glob-parent@^6.0.2:
   version "6.0.2"
@@ -1909,21 +1909,21 @@ hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.1.0, hoist-non-react-
   dependencies:
     react-is "^16.7.0"
 
-html-dom-parser@3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-3.1.3.tgz#ba87ca379f2817ca733523cac55c90de6bac43dd"
-  integrity sha512-fI0yyNlIeSboxU+jnrA4v8qj4+M8SI9/q6AKYdwCY2qki22UtKCDTxvagHniECu7sa5/o2zFRdLleA67035lsA==
+html-dom-parser@3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-3.1.5.tgz#0f403868460a6a64bfe3f5bcf3571f976d9a2671"
+  integrity sha512-9KTy2C7G7OcDDvnJ3Y7np84RF3OuO7X0PE5ZXyrNdOTI9NYam8thaUtxGEIM5lUqJkJR8T1aVe+zlN6H4PCtuA==
   dependencies:
     domhandler "5.0.3"
     htmlparser2 "8.0.1"
 
-html-react-parser@^3.0.7:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-3.0.8.tgz#d0bb3cea8c1db7a687b51138dfd54f31a0c8e1aa"
-  integrity sha512-eIxPq/3Ja3+nZkx6X/BNpFy0lNuW+v3V4nzABzuL8KkRVdYY/2KyXO42epKonsEVVRSBxm2zsxWcOkT6fYL+iQ==
+html-react-parser@^3.0.12:
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-3.0.12.tgz#c5c16bd68825ca43447d5fb7413d2bcec47c3b8f"
+  integrity sha512-eOXg0EvKhXjYjljd8gtBPzL8Pqf49uRrb9JAjYLlqYFr95E+HoCvGt0/w0J1E/fR1ArsEMWY+K6M4/wUuvaQ5Q==
   dependencies:
     domhandler "5.0.3"
-    html-dom-parser "3.1.3"
+    html-dom-parser "3.1.5"
     react-property "2.0.0"
     style-to-js "1.1.3"
 
@@ -2658,15 +2658,15 @@ react-fast-compare@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
-react-github-readme-button@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-github-readme-button/-/react-github-readme-button-1.0.9.tgz#38d1418c27c093817e7d3735d114ce20fe978477"
-  integrity sha512-B/7aMmDQsqmtKvZ3/CMuYJQA/gxQtjRB1gp+ZSofWnkHYn7F9qhvg5C0L5tS84dP44jXHasDcCtN3fn+aX/8lQ==
+react-github-readme-button@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-github-readme-button/-/react-github-readme-button-1.1.0.tgz#d961f0a4115159cffe6333b3a91617ee5e75c017"
+  integrity sha512-JG33dP5BsuDLuDjGOBaRmkNThK5OltFara+C7uiPbyFHpVap0z8sq3W5d9xWVP9t/7Ix1VGB3YI4Rr7ou/BRAw==
   dependencies:
-    dompurify "^2.4.3"
-    github-markdown-css "^5.1.0"
+    dompurify "^3.0.1"
+    github-markdown-css "^5.2.0"
     highlight.js "^11.7.0"
-    html-react-parser "^3.0.7"
+    html-react-parser "^3.0.12"
     marked "^4.2.5"
 
 react-helmet-async@^1.0.9:
