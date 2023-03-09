@@ -19,6 +19,7 @@ import Skills from "/src/components/skills/Skills";
 import ToggleTheme from "/src/components/toggle-theme/ToggleTheme";
 
 import "./App.scss";
+import Projects from "/src/components/projects/Projects";
 
 function App({ settings }) {
   const [theme, setTheme] = useState("light");
@@ -80,6 +81,7 @@ function App({ settings }) {
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}
                   />
+                  <Projects />
                   {/* <FrontendMentor username={settings.fem_username} /> */}
                   <Experience experience={settings.experience} />
                   <OpenSource usernames={settings.githubUsername} />
