@@ -3,7 +3,7 @@
   grid-template-columns: auto 2fr;
   height: 100%;
   column-gap: 1em;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
 
   .left {
     max-width: 40vw;
@@ -39,6 +39,7 @@
   .projectWrapper {
     grid-template-columns: 1fr;
     gap: 15px;
+    // padding: 0.5em 1em;
 
     .left {
       max-width: 100vw;
@@ -52,5 +53,11 @@
     .linksContainer {
       justify-self: center;
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projectWrapper {
+    padding: 1em 1em;
   }
 }
