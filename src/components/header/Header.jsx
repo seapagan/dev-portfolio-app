@@ -56,22 +56,23 @@ const Header = ({ name }) => {
               <Link
                 onClick={closeMenu}
                 className={styles.navLink}
+                to="projects-section"
+                spy={true}
+                smooth={true}
+                duration={1000}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeMenu}
+                className={styles.navLink}
                 to="experience-section"
                 spy={true}
                 smooth={true}
                 duration={1000}>
                 Experience
               </Link>
-            </li>
-            <li>
-              <a
-                onClick={closeMenu}
-                className={styles.navLink}
-                href="http://www.grantramsay.dev"
-                target="_blank"
-                rel="noopener noreferrer">
-                Projects
-              </a>
             </li>
             <li>
               <Link
