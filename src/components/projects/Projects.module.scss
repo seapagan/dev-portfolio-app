@@ -1,0 +1,11 @@
+.projects {
+  max-width: 80vw;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .projects {
+    max-width: 100vw;
+  }
+}

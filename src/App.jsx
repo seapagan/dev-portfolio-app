@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+import "./App.scss";
+
 import About from "/src/components/about/About";
 import BackToTop from "/src/components/back-to-top/BackToTop";
 import Contact from "/src/components/contact/Contact";
@@ -14,12 +16,10 @@ import Header from "/src/components/header/Header";
 import Hero from "/src/components/hero/Hero";
 import MainContent from "/src/components/main-content/MainContent";
 import OpenSource from "/src/components/open-source/OpenSource";
+import Projects from "/src/components/projects/Projects";
 import Route404 from "/src/components/route-404/Route404";
 import Skills from "/src/components/skills/Skills";
 import ToggleTheme from "/src/components/toggle-theme/ToggleTheme";
-
-import "./App.scss";
-import Projects from "/src/components/projects/Projects";
 
 function App({ settings }) {
   const [theme, setTheme] = useState("light");
@@ -81,8 +81,7 @@ function App({ settings }) {
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}
                   />
-                  <Projects />
-                  {/* <FrontendMentor username={settings.fem_username} /> */}
+                  <Projects projectList={settings.projects} delay={10} />
                   <Experience experience={settings.experience} />
                   <OpenSource usernames={settings.githubUsername} />
                   <Contact social={settings.social} />
