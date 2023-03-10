@@ -4,22 +4,22 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import "./App.scss";
+import About from "./components/about/About";
+import BackToTop from "./components/back-to-top/BackToTop";
+import Contact from "./components/contact/Contact";
+import Container from "./components/container/Container";
+import Experience from "./components/experience/Experience";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import MainContent from "./components/main-content/MainContent";
+import OpenSource from "./components/open-source/OpenSource";
+import Projects from "./components/projects/Projects";
+import Route404 from "./components/route-404/Route404";
+import Skills from "./components/skills/Skills";
+import ToggleTheme from "./components/toggle-theme/ToggleTheme";
 
-import About from "/src/components/about/About";
-import BackToTop from "/src/components/back-to-top/BackToTop";
-import Contact from "/src/components/contact/Contact";
-import Container from "/src/components/container/Container";
-import Experience from "/src/components/experience/Experience";
-import Footer from "/src/components/footer/Footer";
-import Header from "/src/components/header/Header";
-import Hero from "/src/components/hero/Hero";
-import MainContent from "/src/components/main-content/MainContent";
-import OpenSource from "/src/components/open-source/OpenSource";
-import Projects from "/src/components/projects/Projects";
-import Route404 from "/src/components/route-404/Route404";
-import Skills from "/src/components/skills/Skills";
-import ToggleTheme from "/src/components/toggle-theme/ToggleTheme";
+import "./App.scss";
 
 function App({ settings }) {
   const [theme, setTheme] = useState("light");
