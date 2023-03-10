@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 import styles from "./Header.module.scss";
 
-const Header = ({ name }) => {
+const Header = ({ name, projects }) => {
   // set a Ref on the checkbox used to open/close the CSS menu. This will be
   // used to ensure we can close it when clicked.
   const toggleRef = useRef();
@@ -52,17 +52,19 @@ const Header = ({ name }) => {
                 Skills
               </Link>
             </li>
-            <li>
-              <Link
-                onClick={closeMenu}
-                className={styles.navLink}
-                to="projects-section"
-                spy={true}
-                smooth={true}
-                duration={1000}>
-                Projects
-              </Link>
-            </li>
+            {projects && (
+              <li>
+                <Link
+                  onClick={closeMenu}
+                  className={styles.navLink}
+                  to="projects-section"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+                  Projects
+                </Link>
+              </li>
+            )}
             <li>
               <Link
                 onClick={closeMenu}

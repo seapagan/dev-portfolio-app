@@ -70,7 +70,7 @@ function App({ settings }) {
         <ToggleTheme mode={theme} toggleTheme={toggleTheme} />
         <Router>
           <div className="App">
-            <Header name={settings.name} />
+            <Header name={settings.name} projects={settings.projects} />
             <BackToTop />
             <MainContent>
               <Switch>
@@ -81,7 +81,9 @@ function App({ settings }) {
                     skills={settings.skills}
                     additionalSkills={settings.additionalSkills}
                   />
-                  <Projects projectList={settings.projects} delay={10} />
+                  {settings.projects && (
+                    <Projects projectList={settings.projects} delay={10} />
+                  )}
                   <Experience experience={settings.experience} />
                   <OpenSource usernames={settings.githubUsername} />
                   <Contact social={settings.social} />

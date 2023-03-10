@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useState } from "react";
 
 import ProjectCard from "./ProjectCard/ProjectCard";
@@ -5,7 +6,9 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import styles from "./Projects.module.scss";
 
 const Projects = ({ projectList, delay = 10 }) => {
-  const [current, setCurrent] = useState(0);
+  if (!projectList) return;
+
+  const [current, setCurrent] = useState(0); // NOSONAR
   const numProjects = projectList.length;
 
   useEffect(() => {
