@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { LinkExternalIcon } from "@primer/octicons-react";
 
@@ -14,7 +14,6 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className={styles.right}>
         <h3 className={styles.heading}>{project.name}</h3>
-
         <p className={styles.desc}>{project.desc}</p>
         <div className={styles.linksContainer}>
           {project.website && (
