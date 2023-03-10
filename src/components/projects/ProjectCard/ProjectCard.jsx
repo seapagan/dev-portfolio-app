@@ -17,13 +17,13 @@ const ProjectCard = ({ project }) => {
         <p className={styles.desc}>{project.desc}</p>
         <div className={styles.linksContainer}>
           {project.website && (
-            <a href={project.website}>
+            <a href={project.website} target="_blank" rel="noopener noreferrer">
               <LinkExternalIcon />
               &nbsp;Visit Website
             </a>
           )}
           {project.repo && (
-            <a href={project.repo}>
+            <a href={project.repo} target="_blank" rel="noopener noreferrer">
               <LinkExternalIcon />
               &nbsp;View Code
             </a>
