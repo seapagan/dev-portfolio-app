@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import { LinkExternalIcon } from "@primer/octicons-react";
 
-import styles from "./ProjectCard.module.scss";
+import CardWrapper from "../../card-wrapper/CardWrapper";
 
-import CardWrapper from "/src/components/card-wrapper/CardWrapper";
+import styles from "./ProjectCard.module.scss";
 
 const ProjectCard = ({ project }) => {
   return (

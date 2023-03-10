@@ -1,6 +1,6 @@
 import React from "react";
 
-import Social from "/src/components/social/Social";
+import Social from "../social/Social";
 
 import styles from "./Contact.module.scss";
 

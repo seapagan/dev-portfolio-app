@@ -10,9 +10,9 @@ import {
 
 import { GitHubReadmeButton } from "react-github-readme-button";
 
-import styles from "./RepoItem.module.scss";
+import CardWrapper from "../card-wrapper/CardWrapper";
 
-import CardWrapper from "/src/components/card-wrapper/CardWrapper";
+import styles from "./RepoItem.module.scss";
 
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;
