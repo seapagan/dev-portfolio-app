@@ -13,7 +13,7 @@
     "modern-css-reset": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-github-readme-button": "^1.2.1",
+    "react-github-readme-button": "^1.2.2",
     "react-helmet-async": "^1.0.9",
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^5.3.4",
