@@ -63,7 +63,7 @@ const Header = ({ name }) => {
                 Experience
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a
                 onClick={closeMenu}
                 className={styles.navLink}
@@ -72,7 +72,7 @@ const Header = ({ name }) => {
                 rel="noopener noreferrer">
                 Projects
               </a>
-            </li>
+            </li> */}
             <li>
               <Link
                 onClick={closeMenu}
