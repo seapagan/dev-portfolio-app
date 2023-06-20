@@ -28,6 +28,8 @@ There is a live working version on my own pages :
 - My Skills
   - Displays brief info about the main Skills you have, and a list of other
     perhaps lesser but still relevant skills.
+- My Projects
+  - Showcase the projects you are most proud of in a rotating carousel.
 - My Experience
   - List your Job/Project experience with dates, notable responsibilities etc.
 - OpenSource Projects.

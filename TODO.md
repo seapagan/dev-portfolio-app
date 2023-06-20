@@ -10,3 +10,9 @@ BUGS and Anoyances should go in the BUGS.md
 - Hero - Make it into a Carousel?
 - Consolidate all the link formatting into global classes
 - Add proper tooltips where required, using own custom css tooltip library
+- Project Display:
+  - add checkbox under container to enable / disable auto rotate.
+  - add hover left/right buttons
+  - add breadcrumb circular buttons at the bottom of the rotating area, shade
+    the current displayed one and allow to select any other.
+  - add some sort of animation on rotate?

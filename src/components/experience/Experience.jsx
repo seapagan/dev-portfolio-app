@@ -1,6 +1,6 @@
 import React from "react";
 
-import JobItem from "/src/components/experience/job/Job";
+import JobItem from "./job/Job";
 
 import styles from "./Experience.module.scss";
 

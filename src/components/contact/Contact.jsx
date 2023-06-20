@@ -1,6 +1,6 @@
 import React from "react";
 
-import Social from "/src/components/social/Social";
+import Social from "../social/Social";
 
 import styles from "./Contact.module.scss";
 
@@ -23,7 +23,7 @@ const Contact = ({ social }) => {
         </div>
         <p>
           This portfolio webpage was originally designed from scratch over a
-          weekend and is availiable for anyone to use under the MIT licence. No
+          weekend and is available for anyone to use under the MIT licence. No
           coding needed to customise, all the details are stored in one
           configuration file. See the link in the footer for the GitHub
           repository.

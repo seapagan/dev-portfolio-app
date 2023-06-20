@@ -1,0 +1,16 @@
+.projects {
+  display: grid;
+  max-width: 80vw;
+  height: 100%;
+  margin: auto;
+
+  .rotateCheck {
+    justify-self: end;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projects {
+    max-width: 100vw;
+  }
+}

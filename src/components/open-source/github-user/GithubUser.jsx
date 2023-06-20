@@ -7,8 +7,8 @@ import {
   MarkGithubIcon,
 } from "@primer/octicons-react";
 
-import RepoItem from "/src/components/repo-item/RepoItem";
-import RepoLoading from "/src/components/repo-loading/RepoLoading";
+import RepoItem from "../../repo-item/RepoItem";
+import RepoLoading from "../../repo-loading/RepoLoading";
 
 import styles from "./GithubUser.module.scss";
 
