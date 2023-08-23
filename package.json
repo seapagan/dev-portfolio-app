@@ -6,7 +6,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.17",
     "@primer/octicons-react": "^19.4.0",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.1.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "graphql": "^16.7.1",
