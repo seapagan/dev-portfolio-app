@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://www.gnramsay.com/",
   "dependencies": {
-    "@apollo/client": "^3.7.17",
+    "@apollo/client": "^3.8.4",
     "@primer/octicons-react": "^19.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
