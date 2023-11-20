@@ -5,9 +5,9 @@
   "homepage": "https://www.gnramsay.com/",
   "dependencies": {
     "@apollo/client": "^3.8.5",
-    "@primer/octicons-react": "^19.4.0",
+    "@primer/octicons-react": "^19.8.0",
     "@testing-library/dom": "^9.3.3",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "graphql": "^16.8.1",
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.1.0",
     "eslint": "^8.54.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^5.0.0",
