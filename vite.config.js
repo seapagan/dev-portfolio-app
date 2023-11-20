@@ -1,10 +1,10 @@
 // vite.config.js
-import { defineConfig } from "vite";
-import { splitVendorChunkPlugin } from "vite";
+import { defineConfig, splitVendorChunkPlugin } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { VitePluginRadar } from "vite-plugin-radar";
 import { visualizer } from "rollup-plugin-visualizer";
+import { ViteMinifyPlugin } from "vite-plugin-minify";
 
 export default defineConfig({
   plugins: [
@@ -16,6 +16,7 @@ export default defineConfig({
       },
     }),
     splitVendorChunkPlugin(),
+    ViteMinifyPlugin({}),
     visualizer(),
   ],
   build: {
