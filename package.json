@@ -49,6 +49,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^5.0.0",
+    "rollup-plugin-visualizer": "^5.9.2",
     "sass": "^1.69.5",
     "vite": "^4.4.11",
     "vite-plugin-radar": "^0.9.1",

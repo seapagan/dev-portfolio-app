@@ -1,8 +1,10 @@
 // vite.config.js
 import { defineConfig } from "vite";
+import { splitVendorChunkPlugin } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { VitePluginRadar } from "vite-plugin-radar";
+import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   plugins: [
@@ -13,5 +15,24 @@ export default defineConfig({
         id: "", // Your Google Analytics tracking ID (V4) qeg. G-XXXXXXXXXX
       },
     }),
+    splitVendorChunkPlugin(),
+    visualizer(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("react-github-readme-button")) {
+            return "github-button";
+          }
+          if (id.includes("highlight.js")) {
+            return "highlight.js";
+          }
+          if (id.includes("@apollo")) {
+            return "@apollo";
+          }
+        },
+      },
+    },
+  },
 });
