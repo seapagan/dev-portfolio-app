@@ -25,3 +25,12 @@ yarn-error.log*
 # specific to this app
 settings.js
 dist
+
+# yarn stuff
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

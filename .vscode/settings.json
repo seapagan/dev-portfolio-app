@@ -1,7 +1,7 @@
 {
   "css.customData": ["./.vscode/custom.css-data.json"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -34,5 +34,10 @@
   "git.enableCommitSigning": true,
   "prettier.arrowParens": "avoid",
   "prettier.jsxBracketSameLine": true,
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "[javascript][javascriptreact][markdown][python][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
 }
