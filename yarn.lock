@@ -1980,6 +1980,7 @@ __metadata:
     react-scroll: "npm:^1.8.9"
     sass: "npm:^1.69.5"
     vite: "npm:^4.4.11"
+    vite-plugin-radar: "npm:^0.9.1"
     vite-plugin-svgr: "npm:^3.2.0"
   languageName: unknown
   linkType: soft
@@ -5677,6 +5678,15 @@ __metadata:
   version: 1.0.1
   resolution: "value-equal@npm:1.0.1"
   checksum: 79068098355483ef29f4d3753999ad880875b87625d7e9055cad9346ea4b7662aad3a66f87976801b0dd7a6f828ba973d28b1669ebcd37eaf88cc5f687c1a691
+  languageName: node
+  linkType: hard
+
+"vite-plugin-radar@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "vite-plugin-radar@npm:0.9.1"
+  peerDependencies:
+    vite: ^2.0.0 || ^3.0.0 || ^4.0.0
+  checksum: 1ddd76fb80eeafd7399e4665e9b193d30725d3697419625a44801991ace02969c0f0f1073c98a164ae768f73b669fc50640bff5895d3dcf9776126eb7ce014a8
   languageName: node
   linkType: hard
 
