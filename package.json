@@ -6,6 +6,7 @@
   "dependencies": {
     "@apollo/client": "^3.8.5",
     "@primer/octicons-react": "^19.8.0",
+    "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -50,6 +51,7 @@
     "gh-pages": "^5.0.0",
     "sass": "^1.69.5",
     "vite": "^4.4.11",
+    "vite-plugin-radar": "^0.9.1",
     "vite-plugin-svgr": "^3.2.0"
   }
 }
