@@ -71,14 +71,14 @@ build`. This will create a production-ready website in the `dist` folder. This
 contents of this folder being the root to serve. Again, the React Deployment
 pages have good information if you are new at this.
 
-:::tip[Test the bundle locally]
+:::tip[Test the Production bundle locally]
 
 If you want to test the production bundle locally, you can use the
 [`serve`](https://www.npmjs.com/package/serve) package to serve the bundle
 locally.
 
-For `yarn`, simply run `yarn dlx serve -s dist` from the root folder of the
-repository ,while for `npm` you can either run `npx serve -s dist` or install it
+For **yarn**, simply run `yarn dlx serve -s dist` from the root folder of the
+repository ,while for **npm** you can either run `npx serve -s dist` or install it
 globally with `npm install -g serve` and then run `serve -s dist` from the root
 folder. This will serve the production bundle at
 [http://localhost:3000](http://localhost:3000)
@@ -87,11 +87,17 @@ folder. This will serve the production bundle at
 
 ## Deploy the application
 
+Since the production bundle is just static HTML, CSS and JavaScript files, you
+can deploy it to any web hosting provider.
+
 I no longer recommend deploying to GitHub pages - since your GitHub Personal
 Access Token is stored in the final production build, GitHub will then detect
 this and cancel it, hence the OpenSource section will fail. Look at
 [Netlify][netlify] or [Vercel][vercel] instead. Obviously, if you have your own
 hosting you can upload the production build and serve that as any other site.
+
+Again, check the Create-React-App [website][deploy] for more information on
+deployment.
 
 [react]: https://reactjs.org/
 [nodejs]: https://nodejs.org/en/
