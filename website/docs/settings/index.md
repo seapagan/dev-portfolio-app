@@ -86,6 +86,8 @@ githubUsername: ["my-github-username"],
 // ...
 ```
 
+The `name` value will be used in the title of the page, and in the page header.
+
 Note that the `githubUsername` setting is an array, this is because you can
 specify multiple usernames. This is useful if you have multiple GitHub accounts.
 

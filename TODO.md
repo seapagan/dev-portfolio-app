@@ -10,3 +10,8 @@ BUGS and Anoyances should go in the BUGS.md
 - Hero - Make it into a Carousel?
 - Consolidate all the link formatting into global classes
 - Add proper tooltips where required, using own custom css tooltip library
+- Let the page header be sticky
+- Contact Me - Allow changing the text for this section, add custom links etc.
+- OpenSource - add a list of repos that should not be displayed. Likewise, add a
+  list of repos that should be the only ones displayed.
+- OpenSource - hide forked repos
