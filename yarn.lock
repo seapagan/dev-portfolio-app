@@ -2274,7 +2274,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     react-github-readme-button: "npm:^1.2.2"
     react-helmet-async: "npm:^1.0.9"
-    react-loader-spinner: "npm:^5.3.4"
+    react-loader-spinner: "npm:^5.4.5"
     react-router-dom: "npm:^5.3.4"
     react-scroll: "npm:^1.8.9"
     rollup-plugin-visualizer: "npm:^5.9.2"
@@ -5144,9 +5144,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-loader-spinner@npm:^5.3.4":
-  version: 5.3.4
-  resolution: "react-loader-spinner@npm:5.3.4"
+"react-loader-spinner@npm:^5.4.5":
+  version: 5.4.5
+  resolution: "react-loader-spinner@npm:5.4.5"
   dependencies:
     react-is: "npm:^18.2.0"
     styled-components: "npm:^5.3.5"
@@ -5154,7 +5154,7 @@ __metadata:
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 929b4004d1f0ee770af7276804366bdcceb3c14610783f78b4c5d2c3e8053c0a18da58e048b49584aec2145cbafb3460c43929f4a824316a54736b44ac9dbe95
+  checksum: c6f59fd4f92da931fe56cc039273a2f66f9fe08932ce7a000196df2309e46a5cac2b125c708f80801c1bb886de1ca7c1039c5e91e77db6a93b78b928858224b0
   languageName: node
   linkType: hard
 
