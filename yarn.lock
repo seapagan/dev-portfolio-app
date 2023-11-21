@@ -2276,7 +2276,7 @@ __metadata:
     react-helmet-async: "npm:^1.0.9"
     react-loader-spinner: "npm:^5.4.5"
     react-router-dom: "npm:^5.3.4"
-    react-scroll: "npm:^1.8.9"
+    react-scroll: "npm:^1.9.0"
     rollup-plugin-visualizer: "npm:^5.9.2"
     sass: "npm:^1.69.5"
     vite: "npm:^5.0.0"
@@ -5208,16 +5208,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:^1.8.9":
-  version: 1.8.9
-  resolution: "react-scroll@npm:1.8.9"
+"react-scroll@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "react-scroll@npm:1.9.0"
   dependencies:
     lodash.throttle: "npm:^4.1.1"
     prop-types: "npm:^15.7.2"
   peerDependencies:
     react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 2a725ecab24ea0d2fbb34c99e0fd833548d6960d694b451152f0b42f3dda90d39389b6dbd768ed3d7010fd731b707c0b20191fdb09511bd891ec888478b8c006
+  checksum: bcaa045740351ba1373d2e3f236b1ff0d383e4e5efd43d87644c165a3c1c4988bd0361515c487688daf39c122b035c8a014fcd9184f51deb4a0d2c232ac5fb61
   languageName: node
   linkType: hard
 
