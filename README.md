@@ -1,6 +1,6 @@
 # Developers Portfolio Website
 
-![Website Preview](docs/images/webpage_image.png)
+![Website Preview](website/docs/intro/img/webpage_image.png)
 
 A totally stand-alone React based developers portfolio website, taking all data
 from a local JSON file. The Application is **Fully Responsive**, reads your
