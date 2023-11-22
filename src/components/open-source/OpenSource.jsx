@@ -6,6 +6,9 @@ import GithubUser from "/src/components/open-source/github-user/GithubUser";
 import styles from "./OpenSource.module.scss";
 
 const OpenSource = ({ usernames }) => {
+  if (!usernames || !usernames.length) {
+    return null;
+  }
   return (
     <section id="openSource-section">
       <h2 className="section__title">OpenSource Projects</h2>
