@@ -46,7 +46,7 @@ images.
 import heroLogo from "/src/assets/svg/undraw_Code_thinking.svg";
 
 // Used in the 'My Skills' section
-import { ReactComponent as apiLogo } from "/src/assets/icons/api.svg";
+import apiLogo from "/src/assets/icons/api.svg";
 import cloudLogo from "/src/assets/icons/cloud.png";
 import cssLogo from "/src/assets/icons/css3.png";
 import databaseLogo from "/src/assets/icons/database.png";
