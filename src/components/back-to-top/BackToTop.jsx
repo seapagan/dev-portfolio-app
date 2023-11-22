@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReactComponent as BackToTopIcon } from "/src/assets/icons/back-to-top.svg";
+import BackToTopIcon from "/src/assets/icons/back-to-top.svg?react";
 import { animateScroll as scroll } from "react-scroll";
 
 import styles from "./BackToTop.module.scss";
