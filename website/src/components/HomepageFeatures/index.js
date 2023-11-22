@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "No coding required!",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("@site/static/img/undraw_code.svg").default,
     description: (
       <>
         Just edit the example settings file, build the production version, and
@@ -15,12 +15,14 @@ const FeatureList = [
   },
   {
     title: "Mobile Friendly",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: <>Fully responsive design that works on any device.</>,
+    Svg: require("@site/static/img/undraw_rocket.svg").default,
+    description: (
+      <>Fully responsive design that works on any device, right out the box.</>
+    ),
   },
   {
     title: "MIT Licensed",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("@site/static/img/undraw_note.svg").default,
     description: (
       <>
         This project is licensed under the terms of the MIT license. It is free
