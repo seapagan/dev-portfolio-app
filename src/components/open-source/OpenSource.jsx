@@ -1,12 +1,12 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import Wrapper from "/src/components/card-wrapper/CardWrapper";
 import GithubUser from "/src/components/open-source/github-user/GithubUser";
 
 import styles from "./OpenSource.module.scss";
 
 const OpenSource = ({ usernames }) => {
-  if (!usernames || !usernames.length) {
+  if (!usernames?.length) {
     return null;
   }
   return (
@@ -21,6 +21,9 @@ const OpenSource = ({ usernames }) => {
       })}
     </section>
   );
+};
+OpenSource.propTypes = {
+  usernames: PropTypes.array.isRequired,
 };
 
 export default OpenSource;

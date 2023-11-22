@@ -69,7 +69,7 @@ function App({ settings }) {
         <ToggleTheme mode={theme} toggleTheme={toggleTheme} />
         <Router>
           <div className="App">
-            <Header name={settings.name} />
+            <Header name={settings.name} usernames={settings.githubUsername} />
             <BackToTop />
             <MainContent>
               <Switch>
