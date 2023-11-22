@@ -2,7 +2,7 @@
 // values to suit your own details
 
 // comment out these imports if you are not using the particular icon
-import { ReactComponent as apiLogo } from "/src/assets/icons/api.svg";
+import apiLogo from "/src/assets/icons/api.svg";
 import cloudLogo from "/src/assets/icons/cloud.png";
 import cssLogo from "/src/assets/icons/css3.png";
 import databaseLogo from "/src/assets/icons/database.png";
