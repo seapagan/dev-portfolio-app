@@ -1,6 +1,6 @@
 # Developers Portfolio Website
 
-![Website Preview](website/docs/intro/img/webpage_image.png)
+![Website Preview](website/docs/introduction/img/webpage_image.png)
 
 A totally stand-alone React based developers portfolio website, taking all data
 from a local JSON file. The Application is **Fully Responsive**, reads your
@@ -80,7 +80,7 @@ are the contents of the `./dist` directory.
 
 ### Install the dependencies
 
-From the root project directory, either run `npm install` or `yarn` depending on
+From the project root directory, either run `npm install` or `yarn` depending on
 your own personal preference. I use Yarn personally, so there is a `yarn.lock`
 file in the repo.
 
@@ -101,7 +101,7 @@ changing**.
 
 ### Build the application
 
-From the web application root folder, either run ```npm run build``` or ```yarn
+From the project root folder, either run ```npm run build``` or ```yarn
 build```. This will create a production-ready website in the
 [`./dist`](./dist) folder. This `/.dist` folder is the one you need to upload
 to your hosting provider, with the **contents of this folder** being the root to
@@ -119,6 +119,8 @@ hosting you can upload the production build and serve that as any other site.
 ## Attributions
 
 - Day/Night toggle icons are from [IconScout](https://iconscout.com)
+- SVG graphics on the [website](https://portfolio.seapagan.net) are from
+  [Undraw](https://undraw.co)
 
 ## TODO
 
