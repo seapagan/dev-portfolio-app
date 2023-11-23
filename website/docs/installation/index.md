@@ -36,6 +36,7 @@ already done:
 
 ```console
 $ corepack enable
+$ yarn set version stable
 ```
 
 ## Install the dependencies
@@ -73,15 +74,11 @@ pages have good information if you are new at this.
 
 :::tip[Test the Production bundle locally]
 
-If you want to test the production bundle locally, you can use the
-[`serve`](https://www.npmjs.com/package/serve) package to serve the bundle
-locally.
+If you want to test the production bundle locally, you can use built in preview
+server that comes with `vite`.
 
-For **yarn**, simply run `yarn dlx serve -s dist` from the root folder of the
-repository ,while for **npm** you can either run `npx serve -s dist` or install it
-globally with `npm install -g serve` and then run `serve -s dist` from the root
-folder. This will serve the production bundle at
-[http://localhost:3000](http://localhost:3000)
+Use either `yarn preview` or `npm run preview` to start the preview server. This
+will automatically open a browser window for you.
 
 :::
 
