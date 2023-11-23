@@ -134,7 +134,9 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} seapagan. Built with Docusaurus.`,
+        copyright:
+          `Copyright © ${new Date().getFullYear()} seapagan. ` +
+          "Built with Docusaurus.",
       },
       prism: {
         theme: prismThemes.github,

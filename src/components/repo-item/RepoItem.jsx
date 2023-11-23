@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   DotFillIcon,
   GitCommitIcon,
@@ -10,9 +8,9 @@ import {
 
 import { GitHubReadmeButton } from "react-github-readme-button";
 
-import CardWrapper from "/src/components/card-wrapper/CardWrapper";
-
 import styles from "./RepoItem.module.scss";
+
+import CardWrapper from "/src/components/card-wrapper/CardWrapper";
 
 const RepoItem = ({ repo }) => {
   const totalCommits = repo.defaultBranchRef.target.history.totalCount;

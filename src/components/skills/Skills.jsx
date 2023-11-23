@@ -1,5 +1,3 @@
-import React from "react";
-
 import SkillItem from "./skill-item/SkillItem";
 
 import styles from "./Skills.module.scss";

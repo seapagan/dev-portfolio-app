@@ -1,8 +1,6 @@
-import React from "react";
+import styles from "./Contact.module.scss";
 
 import Social from "/src/components/social/Social";
-
-import styles from "./Contact.module.scss";
 
 const Contact = ({ social }) => {
   return (

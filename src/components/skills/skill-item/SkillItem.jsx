@@ -1,5 +1,3 @@
-import React from "react";
-
 import CardWrapper from "../../card-wrapper/CardWrapper";
 
 import styles from "./SkillItem.module.scss";
