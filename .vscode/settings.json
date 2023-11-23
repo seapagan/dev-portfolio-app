@@ -16,7 +16,6 @@
   "emmet.triggerExpansionOnTab": true,
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -33,7 +32,7 @@
   "files.trimTrailingWhitespace": true,
   "git.enableCommitSigning": true,
   "prettier.arrowParens": "avoid",
-  "prettier.jsxBracketSameLine": true,
+  "prettier.bracketSameLine": true,
   "prettier.tabWidth": 2,
   "[javascript][javascriptreact][markdown][python][typescript]": {
     "editor.codeActionsOnSave": {

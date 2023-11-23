@@ -7,10 +7,12 @@ import {
   MarkGithubIcon,
 } from "@primer/octicons-react";
 
-import RepoItem from "/src/components/repo-item/RepoItem";
-import RepoLoading from "/src/components/repo-loading/RepoLoading";
+import PropTypes from "prop-types";
 
 import styles from "./GithubUser.module.scss";
+
+import RepoItem from "/src/components/repo-item/RepoItem";
+import RepoLoading from "/src/components/repo-loading/RepoLoading";
 
 const GithubUser = ({ username }) => {
   const githubApiQuery = gql`
@@ -110,7 +112,9 @@ const GithubUser = ({ username }) => {
   if (error)
     return (
       <section id="openSourceUser">
-        <div>{`Error! ${error.message}`}</div>
+        <div>
+          Error! <strong>{`${error.message}`}</strong>
+        </div>
       </section>
     );
 
@@ -150,53 +154,52 @@ const GithubUser = ({ username }) => {
       {loading ? (
         <RepoLoading />
       ) : (
-        <>
-          <div className={styles.openSource}>
-            {/* <div className={styles.header}> */}
-            <h3 onClick={toggleUser} className={styles.userTitle}>
-              <span className={styles.foldIcon}>
-                {showUser ? (
-                  <ChevronDownIcon size="medium" />
-                ) : (
-                  <ChevronRightIcon size="medium" />
-                )}
-              </span>
-              Github Account “{username}”
-            </h3>
-            {/* </div> */}
+        <div className={styles.openSource}>
+          {/* <div className={styles.header}> */}
+          <h3 onClick={toggleUser} className={styles.userTitle}>
+            <span className={styles.foldIcon}>
+              {showUser ? (
+                <ChevronDownIcon size="medium" />
+              ) : (
+                <ChevronRightIcon size="medium" />
+              )}
+            </span>
+            Github Account “{username}”
+          </h3>
+          {/* </div> */}
 
-            {showUser && (
-              <>
-                <div className={styles.url}>
-                  <MarkGithubIcon />
-                  <a
-                    href={data.user.url}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    view repositories on GitHub
-                  </a>
+          {showUser && (
+            <>
+              <div className={styles.url}>
+                <MarkGithubIcon />
+                <a
+                  href={data.user.url}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  view repositories on GitHub
+                </a>
+              </div>
+              <div className={styles.openSourceGrid}>
+                {returnPinned()}
+                <div className={styles.publicHeader}>
+                  <div
+                    onClick={togglePublicRepos}
+                    className={styles.publicTitle}>
+                    {showPublicRepos ? "Hide" : "Show more"}
+                    &nbsp;Public Repositories.
+                  </div>
                 </div>
-                <div className={styles.openSourceGrid}>
-                  <>
-                    {returnPinned()}
-                    <div className={styles.publicHeader}>
-                      <div
-                        onClick={togglePublicRepos}
-                        className={styles.publicTitle}>
-                        {showPublicRepos ? "Hide" : "Show more"}
-                        &nbsp;Public Repositories.
-                      </div>
-                    </div>
-                    {showPublicRepos ? returnPublic() : ""}
-                  </>
-                </div>
-              </>
-            )}
-          </div>
-        </>
+                {showPublicRepos ? returnPublic() : ""}
+              </div>
+            </>
+          )}
+        </div>
       )}
     </>
   );
+};
+GithubUser.propTypes = {
+  username: PropTypes.string.isRequired,
 };
 
 export default GithubUser;

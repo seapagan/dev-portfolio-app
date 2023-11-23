@@ -24,12 +24,6 @@
     "start": "vite",
     "build": "vite build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -45,13 +39,16 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.54.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^6.1.0",
     "rollup-plugin-visualizer": "^5.9.2",
     "sass": "^1.69.5",
     "vite": "^4.0.0",
+    "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-minify": "^1.5.2",
     "vite-plugin-radar": "^0.9.1",
     "vite-plugin-svgr": "^4.2.0"
