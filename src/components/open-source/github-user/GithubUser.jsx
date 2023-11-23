@@ -7,10 +7,12 @@ import {
   MarkGithubIcon,
 } from "@primer/octicons-react";
 
-import RepoItem from "/src/components/repo-item/RepoItem";
-import RepoLoading from "/src/components/repo-loading/RepoLoading";
+import PropTypes from "prop-types";
 
 import styles from "./GithubUser.module.scss";
+
+import RepoItem from "/src/components/repo-item/RepoItem";
+import RepoLoading from "/src/components/repo-loading/RepoLoading";
 
 const GithubUser = ({ username }) => {
   const githubApiQuery = gql`
@@ -110,7 +112,9 @@ const GithubUser = ({ username }) => {
   if (error)
     return (
       <section id="openSourceUser">
-        <div>{`Error! ${error.message}`}</div>
+        <div>
+          Error! <strong>{`${error.message}`}</strong>
+        </div>
       </section>
     );
 
@@ -193,6 +197,9 @@ const GithubUser = ({ username }) => {
       )}
     </>
   );
+};
+GithubUser.propTypes = {
+  username: PropTypes.string.isRequired,
 };
 
 export default GithubUser;

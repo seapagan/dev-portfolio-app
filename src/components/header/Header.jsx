@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 
+import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 
 import styles from "./Header.module.scss";
@@ -62,17 +63,20 @@ const Header = ({ name, usernames }) => {
               Experience
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              className={styles.navLink}
-              to="openSource-section"
-              spy={true}
-              smooth={true}
-              duration={1000}>
-              Open-Source
-            </Link>
-          </li>
+          {/* only display the 'Open-Source section if we have username(s) */}
+          {usernames?.length > 0 && (
+            <li>
+              <Link
+                onClick={closeMenu}
+                className={styles.navLink}
+                to="openSource-section"
+                spy={true}
+                smooth={true}
+                duration={1000}>
+                Open-Source
+              </Link>
+            </li>
+          )}
           <li>
             <Link
               onClick={closeMenu}
@@ -89,6 +93,10 @@ const Header = ({ name, usernames }) => {
       </nav>
     </header>
   );
+};
+Header.propTypes = {
+  name: PropTypes.string.isRequired,
+  usernames: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Header;
