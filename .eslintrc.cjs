@@ -1,38 +1,42 @@
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "react-app",
-    "react-app/jest",
+module.exports = {
+  root: true,
+  env: { browser: true, es2021: true },
+  extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "prettier",
   ],
-  "parserOptions": {
+  ignorePatterns: ["dist", ".eslintrc.cjs", "build"],
+  parserOptions: {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  "plugins": ["react", "react-hooks", "simple-import-sort", "import"],
-  "rules": {
+  settings: { react: { version: "detect" } },
+  plugins: ["react-refresh", "simple-import-sort", "import"],
+  rules: {
+    "react-refresh/only-export-components": [
+      "warn",
+      { allowConstantExport: true },
+    ],
     "import/no-duplicates": "error",
     "import/first": "error",
     "import/newline-after-import": [
       "error",
       {
-        "count": 1
-      }
+        "count": 1,
+      },
     ],
     "indent": [
       "error",
       2,
       {
-        "SwitchCase": 1
-      }
+        "SwitchCase": 1,
+      },
     ],
     "linebreak-style": ["error", "unix"],
     "max-len": [
@@ -42,22 +46,23 @@
       {
         "ignoreComments": false,
         "ignoreStrings": false,
-        "ignoreUrls": true
-      }
+        "ignoreUrls": true,
+      },
     ],
     "no-unused-vars": "warn",
     "quotes": ["error", "double"],
     "react/prop-types": [
       "error",
       {
-        "skipUndeclared": false
-      }
+        "skipUndeclared": false,
+      },
     ],
     "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
     "semi": ["error", "always"],
     "padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": "*", "next": "return" }
+      { "blankLine": "always", "prev": "*", "next": "return" },
     ],
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": [
@@ -82,9 +87,9 @@
           // Imports starting with `./`
           ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
           // Style imports
-          ["^.+\\.s?css$"]
-        ]
-      }
-    ]
-  }
-}
+          ["^.+\\.s?css$"],
+        ],
+      },
+    ],
+  },
+};
