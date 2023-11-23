@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2021: true },
+  env: { browser: true, es2021: true, node: true },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "build"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "build", ".docusaurus"],
   parserOptions: {
     "ecmaFeatures": {
       "jsx": true,
@@ -54,7 +54,7 @@ module.exports = {
     "react/prop-types": [
       "error",
       {
-        "skipUndeclared": false,
+        "skipUndeclared": true,
       },
     ],
     "react/react-in-jsx-scope": "off",

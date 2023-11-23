@@ -17,7 +17,7 @@ export default defineConfig({
         id: "", // Your Google Analytics tracking ID (V4) qeg. G-XXXXXXXXXX
       },
     }),
-    // eslint(),
+    eslint(),
     splitVendorChunkPlugin(),
     ViteMinifyPlugin({}),
     visualizer(),
