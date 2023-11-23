@@ -1,10 +1,12 @@
 // vite.config.js
-import { defineConfig, splitVendorChunkPlugin } from "vite";
 import react from "@vitejs/plugin-react";
-import svgr from "vite-plugin-svgr";
-import { VitePluginRadar } from "vite-plugin-radar";
+
 import { visualizer } from "rollup-plugin-visualizer";
+import { defineConfig, splitVendorChunkPlugin } from "vite";
+import eslint from "vite-plugin-eslint";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
+import { VitePluginRadar } from "vite-plugin-radar";
+import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [
@@ -15,6 +17,7 @@ export default defineConfig({
         id: "", // Your Google Analytics tracking ID (V4) qeg. G-XXXXXXXXXX
       },
     }),
+    // eslint(),
     splitVendorChunkPlugin(),
     ViteMinifyPlugin({}),
     visualizer(),
