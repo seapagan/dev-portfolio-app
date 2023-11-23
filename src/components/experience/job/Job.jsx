@@ -1,9 +1,7 @@
-import React from "react";
+import styles from "./Job.module.scss";
 
 import CardWrapper from "/src/components/card-wrapper/CardWrapper";
 import Task from "/src/components/experience/tasks/Task";
-
-import styles from "./Job.module.scss";
 
 const JobItem = ({ job }) => {
   return (

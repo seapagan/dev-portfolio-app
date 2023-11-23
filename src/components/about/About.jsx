@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 import styles from "./About.module.scss";
 
@@ -13,6 +13,9 @@ const About = ({ about }) => {
       </div>
     </section>
   );
+};
+About.propTypes = {
+  about: PropTypes.array.isRequired,
 };
 
 export default About;

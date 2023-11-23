@@ -1,9 +1,8 @@
-import React from "react";
-
-import BackToTopIcon from "/src/assets/icons/back-to-top.svg?react";
 import { animateScroll as scroll } from "react-scroll";
 
 import styles from "./BackToTop.module.scss";
+
+import BackToTopIcon from "/src/assets/icons/back-to-top.svg?react";
 
 const scrollToTop = () => {
   scroll.scrollToTop();

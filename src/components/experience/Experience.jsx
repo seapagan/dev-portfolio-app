@@ -1,8 +1,6 @@
-import React from "react";
+import styles from "./Experience.module.scss";
 
 import JobItem from "/src/components/experience/job/Job";
-
-import styles from "./Experience.module.scss";
 
 const Experience = ({ experience }) => {
   return (

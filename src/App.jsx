@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import "./App.scss";
 
 import About from "/src/components/about/About";
 import BackToTop from "/src/components/back-to-top/BackToTop";
@@ -17,8 +19,6 @@ import OpenSource from "/src/components/open-source/OpenSource";
 import Route404 from "/src/components/route-404/Route404";
 import Skills from "/src/components/skills/Skills";
 import ToggleTheme from "/src/components/toggle-theme/ToggleTheme";
-
-import "./App.scss";
 
 function App({ settings }) {
   const [theme, setTheme] = useState("light");

@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./ToggleTheme.module.scss";
 
 const ToggleTheme = ({ mode, toggleTheme }) => {
