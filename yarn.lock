@@ -2240,7 +2240,7 @@ __metadata:
     react-loader-spinner: "npm:^5.4.5"
     react-router-dom: "npm:^5.3.4"
     react-scroll: "npm:^1.9.0"
-    rollup-plugin-visualizer: "npm:^5.9.2"
+    rollup-plugin-visualizer: "npm:^5.9.3"
     sass: "npm:^1.69.5"
     vite: "npm:^4.0.0"
     vite-plugin-eslint: "npm:^1.8.1"
@@ -5388,22 +5388,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.9.2":
-  version: 5.9.2
-  resolution: "rollup-plugin-visualizer@npm:5.9.2"
+"rollup-plugin-visualizer@npm:^5.9.3":
+  version: 5.9.3
+  resolution: "rollup-plugin-visualizer@npm:5.9.3"
   dependencies:
     open: "npm:^8.4.0"
     picomatch: "npm:^2.3.1"
     source-map: "npm:^0.7.4"
     yargs: "npm:^17.5.1"
   peerDependencies:
-    rollup: 2.x || 3.x
+    rollup: 2.x || 3.x || 4.x
   peerDependenciesMeta:
     rollup:
       optional: true
   bin:
     rollup-plugin-visualizer: dist/bin/cli.js
-  checksum: e6280bed797084e9f9ee06726e46706e32854fc7647c5c5bcec68a9be8ca8e6fbf7f8a0b2f76255e9df72e84135a7d57eb2662b6cfd68496a1ef60fa33597eaf
+  checksum: 71c2b01af69cc1d6a72b4a7ede95a0d18c39a01316892a967eb53865762411f5ea73ce15e4b456bc3d34fffa39cef584b8e47857315811e3883abc929e41112d
   languageName: node
   linkType: hard
 
