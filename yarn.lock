@@ -2329,7 +2329,7 @@ __metadata:
     vite: "npm:^5.0.5"
     vite-plugin-eslint: "npm:^1.8.1"
     vite-plugin-minify: "npm:^1.5.2"
-    vite-plugin-radar: "npm:^0.9.1"
+    vite-plugin-radar: "npm:^0.9.2"
     vite-plugin-svgr: "npm:^4.2.0"
   languageName: unknown
   linkType: soft
@@ -6351,12 +6351,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-radar@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "vite-plugin-radar@npm:0.9.1"
+"vite-plugin-radar@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "vite-plugin-radar@npm:0.9.2"
   peerDependencies:
-    vite: ^2.0.0 || ^3.0.0 || ^4.0.0
-  checksum: 1ddd76fb80eeafd7399e4665e9b193d30725d3697419625a44801991ace02969c0f0f1073c98a164ae768f73b669fc50640bff5895d3dcf9776126eb7ce014a8
+    vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+  checksum: 007d7fa2c6c206225ac730035c443850033c38e009d7d22b216ae1189b3cb9a8e4b82eb1cc01c049b74e41c87c432f6f2b3b122ca9972ae432ca3579d38d17d9
   languageName: node
   linkType: hard
 
