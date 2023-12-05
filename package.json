@@ -2,6 +2,7 @@
   "name": "dev-portfolio-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "homepage": "https://www.gnramsay.com/",
   "dependencies": {
     "@apollo/client": "^3.8.8",
