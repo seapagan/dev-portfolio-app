@@ -15,9 +15,9 @@ export default defineConfig({
     VitePluginRadar({
       analytics: {
         id: "", // Your Google Analytics tracking ID (V4) qeg. G-XXXXXXXXXX
-      },
-      config: {
-        cookie_flags: "SameSite=None;Secure",
+        config: {
+          cookie_flags: "SameSite=None;Secure",
+        },
       },
     }),
     eslint(),
