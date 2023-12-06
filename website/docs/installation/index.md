@@ -54,8 +54,13 @@ to your own requirements.
 this, that section will not work. Define your PAT on GitHub (it is account wide,
 not per-repository) [here](https://github.com/settings/tokens) under Personal
 access tokens
+3) Add your Google Analytics Tracking ID to the `VITE_GA_ID` key in the `.env`
+   if you want to use Google Analytics to track visitors to your portfolio app.
 
-These files are the ONLY files you should be editing! Nothing else needs changing.
+These files are the ONLY files you should be editing! Nothing else needs
+changing.
+
+See the [`.env file`](./dotenv) page for more information on the `.env` file.
 
 ## Run the application locally
 
