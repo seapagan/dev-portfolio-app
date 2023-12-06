@@ -58,6 +58,12 @@ function App({ settings }) {
     localStorage.setItem("dev-portfolio-theme", newTheme);
   };
 
+  // this is a hack to stop the console warning from Apollo client to install
+  // the dev tools extension while in production mode
+  if (import.meta.env.MODE === "production") {
+    globalThis.__DEV__ = false;
+  }
+
   return (
     <HelmetProvider>
       <Helmet>
