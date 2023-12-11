@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0",
     "react-github-readme-button": "^1.2.3",
     "react-helmet-async": "^2.0.3",
-    "react-loader-spinner": "^5.4.5",
+    "react-loader-spinner": "^6.1.0",
     "react-router-dom": "^5.3.4",
     "react-scroll": "^1.9.0"
   },
