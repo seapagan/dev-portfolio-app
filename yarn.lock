@@ -2343,7 +2343,7 @@ __metadata:
     react-scroll: "npm:^1.9.0"
     rollup-plugin-visualizer: "npm:^5.10.0"
     sass: "npm:^1.69.5"
-    vite: "npm:^5.0.6"
+    vite: "npm:^5.0.10"
     vite-plugin-eslint: "npm:^1.8.1"
     vite-plugin-minify: "npm:^1.5.2"
     vite-plugin-radar: "npm:^0.9.2"
@@ -6391,9 +6391,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.6":
-  version: 5.0.6
-  resolution: "vite@npm:5.0.6"
+"vite@npm:^5.0.10":
+  version: 5.0.10
+  resolution: "vite@npm:5.0.10"
   dependencies:
     esbuild: "npm:^0.19.3"
     fsevents: "npm:~2.3.3"
@@ -6427,7 +6427,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 5c0f29e81865c8a4992d7a13a9c736b79a6caa4cdd98ade73ab5923e928818dddc23a954c99a3e1de5d59a0e004e7e86344c18a955e6d06194d7e394d7027e20
+  checksum: d666b2760d2a7ea1d0d35f67c042053e562144f80554be4e4dc58e607fd5f62193cd203d73ab2e315df66830d8b9d9a2e3509d0208bdef1b2e92e0a5c364df84
   languageName: node
   linkType: hard
 
