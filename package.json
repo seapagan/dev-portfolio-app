@@ -40,7 +40,7 @@
     "gh-pages": "^6.1.0",
     "rollup-plugin-visualizer": "^5.10.0",
     "sass": "^1.69.5",
-    "vite": "^5.0.6",
+    "vite": "^5.0.12",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-minify": "^1.5.2",
     "vite-plugin-radar": "^0.9.2",
