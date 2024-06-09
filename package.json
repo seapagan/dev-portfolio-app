@@ -39,7 +39,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "gh-pages": "^6.1.1",
     "rollup-plugin-visualizer": "^5.12.0",
-    "sass": "^1.69.5",
+    "sass": "^1.77.4",
     "vite": "^5.1.7",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-minify": "^1.5.2",
