@@ -11,6 +11,14 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
 
+  const external = [
+    "mathematica.js",
+    "isbl.js",
+    "1c.js",
+    "maxima.js",
+    "sqf.js",
+  ];
+
   return {
     plugins: [
       react(),
@@ -30,6 +38,14 @@ export default defineConfig(({ mode }) => {
     ],
     build: {
       rollupOptions: {
+        // external: id => {
+        //   // Mark these specific dependencies as external
+        //   if (external.some(ext => id.includes(ext))) {
+        //     return true;
+        //   }
+
+        //   return false;
+        // },
         output: {
           manualChunks(id) {
             if (id.includes("react-github-readme-button")) {
