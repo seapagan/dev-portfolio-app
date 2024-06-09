@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
     "1c.js",
     "maxima.js",
     "sqf.js",
+    "gml.js",
   ];
 
   return {
@@ -32,22 +33,18 @@ export default defineConfig(({ mode }) => {
         },
       }),
       eslint(),
-      splitVendorChunkPlugin(),
       ViteMinifyPlugin({}),
       visualizer(),
     ],
     build: {
       rollupOptions: {
-        // external: id => {
-        //   // Mark these specific dependencies as external
-        //   if (external.some(ext => id.includes(ext))) {
-        //     return true;
-        //   }
-
-        //   return false;
-        // },
         output: {
           manualChunks(id) {
+            for (const e of external) {
+              if (id.includes(e)) {
+                return "extra-lang";
+              }
+            }
             if (id.includes("react-github-readme-button")) {
               return "github-button";
             }
@@ -56,6 +53,12 @@ export default defineConfig(({ mode }) => {
             }
             if (id.includes("@apollo")) {
               return "@apollo";
+            }
+            if (id.includes("graphql")) {
+              return "graphql";
+            }
+            if (id.includes("node_modules")) {
+              return "vendor";
             }
           },
         },
