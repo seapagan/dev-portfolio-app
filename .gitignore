@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # specific to this app
-settings.js
+# settings.js
 dist
 
 # yarn stuff
