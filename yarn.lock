@@ -2350,7 +2350,7 @@ __metadata:
     gh-pages: "npm:^6.1.1"
     graphql: "npm:^16.8.1"
     modern-css-reset: "npm:^1.4.0"
-    react: "npm:^18.2.0"
+    react: "npm:^19.0.0"
     react-dom: "npm:^18.2.0"
     react-github-readme-button: "npm:^1.2.3"
     react-helmet-async: "npm:^2.0.4"
@@ -5340,12 +5340,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
-  version: 18.2.0
-  resolution: "react@npm:18.2.0"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
+"react@npm:^19.0.0":
+  version: 19.0.0
+  resolution: "react@npm:19.0.0"
+  checksum: 10c0/9cad8f103e8e3a16d15cb18a0d8115d8bd9f9e1ce3420310aea381eb42aa0a4f812cf047bb5441349257a05fba8a291515691e3cb51267279b2d2c3253f38471
   languageName: node
   linkType: hard
 
