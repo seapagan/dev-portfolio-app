@@ -7,17 +7,22 @@ from a local JSON file. The Application is **Fully Responsive**, reads your
 GitHub **repository data in real-time**, has **Social Media buttons**, and can
 be configured using one simple file - **No Coding needed**.
 
-This is still work in progress but fully able to be used live. I try to avoid
-any breaking changes in the configuration file, this will be noted in the
-changelog if required.
+This is fully able to be used live. I try to avoid any breaking changes in the
+configuration file, this will be noted in the changelog if required.
 
-> **Important : I have now converted this application to use**
-> **[Vite](https://vitejs.dev) instead of `Create React App`. If you have an**
-> **existing installation, please delete your existing `node_modules` folder and**
-> **re-install the dependencies using `npm` or `yarn`**
-
-There is a live working version on my own pages :
-[https://www.gnramsay.com](https://www.gnramsay.com)
+> [!NOTE]
+>
+> At this time I am not focusing much on this project, since my new portfolio
+> page uses `Python` with `Django`, `Tailwind`, `HTMX` and `Alpine.js` instead
+> and can be found [here](https://github.com/seapagan/django-projects), with the
+> actual live pages [here](https://www.gnramsay.com)
+>
+> That project is a simpler but much cleaner and streamlined website using the
+> database for customization instead of local files.
+>
+> I have learned much since I coded this site - largely that `React` is NOT
+> NEEDED when you have a decent backend with templates and use `HTMX` or similar
+> for front-end reactivity.
 
 ## Sections
 
