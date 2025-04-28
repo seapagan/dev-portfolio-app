@@ -971,12 +971,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@primer/octicons-react@npm:^19.8.0":
-  version: 19.8.0
-  resolution: "@primer/octicons-react@npm:19.8.0"
+"@primer/octicons-react@npm:^19.15.1":
+  version: 19.15.1
+  resolution: "@primer/octicons-react@npm:19.15.1"
   peerDependencies:
     react: ">=16.3"
-  checksum: 10c0/6235cd84c71ac645cfdad7f3d9873b881ff24e480751dd6ce8fae2f9daf6f4270c972776f6ee912dba6537aba6050c3505cbd4be07b501e197ff1528a761bcd0
+  checksum: 10c0/5aef319368de2624256b3b896088aaddbc949d26bfbdf290b485f8c7b22c74e66230affb7420cfe55e2d77e31dec1129aef72d406e1c47b9fb46053dcd1ddad4
   languageName: node
   linkType: hard
 
@@ -2333,7 +2333,7 @@ __metadata:
   resolution: "dev-portfolio-app@workspace:."
   dependencies:
     "@apollo/client": "npm:^3.8.8"
-    "@primer/octicons-react": "npm:^19.8.0"
+    "@primer/octicons-react": "npm:^19.15.1"
     "@testing-library/dom": "npm:^9.3.3"
     "@testing-library/jest-dom": "npm:^6.4.2"
     "@testing-library/react": "npm:^14.1.2"
